@@ -376,9 +376,74 @@ body{background:var(--bg);color:var(--txt);font-family:var(--f);-webkit-font-smo
   .charts-grid2{grid-template-columns:1fr!important;}
   .services-grid{grid-template-columns:1fr!important;}
 }
+
+/* ===== V4 | COMPACTAÇÃO + CONVERSÃO ===== */
+body.compact-mode{padding-bottom:72px;}
+.section{padding:44px 32px;}
+.dark-sec{padding:44px 0;}
+.dark-inner{padding:0 32px;}
+.hero-content{padding:48px 32px 70px;}
+.section-sub{margin-bottom:24px;max-width:700px;}
+.hero-subtitle{max-width:700px;margin-bottom:26px;}
+.hero-kpi,.kpi-card,.chart-card,.pain-card,.service-card,.ptable,.extra-card,.contract-block{padding-top:16px;padding-bottom:16px;}
+.pain-grid,.services-grid,.price-grid,.extras-grid,.contract-grid,.cta-btns,.cta-contacts{gap:10px;}
+.loja-tabs{margin-bottom:18px;}
+.compact-intro{display:grid;grid-template-columns:1.2fr .8fr;gap:12px;margin-top:20px;max-width:920px;}
+.compact-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:16px 18px;backdrop-filter:blur(8px);}
+.compact-card.white{background:var(--white);border:1px solid var(--s3);box-shadow:var(--sh);}
+.compact-eyebrow{font-size:10px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:8px;}
+.compact-card.white .compact-eyebrow{color:var(--red);}
+.compact-title{font-size:15px;font-weight:900;line-height:1.25;color:#fff;margin-bottom:6px;}
+.compact-card.white .compact-title{color:var(--txt);}
+.compact-text{font-size:12px;line-height:1.65;color:rgba(255,255,255,.64);}
+.compact-card.white .compact-text{color:var(--t2);}
+.decision-points{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px;}
+.dp{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:11px 12px;}
+.dp-l{font-size:9px;text-transform:uppercase;letter-spacing:.9px;color:rgba(255,255,255,.35);font-weight:800;margin-bottom:4px;}
+.dp-v{font-size:12px;color:#fff;line-height:1.45;font-weight:700;}
+.hero-cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.hero-chip{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);font-size:11px;font-weight:700;color:rgba(255,255,255,.74);}
+.hero-chip strong{color:#fff;}
+.section-compact-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-end;flex-wrap:wrap;margin-bottom:18px;}
+.section-compact-head .section-sub{margin-bottom:0;}
+.summary-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px;}
+.summary-pill{background:var(--white);border:1px solid var(--s3);border-radius:12px;padding:14px 16px;box-shadow:var(--sh);}
+.summary-pill .k{font-size:9px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--t3);margin-bottom:5px;}
+.summary-pill .v{font-size:13px;font-weight:800;line-height:1.45;color:var(--txt);}
+.loss-banner{background:linear-gradient(135deg,#fff 0%,#fff7f7 100%);border:1px solid #ffd7dc;border-radius:14px;padding:16px 18px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px;box-shadow:var(--sh);}
+.loss-copy{font-size:12px;line-height:1.7;color:var(--txt);max-width:760px;}
+.loss-copy strong{color:var(--red);}
+.loss-badge{flex-shrink:0;background:var(--red);color:#fff;border-radius:12px;padding:10px 12px;font-size:11px;font-weight:800;text-align:center;min-width:132px;}
+.loss-badge span{display:block;font-size:9px;color:rgba(255,255,255,.72);font-weight:700;letter-spacing:.8px;text-transform:uppercase;margin-top:4px;}
+.sticky-close{position:fixed;right:14px;bottom:84px;z-index:150;background:var(--red);color:#fff;border:none;border-radius:999px;box-shadow:var(--sh3);padding:12px 16px;font:800 12px var(--f);display:inline-flex;align-items:center;gap:8px;cursor:pointer;}
+.sticky-close small{display:block;font-size:9px;font-weight:700;letter-spacing:.5px;color:rgba(255,255,255,.75);}
+.quick-win{background:rgba(74,222,128,.08);border:1px solid rgba(74,222,128,.24);border-radius:12px;padding:14px 16px;margin-bottom:16px;}
+.quick-win .q-title{font-size:11px;font-weight:900;letter-spacing:1px;text-transform:uppercase;color:#1e7a44;margin-bottom:5px;}
+.quick-win .q-text{font-size:12px;line-height:1.65;color:var(--txt);}
+.contract-summary{background:var(--white);border:1px solid var(--s3);border-radius:14px;padding:16px 18px;box-shadow:var(--sh);margin-bottom:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+.contract-mini{background:var(--s1);border-radius:10px;padding:12px;}
+.contract-mini .l{font-size:9px;letter-spacing:1px;text-transform:uppercase;font-weight:800;color:var(--t3);margin-bottom:4px;}
+.contract-mini .v{font-size:12px;font-weight:800;line-height:1.5;color:var(--txt);}
+.footer-note{font-size:11px;color:var(--t3);line-height:1.65;text-align:center;margin-top:12px;}
+@media (max-width: 768px){
+  .section{padding:30px 16px;}
+  .dark-sec{padding:30px 0;}
+  .dark-inner{padding:0 16px;}
+  .hero-content{padding:34px 16px 56px;}
+  .hero-kpis,.kpi-row,.summary-strip,.contract-summary,.decision-points,.compact-intro{grid-template-columns:1fr!important;}
+  .loss-banner{flex-direction:column;}
+  .loss-badge{width:100%;min-width:0;}
+  .sticky-close{left:12px;right:12px;bottom:74px;justify-content:center;border-radius:14px;}
+  .hero-chip{width:100%;justify-content:center;}
+}
+@media (min-width: 769px){
+  .topnav{height:54px;}
+  .hero{min-height:92vh;}
+}
+
 </style>
 </head>
-<body>
+<body class="compact-mode">
 
 <!-- MOBILE NAV -->
 <nav class="mob-nav no-print">
@@ -417,14 +482,35 @@ body{background:var(--bg);color:var(--txt);font-family:var(--f);-webkit-font-smo
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
   <div class="hero-content">
-    <div class="hero-badge"><div class="hero-badge-dot"></div>Gestão Logística · 5 Lojas · 2026</div>
+    <div class="hero-badge"><div class="hero-badge-dot"></div>Diagnóstico executivo · 5 lojas · março/2026</div>
     <h1 class="hero-title">
-      Fratelli Group —<br>operação logística<br><span>em números reais.</span>
+      Hoje a Fratelli já perde dinheiro<br><span>mesmo vendendo.</span>
     </h1>
     <p class="hero-subtitle">
-      <strong style="color:rgba(255,255,255,.75)">5.715 pedidos auditados</strong> em 5 unidades Fratelli.
-      Diagnóstico completo: receita, cancelamentos, tempos e oportunidades de otimização com a Osasco Express.
+      Auditamos <strong style="color:rgba(255,255,255,.82)">5.715 pedidos reais</strong> e a leitura é simples: a operação atual gera perda, atrito com o cliente e custo sem controle. A proposta abaixo mostra como a Osasco Express entra para reduzir cancelamento, organizar o delivery e transformar logística em resultado.
     </p>
+    <div class="hero-cta-row">
+      <div class="hero-chip">📉 <strong>15,2%</strong> de cancelamento — quase o dobro do saudável</div>
+      <div class="hero-chip">💸 <strong>R$44.301</strong> em receita perdida no período analisado</div>
+      <div class="hero-chip">⚙️ operação dedicada para cair abaixo de <strong>8%</strong></div>
+    </div>
+    <div class="compact-intro">
+      <div class="compact-card">
+        <div class="compact-eyebrow">Leitura do dono</div>
+        <div class="compact-title">O ponto não é ter mais entregador. É parar de perder margem, cliente e reputação.</div>
+        <div class="compact-text">Quando a logística fica na mão da plataforma, a Fratelli paga o custo, assume a reclamação e ainda perde recompra. Com operação dedicada, o delivery volta a obedecer o padrão da marca.</div>
+        <div class="decision-points">
+          <div class="dp"><div class="dp-l">Hoje</div><div class="dp-v">Custo sem controle e experiência variável</div></div>
+          <div class="dp"><div class="dp-l">Com OE</div><div class="dp-v">Equipe, rota e despacho sob gestão</div></div>
+          <div class="dp"><div class="dp-l">Objetivo</div><div class="dp-v">Mais pedidos concluídos e mais recompra</div></div>
+        </div>
+      </div>
+      <div class="compact-card">
+        <div class="compact-eyebrow">Decisão rápida</div>
+        <div class="compact-title">Essa proposta faz sentido se a Fratelli quiser:</div>
+        <div class="compact-text">• reduzir cancelamentos<br>• encurtar tempo de coleta<br>• padronizar a experiência do cliente<br>• ter previsibilidade de escala e custo<br>• crescer com mais controle operacional</div>
+      </div>
+    </div>
     <div class="hero-kpis">
       <div class="hero-kpi">
         <div class="hero-kpi-val">5.715</div>
@@ -537,9 +623,22 @@ body{background:var(--bg);color:var(--txt);font-family:var(--f);-webkit-font-smo
 <!-- ══ PROBLEMA ══ -->
 <div style="background:var(--bg)" id="s-problema">
   <div class="section fade-up">
-    <div class="section-tag">O problema real</div>
-    <h2 class="section-title">O que os dados <em>revelam</em><br>sobre a operação atual.</h2>
-    <p class="section-sub">Com entregadores de plataforma, o Fratelli Group perde receita, clientes e visibilidade — todos os dias.</p>
+    <div class="section-compact-head">
+      <div>
+        <div class="section-tag">O problema real</div>
+        <h2 class="section-title">O que os dados <em>revelam</em><br>sobre a operação atual.</h2>
+      </div>
+      <p class="section-sub">Com entregadores de plataforma, o Fratelli Group perde receita, clientes e visibilidade — todos os dias.</p>
+    </div>
+    <div class="loss-banner">
+      <div class="loss-copy">A leitura mais importante aqui é simples: <strong>a Fratelli já está pagando por um problema que ainda não controla</strong>. Cancelamento alto, retenção baixa e despesa promocional formam um vazamento que enfraquece o caixa e a recompra.</div>
+      <div class="loss-badge">agir agora<span>mais controle · menos perda</span></div>
+    </div>
+    <div class="summary-strip">
+      <div class="summary-pill"><div class="k">Perda visível</div><div class="v">R$44.301 em receita cancelada</div></div>
+      <div class="summary-pill"><div class="k">Sintoma comercial</div><div class="v">13,3% de recompra média — abaixo do potencial</div></div>
+      <div class="summary-pill"><div class="k">Direção da proposta</div><div class="v">reduzir cancelamento, proteger receita e padronizar entrega</div></div>
+    </div>
     <div class="pain-grid">
       <div class="pain-card">
         <div class="pain-icon">❌</div>
@@ -576,9 +675,17 @@ body{background:var(--bg);color:var(--txt);font-family:var(--f);-webkit-font-smo
 <!-- ══ OPERAÇÃO OE ══ -->
 <div style="background:var(--bg);border-top:1px solid var(--s2)" id="s-operacao">
   <div class="section fade-up">
-    <div class="section-tag">Proposta Osasco Express</div>
-    <h2 class="section-title">Entregadores dedicados.<br><em>Tecnologia Foody. Resultado mensurável.</em></h2>
-    <p class="section-sub">A Osasco Express opera com a plataforma Foody Delivery — o sistema de logística urbana líder no Brasil, usado por centenas de restaurantes desde 2015. Você não ganha só entregadores. Você ganha controle total da operação.</p>
+    <div class="section-compact-head">
+      <div>
+        <div class="section-tag">Proposta Osasco Express</div>
+        <h2 class="section-title">Entregadores dedicados.<br><em>Tecnologia Foody. Resultado mensurável.</em></h2>
+      </div>
+      <p class="section-sub">A Osasco Express opera com a plataforma Foody Delivery — o sistema de logística urbana líder no Brasil. Aqui a Fratelli não contrata apenas entregadores: contrata processo, despacho, leitura de dados e uma operação que responde ao padrão da marca.</p>
+    </div>
+    <div class="quick-win">
+      <div class="q-title">Por que essa solução fecha venda</div>
+      <div class="q-text">Ela conversa com a dor do dono: menos perda invisível, menos improviso e mais previsibilidade. O ganho não é só operacional. É financeiro, comercial e de experiência do cliente.</div>
+    </div>
 
     <!-- FOODY DESTAQUE -->
     <div style="background:#1a1a18;border-radius:14px;padding:28px 32px;margin-bottom:28px;border:1px solid rgba(255,255,255,.07)">
@@ -1424,6 +1531,11 @@ body{background:var(--bg);color:var(--txt);font-family:var(--f);-webkit-font-smo
   <div class="section fade-up">
     <div class="section-tag">Contrato comercial</div>
     <h2 class="section-title">Proposta de parceria.<br><em>Termos completos para assinar.</em></h2>
+    <div class="contract-summary">
+      <div class="contract-mini"><div class="l">O que entra</div><div class="v">operação dedicada, gestão, monitoramento e suporte</div></div>
+      <div class="contract-mini"><div class="l">Como começa</div><div class="v">assinatura, implantação e escala ajustada aos dados da Fratelli</div></div>
+      <div class="contract-mini"><div class="l">Por que assinar</div><div class="v">tirar a logística da improvisação e colocar sob padrão e controle</div></div>
+    </div>
     <p class="section-sub" style="margin-bottom:28px">Prestação de Serviços de Motofrete e Logística — documento baseado no contrato oficial da Osasco Express, em conformidade com a legislação vigente de prestação de serviços (CC/2002, art. 593 e ss.) e intermediação logística.</p>
 
     <!-- 1. PARTES -->
@@ -1779,8 +1891,8 @@ body{background:var(--bg);color:var(--txt);font-family:var(--f);-webkit-font-smo
       Condições disponíveis até 18/03/2026
     </div>
 
-    <h2 class="cta-title">Prontos para <span>transformar</span><br>a operação Fratelli?</h2>
-    <p class="cta-sub">R$44.301 em receita perdida todo mês. A taxa de maquininha por entrega — <strong style="color:rgba(255,255,255,.7)">inclusa sem custo adicional</strong> para quem fechar agora.</p>
+    <h2 class="cta-title">A decisão aqui é simples:<br><span>continuar perdendo</span> ou assumir o controle.</h2>
+    <p class="cta-sub">Os dados mostram a dor. A proposta mostra o caminho. Se a Fratelli quer delivery mais previsível, menos cancelamento e uma experiência coerente com a força da marca, esse é o momento de virar a chave.</p>
 
     <!-- Resumo do que está incluso -->
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:28px">
@@ -1803,6 +1915,7 @@ body{background:var(--bg);color:var(--txt);font-family:var(--f);-webkit-font-smo
       
     </div>
     <div class="cta-contacts">
+      <div class="cta-contact cta-legal">🤝 <strong>Próximo passo:</strong><br>alinhamento final, assinatura e início da implantação com escala baseada nos dados reais da operação.</div>
       <div class="cta-contact">📧 <strong>contato@osascoexpress.com.br</strong></div>
       <div class="cta-contact">📞 <strong>(11) 98666-1784</strong></div>
       <div class="cta-contact">📞 <strong>(11) 96425-1461</strong></div>
@@ -2072,5 +2185,6 @@ buildOverviewCharts();
 renderLojaPanel('all');
 buildAlertas();
 </script>
+  <button class="sticky-close no-print" onclick="window.open('https://wa.me/5511986661784','_blank')">📱 Fechar no WhatsApp <small>(11) 98666-1784</small></button>
 </body>
 </html>
