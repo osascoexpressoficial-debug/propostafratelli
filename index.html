@@ -240,6 +240,567 @@ img,video,iframe,svg{max-width:100%;height:auto}
   .brand-mark{display:none}
 }
 
+
+/* LINHA DO TEMPO DE IMPLANTAÇÃO — UX FINAL */
+.onboarding-section{
+  position:relative;
+  background:
+    radial-gradient(circle at 90% 0%,rgba(243,109,33,.16),transparent 28%),
+    linear-gradient(180deg,#120d0a 0%,#1b120d 100%);
+  color:var(--cream);
+  overflow:hidden;
+}
+.onboarding-section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px),
+    linear-gradient(180deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:52px 52px;
+  mask-image:linear-gradient(180deg,rgba(0,0,0,.45),transparent 88%);
+  pointer-events:none;
+}
+.onboarding-section .wrap{position:relative;z-index:1}
+.onboarding-hero{
+  display:grid;
+  grid-template-columns:minmax(0,.92fr) minmax(320px,1.08fr);
+  gap:28px;
+  align-items:stretch;
+}
+.onboarding-copy{
+  border:1px solid rgba(255,246,235,.14);
+  border-radius:32px;
+  padding:30px;
+  background:rgba(255,246,235,.06);
+  box-shadow:0 24px 70px rgba(0,0,0,.22);
+  backdrop-filter:blur(10px);
+}
+.onboarding-copy h2{
+  color:#fff;
+  font-size:clamp(31px,4.4vw,52px);
+  margin-bottom:14px;
+}
+.onboarding-copy p{
+  color:rgba(255,246,235,.74);
+  font-size:15px;
+  line-height:1.78;
+  max-width:620px;
+}
+.onboarding-alert{
+  margin-top:18px;
+  background:rgba(21,117,79,.18);
+  border:1px solid rgba(21,117,79,.32);
+  border-left:4px solid var(--green);
+  border-radius:0 18px 18px 0;
+  padding:15px 17px;
+  color:#dff4ea;
+  font-size:13.5px;
+  line-height:1.65;
+}
+.onboarding-actions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:22px;
+}
+.onboarding-actions .btn{
+  border-radius:16px;
+  min-height:52px;
+  width:100%;
+}
+.onboarding-panel{
+  background:linear-gradient(180deg,#fff9f2,#fff1e4);
+  color:var(--ink);
+  border:1px solid rgba(243,109,33,.22);
+  border-radius:32px;
+  overflow:hidden;
+  box-shadow:0 26px 74px rgba(0,0,0,.25);
+}
+.onboarding-panel-head{
+  background:#0f0c0a;
+  color:#fff;
+  padding:22px 24px;
+}
+.onboarding-panel-head h3{
+  color:#fff;
+  font-size:26px;
+  margin-bottom:5px;
+}
+.onboarding-panel-head p{
+  color:rgba(255,255,255,.58);
+  font-size:12.5px;
+}
+.timeline{
+  position:relative;
+  padding:24px;
+  display:grid;
+  gap:12px;
+}
+.timeline::before{
+  content:"";
+  position:absolute;
+  left:45px;
+  top:35px;
+  bottom:35px;
+  width:2px;
+  background:linear-gradient(180deg,var(--orange),rgba(243,109,33,.08));
+  border-radius:999px;
+}
+.t-step{
+  position:relative;
+  display:grid;
+  grid-template-columns:42px minmax(0,1fr);
+  gap:14px;
+  align-items:flex-start;
+}
+.t-num{
+  position:relative;
+  z-index:1;
+  width:42px;
+  height:42px;
+  border-radius:16px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(135deg,var(--orange),var(--orange2));
+  color:#fff;
+  font-size:14px;
+  font-weight:950;
+  box-shadow:0 12px 26px rgba(243,109,33,.24);
+}
+.t-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:15px 16px;
+  box-shadow:0 10px 26px rgba(31,23,19,.06);
+}
+.t-card h4{
+  font-size:15px;
+  font-weight:950;
+  letter-spacing:-.02em;
+  margin-bottom:4px;
+  color:var(--ink);
+}
+.t-card p{
+  font-size:12.8px;
+  line-height:1.62;
+  color:var(--muted);
+}
+.t-card a{
+  color:var(--orange2);
+  font-weight:900;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.t-mini{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:9px;
+}
+.t-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  border-radius:999px;
+  padding:5px 8px;
+  font-size:10.5px;
+  font-weight:900;
+  background:var(--greenSoft);
+  color:var(--green);
+  border:1px solid rgba(21,117,79,.12);
+}
+.integration-box{
+  margin-top:22px;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+}
+.integration-card{
+  background:rgba(255,246,235,.07);
+  border:1px solid rgba(255,246,235,.14);
+  border-radius:22px;
+  padding:18px;
+  color:#fff;
+}
+.integration-card strong{
+  display:block;
+  font-size:15px;
+  margin-bottom:5px;
+  color:#fff;
+}
+.integration-card span{
+  display:block;
+  color:rgba(255,246,235,.64);
+  font-size:12.5px;
+  line-height:1.55;
+}
+.security-note{
+  margin-top:16px;
+  border:1px solid rgba(255,246,235,.14);
+  border-radius:20px;
+  padding:16px 18px;
+  background:rgba(0,0,0,.18);
+  color:rgba(255,246,235,.72);
+  font-size:13px;
+  line-height:1.65;
+}
+.security-note strong{color:#fff}
+@media(max-width:980px){
+  .onboarding-hero{grid-template-columns:1fr}
+  .integration-box{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .onboarding-copy,.onboarding-panel{border-radius:22px}
+  .onboarding-copy{padding:20px}
+  .onboarding-actions{grid-template-columns:1fr}
+  .onboarding-panel-head,.timeline{padding:18px}
+  .timeline::before{left:38px}
+  .t-step{grid-template-columns:38px minmax(0,1fr);gap:12px}
+  .t-num{width:38px;height:38px;border-radius:14px}
+  .t-card{padding:13px 14px;border-radius:16px}
+}
+
+
+/* UPGRADE ULTRA SENIOR — ONBOARDING INTERATIVO */
+.activation-section{
+  background:linear-gradient(180deg,#fff6eb 0%,#f8efe4 100%);
+  color:var(--ink);
+}
+.activation-section p{color:var(--muted)}
+.activation-grid{
+  display:grid;
+  grid-template-columns:minmax(0,.92fr) minmax(340px,1.08fr);
+  gap:22px;
+  align-items:start;
+}
+.command-card{
+  position:sticky;
+  top:86px;
+  background:#0f0c0a;
+  color:#fff;
+  border:1px solid rgba(243,109,33,.22);
+  border-radius:30px;
+  padding:24px;
+  box-shadow:0 26px 74px rgba(31,23,19,.22);
+  overflow:hidden;
+}
+.command-card::before{
+  content:"";
+  position:absolute;
+  inset:auto -90px -120px auto;
+  width:260px;height:260px;border-radius:50%;
+  background:rgba(243,109,33,.18);
+  filter:blur(2px);
+}
+.command-card>*{position:relative;z-index:1}
+.command-label{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:rgba(243,109,33,.14);
+  border:1px solid rgba(243,109,33,.24);
+  color:#ffd7bd;
+  border-radius:999px;
+  padding:7px 10px;
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  margin-bottom:14px;
+}
+.command-card h2{
+  color:#fff;
+  font-size:clamp(27px,3.4vw,42px);
+  margin-bottom:12px;
+}
+.command-card p{
+  color:rgba(255,246,235,.72);
+  font-size:14px;
+  line-height:1.72;
+}
+.progress-shell{
+  margin:22px 0 16px;
+  background:rgba(255,255,255,.09);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:20px;
+  padding:16px;
+}
+.progress-top{
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  align-items:center;
+  margin-bottom:10px;
+}
+.progress-title{
+  font-size:12px;
+  color:rgba(255,255,255,.58);
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+}
+.progress-count{
+  font-size:20px;
+  font-weight:950;
+  color:#fff;
+  letter-spacing:-.04em;
+}
+.progress-bar{
+  height:12px;
+  background:rgba(255,255,255,.12);
+  border-radius:999px;
+  overflow:hidden;
+}
+.progress-fill{
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg,var(--orange),#ffb06f);
+  border-radius:999px;
+  transition:width .35s ease;
+  box-shadow:0 0 22px rgba(243,109,33,.38);
+}
+.progress-status{
+  margin-top:10px;
+  font-size:12.5px;
+  line-height:1.55;
+  color:#f5d8c6;
+}
+.command-actions{
+  display:grid;
+  gap:10px;
+  margin-top:16px;
+}
+.command-actions .btn{
+  width:100%;
+  border-radius:16px;
+  min-height:52px;
+}
+.btn-support{
+  background:linear-gradient(135deg,#22a06b,#15754f);
+  color:#fff;
+  box-shadow:0 16px 34px rgba(21,117,79,.22);
+}
+.activation-board{
+  display:grid;
+  gap:14px;
+}
+.check-card{
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr) auto;
+  gap:14px;
+  align-items:flex-start;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:16px;
+  box-shadow:0 12px 30px rgba(31,23,19,.07);
+  transition:.18s ease;
+}
+.check-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 18px 42px rgba(31,23,19,.10);
+}
+.check-card.is-done{
+  background:linear-gradient(180deg,#fff,#f0fbf6);
+  border-color:rgba(21,117,79,.22);
+}
+.check-card.is-next{
+  border-color:rgba(243,109,33,.45);
+  box-shadow:0 18px 46px rgba(243,109,33,.13);
+}
+.check-toggle{
+  width:34px;
+  height:34px;
+  border-radius:13px;
+  border:2px solid #ddc9b5;
+  background:#fff;
+  display:grid;
+  place-items:center;
+  color:#fff;
+  cursor:pointer;
+  transition:.18s ease;
+  flex:0 0 auto;
+}
+.check-toggle svg{width:17px;height:17px;stroke:currentColor;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.check-card.is-done .check-toggle{
+  background:var(--green);
+  border-color:var(--green);
+}
+.check-body h3{
+  font-size:17px;
+  letter-spacing:-.025em;
+  margin-bottom:4px;
+  color:var(--ink);
+}
+.check-body p{
+  font-size:13px;
+  line-height:1.62;
+}
+.check-body a{
+  color:var(--orange2);
+  font-weight:900;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.step-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:34px;
+  height:28px;
+  border-radius:999px;
+  background:var(--orangeSoft);
+  color:var(--orange2);
+  font-size:11px;
+  font-weight:950;
+  white-space:nowrap;
+}
+.check-card.is-done .step-badge{
+  background:var(--greenSoft);
+  color:var(--green);
+}
+.check-card.is-next .step-badge{
+  background:var(--orange);
+  color:#fff;
+}
+.remote-section{
+  background:linear-gradient(180deg,#120d0a 0%,#1b120d 100%);
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+.remote-section::after{
+  content:"";
+  position:absolute;
+  right:-120px;top:20px;
+  width:360px;height:360px;border-radius:50%;
+  background:rgba(243,109,33,.16);
+  pointer-events:none;
+}
+.remote-grid{
+  position:relative;z-index:1;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(320px,.75fr);
+  gap:22px;
+  align-items:stretch;
+}
+.remote-main{
+  background:rgba(255,246,235,.07);
+  border:1px solid rgba(255,246,235,.14);
+  border-radius:30px;
+  padding:28px;
+  box-shadow:0 24px 70px rgba(0,0,0,.22);
+}
+.remote-main h2{color:#fff;margin-bottom:12px}
+.remote-main p{color:rgba(255,246,235,.72);font-size:15px;line-height:1.76}
+.remote-metrics{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-top:22px;
+}
+.remote-metric{
+  background:rgba(0,0,0,.20);
+  border:1px solid rgba(255,255,255,.11);
+  border-radius:20px;
+  padding:16px;
+}
+.remote-metric strong{
+  display:block;
+  color:#fff;
+  font-size:27px;
+  line-height:1;
+  letter-spacing:-.04em;
+  margin-bottom:6px;
+}
+.remote-metric span{
+  color:rgba(255,246,235,.58);
+  font-size:12px;
+  line-height:1.45;
+}
+.ready-card{
+  background:#fff;
+  color:var(--ink);
+  border-radius:30px;
+  padding:24px;
+  box-shadow:0 24px 70px rgba(0,0,0,.24);
+  border:1px solid rgba(243,109,33,.22);
+}
+.ready-card h3{
+  font-size:26px;
+  margin-bottom:10px;
+}
+.ready-list{
+  display:grid;
+  gap:9px;
+  margin-top:14px;
+}
+.ready-item{
+  display:flex;
+  gap:9px;
+  align-items:flex-start;
+  padding:10px;
+  border-radius:14px;
+  background:#fff8f0;
+  border:1px solid rgba(243,109,33,.12);
+  font-size:12.7px;
+  line-height:1.45;
+  color:var(--muted);
+}
+.ready-item::before{
+  content:"✓";
+  display:grid;
+  place-items:center;
+  width:20px;height:20px;
+  border-radius:50%;
+  flex:0 0 20px;
+  background:var(--green);
+  color:#fff;
+  font-size:12px;
+  font-weight:900;
+}
+.ready-card .btn{
+  width:100%;
+  border-radius:16px;
+  margin-top:16px;
+}
+.toast{
+  position:fixed;
+  left:50%;
+  bottom:92px;
+  transform:translateX(-50%) translateY(18px);
+  opacity:0;
+  pointer-events:none;
+  z-index:999;
+  background:#0f0c0a;
+  color:#fff;
+  border:1px solid rgba(243,109,33,.28);
+  border-radius:999px;
+  padding:11px 16px;
+  font-size:12.5px;
+  font-weight:850;
+  box-shadow:0 20px 50px rgba(0,0,0,.28);
+  transition:.22s ease;
+}
+.toast.show{
+  opacity:1;
+  transform:translateX(-50%) translateY(0);
+}
+@media(max-width:980px){
+  .activation-grid,.remote-grid{grid-template-columns:1fr}
+  .command-card{position:relative;top:auto}
+}
+@media(max-width:640px){
+  .command-card,.remote-main,.ready-card{border-radius:22px;padding:18px}
+  .activation-grid{gap:16px}
+  .check-card{grid-template-columns:auto minmax(0,1fr);gap:12px}
+  .step-badge{grid-column:2;justify-self:start}
+  .remote-metrics{grid-template-columns:1fr}
+  .toast{width:calc(100% - 28px);text-align:center;border-radius:18px}
+}
+
 </style>
 </head>
 <body id="top">
@@ -250,6 +811,8 @@ img,video,iframe,svg{max-width:100%;height:auto}
       <a href="#ajustes">Ajustes</a>
       <a href="#operacao">Operação</a>
       <a href="#contratos">Contratos</a>
+      <a href="#ativacao">Ativação</a>
+      <a href="#implantacao">Implantação</a>
       <a class="primary" href="#assinar">Assinar</a>
     </div>
   </div>
@@ -395,16 +958,136 @@ img,video,iframe,svg{max-width:100%;height:auto}
   </div>
 </section>
 
+
+
+<section class="section activation-section" id="ativacao">
+  <div class="wrap">
+    <div class="activation-grid">
+      <aside class="command-card fade">
+        <div class="command-label">Painel de ativação</div>
+        <h2>Henrique, vamos tirar a operação do papel.</h2>
+        <p>Marque cada etapa conforme for concluindo. A página salva seu progresso neste dispositivo e mostra exatamente o próximo passo para a integração acontecer sem travar.</p>
+
+        <div class="progress-shell" aria-label="Progresso da ativação">
+          <div class="progress-top">
+            <div class="progress-title">Progresso</div>
+            <div class="progress-count"><span id="doneCount">0</span>/6</div>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          <div class="progress-status" id="progressStatus">Comece pelo cadastro da empresa no sistema da Osasco Express.</div>
+        </div>
+
+        <div class="command-actions">
+          <a class="btn btn-primary" href="https://osascoexpressemotoboys.entregas.io/signup/customer-company" target="_blank" rel="noopener">Criar conta da empresa</a>
+          <a class="btn btn-support" href="https://wa.me/5511986661784?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+J%C3%A1+fiz+o+cadastro+e+quero+ativar+a+conta+para+iniciar+a+integra%C3%A7%C3%A3o+remota+via+AnyDesk.+Tenho+cerca+de+40+minutos+para+acompanhar." target="_blank" rel="noopener">Estou pronto para ativar</a>
+          <button class="btn btn-secondary" type="button" id="resetProgress">Reiniciar checklist</button>
+        </div>
+      </aside>
+
+      <div class="activation-board fade" id="activationChecklist">
+        <article class="check-card" data-step="cadastro">
+          <button class="check-toggle" type="button" aria-label="Marcar cadastro como concluído"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="check-body">
+            <h3>Fazer o cadastro no sistema</h3>
+            <p>Acesse o cadastro da empresa, preencha os dados da Fratelli e finalize a criação da conta.</p>
+            <p><a href="https://osascoexpressemotoboys.entregas.io/signup/customer-company" target="_blank" rel="noopener">Abrir cadastro da empresa</a></p>
+          </div>
+          <span class="step-badge">01</span>
+        </article>
+
+        <article class="check-card" data-step="email">
+          <button class="check-toggle" type="button" aria-label="Marcar e-mail como confirmado"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="check-body">
+            <h3>Confirmar o e-mail</h3>
+            <p>Abra o Gmail usado no cadastro e clique no link de confirmação enviado pelo sistema da Osasco Express.</p>
+          </div>
+          <span class="step-badge">02</span>
+        </article>
+
+        <article class="check-card" data-step="perfil">
+          <button class="check-toggle" type="button" aria-label="Marcar perfil como completo"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="check-body">
+            <h3>Completar o perfil da empresa</h3>
+            <p>Informe endereço completo, defina uma senha segura e configure o raio de atuação em <strong>10 km</strong>.</p>
+          </div>
+          <span class="step-badge">03</span>
+        </article>
+
+        <article class="check-card" data-step="anydesk">
+          <button class="check-toggle" type="button" aria-label="Marcar AnyDesk como preparado"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="check-body">
+            <h3>Deixar o AnyDesk pronto</h3>
+            <p>Baixe, instale e abra o AnyDesk no computador da loja. O suporte vai pedir o número do dispositivo exibido na tela.</p>
+            <p><a href="https://anydesk.com/pt/downloads/windows" target="_blank" rel="noopener">Baixar AnyDesk para Windows</a></p>
+          </div>
+          <span class="step-badge">04</span>
+        </article>
+
+        <article class="check-card" data-step="suporte">
+          <button class="check-toggle" type="button" aria-label="Marcar suporte como acionado"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="check-body">
+            <h3>Acionar o suporte oficial</h3>
+            <p>Com cadastro, e-mail e AnyDesk prontos, fale com o suporte. A integração pode acontecer no mesmo dia, em horário combinado.</p>
+            <p><a href="https://wa.me/5511986661784?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+J%C3%A1+fiz+o+cadastro+e+quero+ativar+a+conta+para+iniciar+a+integra%C3%A7%C3%A3o+remota+via+AnyDesk.+Tenho+cerca+de+40+minutos+para+acompanhar." target="_blank" rel="noopener">Chamar suporte no WhatsApp</a></p>
+          </div>
+          <span class="step-badge">05</span>
+        </article>
+
+        <article class="check-card" data-step="integracao">
+          <button class="check-toggle" type="button" aria-label="Marcar integração como concluída"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="check-body">
+            <h3>Acompanhar a integração remota</h3>
+            <p>Reserve cerca de <strong>40 minutos</strong>. O cliente acompanha a configuração do iFood e demais contas pelo AnyDesk, com o suporte da Osasco Express.</p>
+          </div>
+          <span class="step-badge">06</span>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section remote-section" id="implantacao">
+  <div class="wrap">
+    <div class="remote-grid">
+      <div class="remote-main fade">
+        <p class="kicker">Integração remota assistida</p>
+        <h2>O suporte configura com você no mesmo dia, se tudo estiver pronto.</h2>
+        <p>Depois do cadastro e da confirmação do e-mail, a Osasco Express ativa a conta e conduz a integração remota via AnyDesk. O responsável da Fratelli precisa acompanhar a sessão para liberar acessos, validar plataformas e garantir que o fluxo fique correto desde o primeiro dia.</p>
+        <div class="remote-metrics">
+          <div class="remote-metric"><strong>40 min</strong><span>tempo médio para acompanhar a integração</span></div>
+          <div class="remote-metric"><strong>10 km</strong><span>raio operacional configurado no perfil</span></div>
+          <div class="remote-metric"><strong>mesmo dia</strong><span>quando cadastro, e-mail e AnyDesk já estão prontos</span></div>
+        </div>
+      </div>
+
+      <aside class="ready-card fade">
+        <h3>Para não atrasar sua ativação</h3>
+        <p>Antes de chamar o suporte, deixe estes itens em mãos:</p>
+        <div class="ready-list">
+          <div class="ready-item">Acesso ao e-mail usado no cadastro.</div>
+          <div class="ready-item">Login do iFood e demais plataformas necessárias.</div>
+          <div class="ready-item">Computador da loja disponível.</div>
+          <div class="ready-item">AnyDesk instalado e aberto.</div>
+          <div class="ready-item">Número do dispositivo visível na tela.</div>
+          <div class="ready-item">Responsável da Fratelli disponível por cerca de 40 minutos.</div>
+        </div>
+        <a class="btn btn-primary" href="https://wa.me/5511986661784?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+J%C3%A1+estou+com+cadastro%2C+e-mail%2C+AnyDesk+e+acessos+prontos.+Podemos+ativar+a+conta+e+fazer+a+integra%C3%A7%C3%A3o+remota." target="_blank" rel="noopener">Estou com tudo pronto</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+
 <section class="section-tight" id="proximos">
   <div class="wrap">
     <div class="section-head fade">
-      <p class="kicker">Próximos passos</p>
-      <h2>Depois da assinatura, entramos em implantação.</h2>
+      <p class="kicker">Resumo final</p>
+      <h2>Assinou, ativou, integrou, começou.</h2>
     </div>
     <div class="flow fade">
       <div class="step"><div class="n">1</div><h3>Assinatura</h3><p>Contrato assinado pelas partes com validade eletrônica.</p></div>
-      <div class="step"><div class="n">2</div><h3>Configuração</h3><p>Validação dos acessos, canais e fluxo operacional da Fratelli.</p></div>
-      <div class="step"><div class="n">3</div><h3>Operação</h3><p>Início em até 5 dias úteis, com escala confirmada e acompanhamento.</p></div>
+      <div class="step"><div class="n">2</div><h3>Cadastro e integração</h3><p>Conta criada, e-mail confirmado, suporte acionado e AnyDesk preparado.</p></div>
+      <div class="step"><div class="n">3</div><h3>Escala digital</h3><p>Montagem da escala, confirmação dos turnos e início da operação acompanhada.</p></div>
     </div>
   </div>
 </section>
@@ -433,10 +1116,103 @@ img,video,iframe,svg{max-width:100%;height:auto}
     <small>Fratelli Espaço Gourmet Ltda<br>CNPJ 42.212.888/0003-38<br>Pacote pronto para GitHub Pages.</small>
   </div>
 </footer>
-<div class="sticky"><a href="#contratos">Baixar contratos</a></div>
+<div class="sticky"><a href="#ativacao">Ativar minha conta</a></div>
 <script>
 const io = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in') }), {threshold:.12});
 document.querySelectorAll('.fade').forEach(el => io.observe(el));
 </script>
+
+<script>
+(function(){
+  const storageKey = "fratelli_onboarding_progress_v1";
+  const cards = Array.from(document.querySelectorAll(".check-card[data-step]"));
+  const fill = document.getElementById("progressFill");
+  const count = document.getElementById("doneCount");
+  const status = document.getElementById("progressStatus");
+  const reset = document.getElementById("resetProgress");
+  const toast = document.createElement("div");
+  toast.className = "toast";
+  document.body.appendChild(toast);
+
+  const labels = {
+    cadastro: "Cadastro criado",
+    email: "E-mail confirmado",
+    perfil: "Perfil completo",
+    anydesk: "AnyDesk pronto",
+    suporte: "Suporte acionado",
+    integracao: "Integração acompanhada"
+  };
+
+  const statusByCount = [
+    "Comece pelo cadastro da empresa no sistema da Osasco Express.",
+    "Agora confirme o e-mail enviado pelo sistema.",
+    "Complete o perfil da empresa e configure o raio de 10 km.",
+    "Deixe o AnyDesk instalado e aberto no computador da loja.",
+    "Chame o suporte oficial para ativar a conta e iniciar a integração.",
+    "Acompanhe a integração remota por cerca de 40 minutos.",
+    "Ativação encaminhada. Próximo passo: escala digital e início da operação."
+  ];
+
+  function load(){
+    try { return JSON.parse(localStorage.getItem(storageKey) || "{}"); }
+    catch(e){ return {}; }
+  }
+
+  function save(state){
+    localStorage.setItem(storageKey, JSON.stringify(state));
+  }
+
+  function showToast(text){
+    toast.textContent = text;
+    toast.classList.add("show");
+    clearTimeout(window.__fratelliToast);
+    window.__fratelliToast = setTimeout(()=>toast.classList.remove("show"), 1800);
+  }
+
+  function render(){
+    const state = load();
+    let done = 0;
+    cards.forEach(card => {
+      const key = card.dataset.step;
+      const isDone = !!state[key];
+      card.classList.toggle("is-done", isDone);
+      card.classList.remove("is-next");
+      if(isDone) done++;
+    });
+
+    const next = cards.find(card => !state[card.dataset.step]);
+    if(next) next.classList.add("is-next");
+
+    const percent = cards.length ? Math.round((done / cards.length) * 100) : 0;
+    if(fill) fill.style.width = percent + "%";
+    if(count) count.textContent = done;
+    if(status) status.textContent = statusByCount[done] || statusByCount[0];
+  }
+
+  cards.forEach(card => {
+    const btn = card.querySelector(".check-toggle");
+    if(!btn) return;
+    btn.addEventListener("click", () => {
+      const state = load();
+      const key = card.dataset.step;
+      state[key] = !state[key];
+      save(state);
+      render();
+      showToast(state[key] ? (labels[key] + " marcado") : (labels[key] + " desmarcado"));
+    });
+  });
+
+  if(reset){
+    reset.addEventListener("click", () => {
+      localStorage.removeItem(storageKey);
+      render();
+      showToast("Checklist reiniciado");
+    });
+  }
+
+  render();
+})();
+</script>
+
 </body>
 </html>
