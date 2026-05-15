@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fratelli × Osasco Express | Implantação da operação</title>
+<meta name="description" content="Implantação da parceria Fratelli Espaço Gourmet com a Osasco Express: canais de comunicação, recrutamento e seleção, integração ao sistema, integração com plataformas, testes e início em até 5 dias úteis." />
+<meta property="og:title" content="Fratelli × Osasco Express | Implantação da operação" />
+<meta property="og:description" content="Fluxo real da parceria: canais de comunicação, recrutamento e seleção, integrações técnicas, testes e início em até 5 dias úteis." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/fratelli-capa-social.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Fratelli × Osasco Express | Implantação da operação" />
+<meta name="twitter:description" content="Fluxo real da parceria: canais de comunicação, recrutamento e seleção, integrações técnicas, testes e início em até 5 dias úteis." />
+<meta name="twitter:image" content="assets/fratelli-capa-social.png" />
+<link rel="icon" type="image/png" href="assets/favicon-fratelli.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<style>
+:root{
+  --bg:#0b0705;
+  --bg-soft:#140c08;
+  --bg-card:#120c08;
+  --surface:#fff9f3;
+  --surface-2:#f6ecdf;
+  --paper:#fffdf9;
+  --ink:#18110c;
+  --muted:#6f5b4d;
+  --muted-2:#d9c7b8;
+  --line:#ebd7c3;
+  --line-soft:rgba(255,255,255,.10);
+  --orange:#f36d21;
+  --orange-2:#c95011;
+  --orange-soft:#fff1e6;
+  --green:#167b52;
+  --green-2:#22a36d;
+  --green-soft:#ecf8f1;
+  --blue:#315fd6;
+  --blue-soft:#eef4ff;
+  --red:#ce3645;
+  --shadow:0 28px 80px rgba(0,0,0,.30);
+  --shadow-soft:0 16px 44px rgba(42,22,12,.10);
+  --radius-xl:32px;
+  --radius-lg:24px;
+  --radius-md:18px;
+  --max:1180px;
+  --fs-hero:clamp(38px,5vw,62px);
+  --fs-h2:clamp(28px,3.5vw,42px);
+  --fs-h3:clamp(18px,1.9vw,24px);
+  --fs-body:15px;
+  --fs-body-sm:13px;
+}
+*{box-sizing:border-box;margin:0;padding:0;min-width:0}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{
+  font-family:Inter,Arial,Helvetica,sans-serif;
+  background:
+    radial-gradient(circle at 85% -5%,rgba(243,109,33,.18),transparent 30%),
+    radial-gradient(circle at 10% 10%,rgba(255,255,255,.03),transparent 25%),
+    linear-gradient(180deg,var(--bg) 0%,#1b100a 38%,var(--bg) 100%);
+  color:#fff;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px),
+    linear-gradient(180deg,rgba(255,255,255,.017) 1px,transparent 1px);
+  background-size:56px 56px;
+  mask-image:linear-gradient(180deg,rgba(0,0,0,.5),transparent 62%);
+}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%;height:auto}
+button{font:inherit}
+.wrap{width:min(var(--max),100%);margin:auto;padding:0 clamp(16px,4vw,28px)}
+.section{padding:76px 0}
+.section.tight{padding:54px 0}
+.section.light{
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 92% 6%,rgba(243,109,33,.10),transparent 30%),
+    linear-gradient(180deg,var(--surface) 0%,var(--surface-2) 100%);
+}
+.section.light p{color:var(--muted)}
+.kicker{
+  display:inline-flex;align-items:center;gap:10px;margin-bottom:14px;
+  font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);
+}
+.kicker::before{content:"";width:22px;height:2px;border-radius:99px;background:currentColor}
+h1,h2,h3{font-weight:950;letter-spacing:-.045em;line-height:1.02;text-wrap:balance}
+h1{font-size:var(--fs-hero);max-width:650px}
+h2{font-size:var(--fs-h2);max-width:720px}
+h3{font-size:var(--fs-h3)}
+p{font-size:var(--fs-body);line-height:1.72;color:var(--muted-2);text-wrap:pretty}
+.lead{font-size:16px;max-width:580px}
+.section-head{margin-bottom:28px;max-width:800px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:50px;padding:14px 20px;border-radius:16px;font-size:13px;font-weight:900;
+  border:1px solid transparent;cursor:pointer;transition:.18s ease;text-align:center;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:linear-gradient(135deg,var(--orange),var(--orange-2));color:#fff;box-shadow:0 18px 38px rgba(243,109,33,.28)}
+.btn.secondary{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.14)}
+.btn.light{background:#fff;color:var(--ink);border-color:var(--line);box-shadow:var(--shadow-soft)}
+.btn.green{background:linear-gradient(135deg,var(--green-2),var(--green));color:#fff;box-shadow:0 18px 36px rgba(22,123,82,.24)}
+.topbar{position:sticky;top:0;z-index:999;background:rgba(11,7,5,.84);backdrop-filter:blur(18px);border-bottom:1px solid var(--line-soft)}
+.topbar-inner{width:min(var(--max),100%);margin:auto;padding:12px clamp(16px,4vw,28px);display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:950;color:#fff;letter-spacing:-.02em;white-space:nowrap}
+.brand-mark{width:38px;height:38px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(180deg,#110b08,#050403);border:1px solid rgba(243,109,33,.5);color:var(--orange);box-shadow:0 12px 28px rgba(0,0,0,.25)}
+.nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.nav a{padding:8px 12px;border-radius:999px;font-size:11.5px;font-weight:900;color:#dccab9}
+.nav a:hover{background:rgba(255,255,255,.06)}
+.nav a.primary{background:linear-gradient(135deg,var(--orange),var(--orange-2));color:#fff}
+.hero{padding:68px 0 54px;min-height:min(860px,calc(100vh - 64px));display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.10)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,430px);gap:clamp(30px,5vw,72px);align-items:center}
+.badge{display:inline-flex;padding:9px 13px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(243,109,33,.26);font-size:11px;font-weight:900;color:#ffdcc6;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:500px;margin-top:24px}
+.hero-note{margin-top:20px;max-width:560px;padding:16px 18px;border-radius:0 18px 18px 0;background:linear-gradient(180deg,rgba(22,123,82,.20),rgba(22,123,82,.10));border:1px solid rgba(22,123,82,.28);border-left:4px solid var(--green);font-size:13px;line-height:1.65;color:#e4f7ee}
+.hero-panel{position:relative}
+.hero-img{max-width:430px;margin-left:auto;border-radius:30px;overflow:hidden;background:#090604;border:1px solid rgba(243,109,33,.28);box-shadow:var(--shadow)}
+.hero-img img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.hero-metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px;max-width:430px;margin-left:auto}
+.metric-card{padding:14px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);backdrop-filter:blur(10px)}
+.metric-card strong{display:block;font-size:22px;line-height:1;color:#fff;letter-spacing:-.04em}
+.metric-card span{display:block;font-size:11px;color:#d8c6b6;line-height:1.4;margin-top:6px}
+.journey-strip{padding:18px 0;background:rgba(255,255,255,.05);border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)}
+.journey-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.journey-card{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10)}
+.journey-n{width:30px;height:30px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--orange),var(--orange-2));font-size:12px;font-weight:900;color:#fff;flex:0 0 auto}
+.journey-card b{display:block;font-size:12.5px;color:#fff;line-height:1.2}
+.journey-card small{display:block;font-size:10px;color:#cdb9a8;line-height:1.35;margin-top:3px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-lg);box-shadow:var(--shadow-soft);color:var(--ink)}
+.card.pad{padding:24px}
+.image-card{overflow:hidden}
+.image-card img{width:100%;height:100%;object-fit:cover}
+.contract-stage .grid-2{align-items:stretch}
+.contract-hero{min-height:420px}
+.contract-main{display:flex;flex-direction:column;gap:18px}
+.contract-main p{color:var(--muted)}
+.doc-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px}
+.doc-card{padding:18px;border-radius:22px;border:1px solid var(--line);background:#fffaf4;box-shadow:0 8px 22px rgba(42,22,12,.06)}
+.doc-card.main{background:linear-gradient(180deg,#fff,#fff1e5);border-color:rgba(243,109,33,.30)}
+.doc-card h3{font-size:20px;margin-bottom:8px}
+.doc-card p{font-size:13px;line-height:1.62;color:var(--muted)}
+.doc-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.callout{padding:16px 18px;border-radius:18px;background:var(--green-soft);border:1px solid rgba(22,123,82,.16)}
+.callout p{font-size:13px;color:#285d43}
+.activation-section .activation-wrap{display:grid;grid-template-columns:minmax(300px,.92fr) minmax(0,1.08fr);gap:24px;align-items:start}
+.side-panel{position:sticky;top:84px;padding:24px;border-radius:28px;background:linear-gradient(180deg,#120d0a,#080504);border:1px solid rgba(243,109,33,.25);box-shadow:var(--shadow);overflow:hidden}
+.side-panel::after{content:"";position:absolute;right:-80px;bottom:-90px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(243,109,33,.18),transparent 65%)}
+.side-panel > *{position:relative;z-index:1}
+.panel-tag{display:inline-flex;padding:7px 10px;border-radius:999px;background:rgba(243,109,33,.12);border:1px solid rgba(243,109,33,.22);font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:900;color:#ffd8bf;margin-bottom:14px}
+.side-panel h2{font-size:clamp(28px,3.4vw,38px);max-width:320px;margin-bottom:10px}
+.side-panel p{font-size:13px;color:#d9c7b8;line-height:1.65}
+.progress-shell{margin:20px 0 16px;padding:16px;border-radius:18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.10)}
+.progress-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}
+.progress-head span{font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#bea998}
+.progress-head strong{font-size:20px;letter-spacing:-.04em}
+.progress-bar{height:10px;border-radius:999px;background:rgba(255,255,255,.10);overflow:hidden}
+.progress-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--orange),#ffb06f);border-radius:999px;transition:width .32s ease}
+.progress-status{margin-top:10px;font-size:12px;color:#f3d6c2;line-height:1.5}
+.panel-actions{display:grid;gap:10px}
+.panel-actions .btn{width:100%}
+.steps-stack{display:grid;gap:14px;position:relative}
+.steps-stack::before{content:"";position:absolute;left:20px;top:20px;bottom:20px;width:2px;background:#ead7c4;opacity:.7}
+.step-card{position:relative;display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:start;padding:18px;border-radius:22px;background:#fff;box-shadow:var(--shadow-soft);border:1px solid var(--line)}
+.step-card.is-next{border-color:rgba(243,109,33,.42);box-shadow:0 18px 44px rgba(243,109,33,.12)}
+.step-card.is-done{background:linear-gradient(180deg,#fff,#f1fbf5);border-color:rgba(22,123,82,.22)}
+.step-bullet{width:40px;height:40px;border-radius:14px;background:#fff;border:2px solid #e2cdb8;display:grid;place-items:center;position:relative;z-index:2;cursor:pointer;color:#fff;transition:.18s ease}
+.step-bullet svg{width:18px;height:18px;stroke:currentColor;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.step-card.is-done .step-bullet{background:var(--green);border-color:var(--green)}
+.step-icon{width:40px;height:40px;border-radius:14px;background:var(--orange-soft);display:grid;place-items:center;color:var(--orange)}
+.step-icon svg{width:18px;height:18px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.step-copy h3{font-size:18px;margin-bottom:6px}
+.step-copy p{font-size:13px;line-height:1.62;color:var(--muted)}
+.step-copy a{display:inline-block;margin-top:6px;font-size:12.5px;font-weight:900;color:var(--orange-2);text-decoration:underline;text-underline-offset:3px}
+.step-no{padding:8px 10px;border-radius:999px;background:#fff7f1;color:var(--orange-2);font-size:10px;font-weight:900}
+.integration-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+.dark-card{padding:28px;border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow)}
+.dark-card p{color:#d7c5b6}
+.metrics-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.big-metric{padding:16px;border-radius:20px;background:rgba(0,0,0,.20);border:1px solid rgba(255,255,255,.10)}
+.big-metric strong{display:block;font-size:26px;line-height:1;color:#fff;letter-spacing:-.04em}
+.big-metric span{display:block;font-size:11.5px;line-height:1.45;color:#cdb9a8;margin-top:6px}
+.list-card{padding:24px;border-radius:28px;background:#fff;color:var(--ink);border:1px solid rgba(243,109,33,.18);box-shadow:var(--shadow-soft)}
+.list-card p{color:var(--muted)}
+.check-list{display:grid;gap:10px;margin-top:16px}
+.check-item{display:flex;gap:10px;align-items:flex-start;padding:10px;border-radius:14px;background:#fff8f0;border:1px solid rgba(243,109,33,.12);font-size:13px;line-height:1.5;color:var(--muted)}
+.check-item::before{content:"✓";display:grid;place-items:center;width:20px;height:20px;border-radius:50%;flex:0 0 20px;background:var(--green);color:#fff;font-size:12px;font-weight:900}
+.visual-stage{padding-top:0}
+.mockup-card{overflow:hidden;border-radius:30px;border:1px solid rgba(243,109,33,.22);box-shadow:var(--shadow);background:#0b0806;max-width:980px;margin:0 auto}
+.mockup-card img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.scale-top{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}
+.info-chip{padding:14px;border-radius:18px;background:#fff;border:1px solid var(--line);box-shadow:0 8px 24px rgba(42,22,12,.07)}
+.info-chip strong{display:block;font-size:16px;color:var(--ink)}
+.info-chip span{display:block;font-size:12px;color:var(--muted);line-height:1.45;margin-top:4px}
+.scale-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}
+.day-card{padding:16px;border-radius:22px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-soft)}
+.day-card.hot{background:linear-gradient(180deg,#fff4ec,#fff);border-color:rgba(243,109,33,.36);box-shadow:0 18px 44px rgba(243,109,33,.10)}
+.day-card h3{font-size:15px;margin-bottom:12px}
+.shift{padding:12px;border-radius:14px;background:#fffdf9;border:1px solid var(--line);margin-bottom:10px}
+.shift:last-child{margin-bottom:0}
+.qtd{font-size:28px;font-weight:950;line-height:1;letter-spacing:-.04em;color:var(--ink)}
+.turno{margin-top:4px;font-size:12px;font-weight:900;color:var(--muted)}
+.hora{font-size:11.5px;color:#8c7d71;margin-top:2px}
+.operate-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.price-grid{display:grid;gap:14px}
+.price-card{padding:0;border-radius:24px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-soft)}
+.price-head{padding:16px 18px;font-size:13px;font-weight:900;border-bottom:1px solid var(--line)}
+.price-head.blue{background:var(--blue-soft)}
+.price-head.red{background:#fff1f3;color:var(--red)}
+.price-body{padding:20px}
+.price-number{font-size:42px;font-weight:950;letter-spacing:-.05em;color:var(--ink);line-height:1}
+.price-number span{font-size:15px;color:var(--muted);font-weight:900}
+.price-body p{margin-top:8px;font-size:13px;color:var(--muted)}
+.summary-card{overflow:hidden}
+.summary-head{padding:20px 22px;background:#0f0c0a;color:#fff}
+.summary-head p{font-size:12px;color:#ccb8a8;margin-top:6px}
+.summary-row{display:flex;justify-content:space-between;gap:14px;padding:16px 22px;border-bottom:1px solid var(--line)}
+.summary-row:last-of-type{border-bottom:0}
+.summary-row.highlight{background:var(--orange-soft)}
+.summary-row b{display:block;font-size:14px;color:var(--ink)}
+.summary-row small{display:block;font-size:12px;line-height:1.55;color:var(--muted);margin-top:4px}
+.summary-row .value{font-size:24px;font-weight:950;letter-spacing:-.04em;white-space:nowrap;color:var(--ink)}
+.summary-row.highlight .value,.summary-row.highlight b{color:var(--orange-2)}
+.badges{display:flex;gap:8px;flex-wrap:wrap;padding:16px 22px;background:#fff}
+.badge-item{padding:7px 10px;border-radius:999px;background:var(--green-soft);border:1px solid rgba(22,123,82,.12);color:var(--green);font-size:11px;font-weight:900}
+.details{margin-top:18px;border-radius:24px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-soft)}
+.details summary{list-style:none;cursor:pointer;padding:18px 22px;background:#0f0c0a;color:#fff;font-weight:900}
+.details summary::-webkit-details-marker{display:none}
+.km-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:18px}
+.km-card{border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+.km-head{padding:14px 16px;font-size:13px;font-weight:900;border-bottom:1px solid var(--line)}
+.km-head.blue{background:var(--blue-soft)}
+.km-head.red{background:#fff1f3;color:var(--red)}
+.km-row{display:flex;justify-content:space-between;gap:10px;padding:10px 16px;border-bottom:1px solid var(--line);font-size:13px;color:var(--ink)}
+.km-row:last-child{border-bottom:0}
+.flow-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.flow-card{padding:22px;border-radius:24px;background:#fff;border:1px solid var(--line);color:var(--ink);box-shadow:var(--shadow-soft)}
+.flow-n{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--orange);color:#fff;font-weight:900;margin-bottom:14px}
+.flow-card p{font-size:13px;color:var(--muted);line-height:1.62}
+.cta{background:radial-gradient(circle at 50% -10%,rgba(243,109,33,.22),transparent 34%),linear-gradient(135deg,#0d0907 0%,#1a100b 62%,#382014 100%)}
+.cta-box{max-width:820px;margin:auto;text-align:center}
+.cta p{max-width:700px;margin:16px auto 28px;color:#e0cdbd}
+.final-row{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;margin-top:30px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14)}
+.final-row div{min-width:110px}
+.final-row small{display:block;font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#bfa895}
+.final-row strong{display:block;font-size:13px;color:#fff;margin-top:4px}
+footer{padding:34px 0 24px;background:#0b0705;border-top:1px solid rgba(255,255,255,.10)}
+.footer{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:flex-end}
+.footer small{font-size:11px;color:#ac9b8d;line-height:1.6}
+.sticky{display:none;position:fixed;left:0;right:0;bottom:0;background:rgba(11,7,5,.92);backdrop-filter:blur(14px);padding:10px 14px calc(12px + env(safe-area-inset-bottom));border-top:1px solid rgba(255,255,255,.12);z-index:99}
+.sticky a{display:flex;align-items:center;justify-content:center;border-radius:14px;padding:14px;background:linear-gradient(135deg,var(--orange),var(--orange-2));color:#fff;font-size:14px;font-weight:900}
+.fade{opacity:0;transform:translateY(18px);transition:.45s ease}
+.fade.in{opacity:1;transform:none}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(16px);opacity:0;pointer-events:none;z-index:999;background:#0f0c0a;color:#fff;border:1px solid rgba(243,109,33,.25);padding:11px 16px;border-radius:999px;font-size:12px;font-weight:900;transition:.2s ease;box-shadow:0 20px 44px rgba(0,0,0,.24)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media (max-width:1100px){
+  .journey-grid,.scale-grid{grid-template-columns:repeat(3,1fr)}
+  .scale-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media (max-width:980px){
+  .topbar-inner{flex-direction:column;align-items:flex-start}
+  .nav{width:100%;overflow:auto;flex-wrap:nowrap;padding-bottom:3px}
+  .nav a{flex:0 0 auto}
+  .hero{min-height:auto}
+  .hero-grid,.grid-2,.activation-section .activation-wrap,.integration-grid,.operate-grid{grid-template-columns:1fr}
+  .hero-img,.hero-metrics{margin-left:auto;margin-right:auto;max-width:500px}
+  .side-panel{position:relative;top:auto}
+  .journey-grid{grid-template-columns:repeat(3,1fr)}
+  .doc-grid,.metrics-row,.scale-top,.price-grid,.km-grid{grid-template-columns:1fr 1fr}
+  .flow-grid{grid-template-columns:1fr}
+  .sticky{display:block}
+  body{padding-bottom:82px}
+}
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  .section{padding:50px 0}
+  .section.tight{padding:40px 0}
+  h1{font-size:clamp(34px,10vw,42px)}
+  h2{font-size:clamp(26px,7vw,34px)}
+  p,.lead{font-size:14px;line-height:1.68}
+  .hero-grid{gap:24px}
+  .hero-actions,.doc-actions,.doc-grid,.journey-grid,.scale-top,.scale-grid,.km-grid,.metrics-row,.price-grid{grid-template-columns:1fr}
+  .hero-note{font-size:12.5px}
+  .hero-img,.card,.doc-card,.side-panel,.dark-card,.list-card,.flow-card,.price-card,.summary-card,.mockup-card,.day-card{border-radius:22px}
+  .card.pad,.side-panel,.dark-card,.list-card,.flow-card{padding:18px}
+  .steps-stack::before{left:18px}
+  .step-card{grid-template-columns:auto 1fr;gap:12px;padding:14px}
+  .step-no{grid-column:2;justify-self:start}
+  .step-icon{display:none}
+  .scale-grid{grid-template-columns:1fr}
+  .shift{display:grid;grid-template-columns:56px 1fr;column-gap:12px;align-items:center}
+  .qtd{grid-row:1/span 3;font-size:30px}
+  .summary-row{flex-direction:column;align-items:flex-start}
+  .summary-row .value{font-size:22px;white-space:normal}
+  .final-row{gap:14px}
+  .toast{width:calc(100% - 28px);text-align:center;border-radius:18px}
+}
+@media (max-width:380px){
+  .brand-mark{display:none}
+  .hero-actions .btn,.panel-actions .btn,.doc-actions .btn{font-size:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .fade{opacity:1;transform:none;transition:none}
+  .btn{transition:none}
+}
+
+/* Ajuste da dobra de assinatura oficial */
+.signature-card{
+  display:grid;
+  gap:16px;
+  margin-top:20px;
+}
+.signature-main{
+  padding:22px;
+  border-radius:26px;
+  background:linear-gradient(180deg,#fff,#fff0e5);
+  border:1px solid rgba(243,109,33,.34);
+  box-shadow:0 14px 34px rgba(42,22,12,.08);
+}
+.signature-badge{
+  display:inline-flex;
+  width:max-content;
+  margin-bottom:10px;
+  padding:7px 10px;
+  border-radius:999px;
+  background:rgba(243,109,33,.10);
+  border:1px solid rgba(243,109,33,.18);
+  color:var(--orange-2);
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.signature-badge.gov{
+  background:var(--green-soft);
+  border-color:rgba(22,123,82,.16);
+  color:var(--green);
+}
+.signature-main h3,
+.gov-sign-box h3{
+  font-size:22px;
+  margin-bottom:8px;
+}
+.signature-main p,
+.gov-sign-box p{
+  font-size:13px;
+  line-height:1.62;
+  color:var(--muted);
+}
+.signature-cta{
+  width:100%;
+  margin-top:16px;
+  font-size:14px;
+}
+.gov-sign-box{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:16px;
+  align-items:center;
+  padding:18px;
+  border-radius:24px;
+  background:#fff;
+  border:1px solid var(--line);
+  box-shadow:0 10px 26px rgba(42,22,12,.06);
+}
+.gov-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  padding:13px 16px;
+  border-radius:16px;
+  background:#111;
+  color:#fff;
+  font-size:13px;
+  font-weight:950;
+  text-align:center;
+  transition:.18s ease;
+}
+.gov-link:hover{
+  transform:translateY(-2px);
+}
+@media(max-width:640px){
+  .gov-sign-box{
+    grid-template-columns:1fr;
+  }
+  .gov-link{
+    width:100%;
+  }
+}
+
+
+/* Ajuste proporcional do checklist de ativação */
+.activation-section .activation-wrap{
+  grid-template-columns:minmax(300px,.96fr) minmax(0,1.04fr);
+  align-items:start;
+}
+.side-panel{
+  max-width:390px;
+  justify-self:end;
+}
+.steps-stack{
+  gap:10px;
+  max-width:520px;
+}
+.step-card{
+  padding:12px 14px;
+  border-radius:18px;
+  gap:11px;
+  align-items:center;
+}
+.step-bullet{
+  width:32px;
+  height:32px;
+  border-radius:11px;
+}
+.step-bullet svg{
+  width:15px;
+  height:15px;
+}
+.step-copy h3{
+  font-size:15px;
+  margin-bottom:3px;
+  line-height:1.15;
+}
+.step-copy p{
+  font-size:11.7px;
+  line-height:1.42;
+}
+.step-copy a{
+  margin-top:3px;
+  font-size:11.5px;
+}
+.step-no{
+  padding:6px 8px;
+  font-size:9.5px;
+}
+.steps-stack::before{
+  left:16px;
+  top:18px;
+  bottom:18px;
+}
+@media(max-width:980px){
+  .side-panel,
+  .steps-stack{
+    max-width:100%;
+    justify-self:stretch;
+  }
+}
+@media(max-width:640px){
+  .step-card{
+    padding:12px;
+    align-items:flex-start;
+  }
+  .steps-stack::before{
+    left:16px;
+  }
+}
+
+
+/* Ajuste após remoção do card de fechamento */
+.operate-grid{
+  grid-template-columns:1fr;
+  max-width:760px;
+}
+.operate-grid .section-head{
+  max-width:720px;
+}
+.price-grid{
+  max-width:720px;
+}
+@media(max-width:980px){
+  .operate-grid{
+    max-width:100%;
+  }
+}
+
+
+/* Rodapé institucional Osasco Express */
+.footer-company{
+  display:grid;
+  grid-template-columns:1.2fr 1fr 1fr;
+  gap:22px;
+  align-items:start;
+}
+.footer-company strong{
+  display:block;
+  color:#fff;
+  font-size:14px;
+  margin-bottom:6px;
+}
+.footer-company small{
+  display:block;
+  font-size:11.5px;
+  color:#b9a89a;
+  line-height:1.7;
+}
+.footer-company a{
+  color:#f4d2bb;
+  text-decoration:none;
+}
+.footer-company a:hover{
+  color:#fff;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.footer-contact{
+  display:grid;
+  gap:4px;
+}
+.footer-meta{
+  text-align:right;
+}
+@media(max-width:760px){
+  .footer-company{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+  .footer-meta{
+    text-align:left;
+  }
+}
+
+
+/* AUDITORIA FINAL — experiência mobile da escala */
+.mobile-scale{
+  display:none;
+}
+@media(max-width:640px){
+  #escalar .section-head{
+    margin-bottom:18px;
+  }
+  #escalar .scale-top{
+    grid-template-columns:1fr;
+    gap:8px;
+    margin-bottom:12px;
+  }
+  #escalar .info-chip{
+    padding:12px 13px;
+    border-radius:16px;
+  }
+  #escalar .info-chip strong{
+    font-size:14.5px;
+  }
+  #escalar .info-chip span{
+    font-size:12px;
+  }
+
+  .mobile-scale{
+    display:block;
+    margin-top:12px;
+  }
+  .mobile-scale-head{
+    padding:13px 14px;
+    border-radius:18px;
+    background:#111;
+    color:#fff;
+    margin-bottom:10px;
+    border:1px solid rgba(243,109,33,.24);
+  }
+  .mobile-scale-head strong{
+    display:block;
+    font-size:15px;
+    line-height:1.15;
+  }
+  .mobile-scale-head span{
+    display:block;
+    margin-top:4px;
+    font-size:11.5px;
+    color:#d8c3af;
+    line-height:1.35;
+  }
+  .mobile-scale-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:8px;
+  }
+  .mday{
+    min-height:74px;
+    padding:10px;
+    border-radius:16px;
+    background:#fff;
+    border:1px solid var(--line);
+    box-shadow:0 8px 22px rgba(42,22,12,.06);
+  }
+  .mday b{
+    display:block;
+    font-size:13px;
+    color:var(--ink);
+    line-height:1.1;
+  }
+  .mday span{
+    display:block;
+    margin-top:5px;
+    font-size:11.5px;
+    color:var(--muted);
+    line-height:1.2;
+  }
+  .mday strong{
+    display:block;
+    margin-top:3px;
+    font-size:13px;
+    color:var(--orange-2);
+    line-height:1.15;
+  }
+  .mday.hot{
+    background:linear-gradient(180deg,#fff4ec,#fff);
+    border-color:rgba(243,109,33,.38);
+  }
+  .mobile-hours{
+    margin-top:10px;
+    border-radius:16px;
+    overflow:hidden;
+    background:#fff;
+    border:1px solid var(--line);
+    box-shadow:0 8px 22px rgba(42,22,12,.06);
+  }
+  .mobile-hours summary{
+    list-style:none;
+    cursor:pointer;
+    padding:13px 14px;
+    font-size:13px;
+    font-weight:900;
+    color:#fff;
+    background:#111;
+  }
+  .mobile-hours summary::-webkit-details-marker{
+    display:none;
+  }
+  .mobile-hours-list{
+    padding:10px 14px 12px;
+  }
+  .mobile-hours-list p{
+    font-size:12px;
+    line-height:1.45;
+    color:var(--muted);
+    padding:8px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .mobile-hours-list p:last-child{
+    border-bottom:0;
+  }
+
+  /* No mobile, a grade completa não aparece de cara para não destruir a experiência */
+  #escalar .scale-grid{
+    display:none;
+  }
+}
+
+/* Auditoria final de compatibilidade responsiva */
+html,body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+img,svg,video,canvas,iframe{
+  max-width:100%;
+}
+a,button{
+  touch-action:manipulation;
+}
+@supports(height:100svh){
+  .hero{
+    min-height:min(860px,calc(100svh - 64px));
+  }
+}
+@media(max-width:430px){
+  .hero-actions,
+  .doc-actions,
+  .panel-actions{
+    grid-template-columns:1fr !important;
+  }
+  .journey-card{
+    padding:10px;
+  }
+  .journey-card b{
+    font-size:12px;
+  }
+  .journey-card small{
+    font-size:9.8px;
+  }
+}
+@media(min-width:1600px){
+  .wrap{
+    width:min(1240px,100%);
+  }
+  .hero-img{
+    max-width:460px;
+  }
+}
+
+
+/* FLUXO CORRIGIDO — textura sutil com logo Osasco Express */
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  background-image:url('assets/oe-watermark-tile.png');
+  background-repeat:repeat;
+  background-size:320px 320px;
+  opacity:.14;
+  mix-blend-mode:screen;
+  mask-image:linear-gradient(180deg,rgba(0,0,0,.24),rgba(0,0,0,.12));
+}
+.hero{position:relative;overflow:hidden}
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:radial-gradient(circle at 18% 22%,rgba(243,109,33,.12),transparent 24%), radial-gradient(circle at 84% 18%,rgba(255,255,255,.03),transparent 24%);
+}
+.hero > .wrap{position:relative;z-index:1}
+.signature-card{display:grid;gap:16px;margin-top:20px}
+.signature-main{padding:22px;border-radius:26px;background:linear-gradient(180deg,#fff,#fff0e5);border:1px solid rgba(243,109,33,.34);box-shadow:0 14px 34px rgba(42,22,12,.08)}
+.signature-badge{display:inline-flex;width:max-content;margin-bottom:10px;padding:7px 10px;border-radius:999px;background:rgba(243,109,33,.10);border:1px solid rgba(243,109,33,.18);color:var(--orange-2);font-size:10px;font-weight:950;letter-spacing:.12em;text-transform:uppercase}
+.signature-badge.gov{background:var(--green-soft);border-color:rgba(22,123,82,.16);color:var(--green)}
+.signature-main h3,.gov-sign-box h3{font-size:22px;margin-bottom:8px}
+.signature-main p,.gov-sign-box p{font-size:13px;line-height:1.62;color:var(--muted)}
+.signature-cta{width:100%;margin-top:16px;font-size:14px}
+.gov-sign-box{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;padding:18px;border-radius:24px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 26px rgba(42,22,12,.06)}
+.gov-link{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 16px;border-radius:16px;background:#111;color:#fff;font-size:13px;font-weight:950;text-align:center;transition:.18s ease}
+@media(max-width:640px){.gov-sign-box{grid-template-columns:1fr}.gov-link{width:100%}}
+
+
+
+/* CORREÇÃO FINAL 15/05 — legibilidade, rodapé compacto e responsivo */
+.side-panel,
+.side-panel h2,
+.side-panel h3,
+.side-panel strong{
+  color:#fff !important;
+}
+.side-panel p,
+.side-panel .progress-status{
+  color:#ead8c7 !important;
+}
+.side-panel .panel-tag{
+  color:#ffd8bf !important;
+}
+.side-panel .btn.secondary{
+  color:#fff !important;
+  border-color:rgba(255,255,255,.22);
+  background:rgba(255,255,255,.09);
+}
+
+footer{
+  padding:28px 0 calc(24px + env(safe-area-inset-bottom));
+  background:linear-gradient(180deg,#0b0705 0%,#070403 100%);
+}
+.footer-company{
+  display:grid;
+  grid-template-columns:minmax(260px,1.2fr) minmax(220px,.8fr) minmax(240px,1fr);
+  gap:24px;
+  align-items:start;
+}
+.footer-brand > strong{
+  display:block;
+  color:#fff;
+  font-size:14px;
+  line-height:1.25;
+  margin-bottom:6px;
+}
+.footer-company small{
+  display:block;
+  font-size:11.5px;
+  color:#b9a89a;
+  line-height:1.55;
+}
+.footer-contact{
+  display:grid;
+  gap:7px;
+}
+.footer-contact small{
+  display:block;
+  line-height:1.35;
+}
+.footer-contact strong{
+  display:inline;
+  color:#fff;
+  font-size:12px;
+  margin:0 6px 0 0;
+}
+.footer-meta{
+  text-align:right;
+}
+.footer-meta small{
+  line-height:1.55;
+}
+@media(max-width:900px){
+  .footer-company{
+    grid-template-columns:1fr 1fr;
+  }
+  .footer-meta{
+    grid-column:1 / -1;
+    text-align:left;
+  }
+}
+@media(max-width:640px){
+  footer{
+    padding:26px 0 calc(96px + env(safe-area-inset-bottom));
+  }
+  .footer-company{
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+  .footer-meta{
+    grid-column:auto;
+  }
+  .footer-company small,
+  .footer-contact small{
+    font-size:11px;
+  }
+}
+
+@media(max-width:480px){
+  .topbar-inner{gap:9px;}
+  .brand{font-size:13px;white-space:normal;line-height:1.15;}
+  .brand-mark{width:32px;height:32px;border-radius:12px;flex:0 0 32px;}
+  .nav a{font-size:10.8px;padding:7px 9px;}
+  .activation-section .activation-wrap{gap:16px;}
+  .side-panel{padding:18px;border-radius:22px;}
+  .side-panel h2{font-size:28px;line-height:1.03;}
+  .progress-shell{margin:16px 0 12px;padding:13px;}
+}
+
+</style>
+</head>
+<body id="top">
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top"><span class="brand-mark">F</span>Fratelli <span style="color:var(--orange)">×</span> Osasco Express</a>
+    <div class="nav">
+      <a href="#assinar">Assinar</a>
+      <a href="#ativar">Canais</a>
+      <a href="#escalar">Escala</a>
+      <a href="#integrar">Integrações</a>
+      <a href="#operar">Início</a>
+      <a class="primary" href="#ativar">Começar</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="fade">
+      <div class="badge">Início da parceria • Fratelli Espaço Gourmet</div>
+      <p class="kicker">Implantação da operação</p>
+      <h1>Henrique, sua operação já está desenhada. <em>Agora é implantar com previsibilidade.</em></h1>
+      <p class="lead">Da assinatura ao início da operação, o fluxo segue uma sequência clara e planejada. O prazo previsto é de <strong>até 5 dias úteis</strong>: criação dos canais de comunicação, recrutamento e seleção da equipe, integração da loja ao nosso sistema, integração com as plataformas, testes e início.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#assinar">Assinar contrato Fratelli</a>
+        <a class="btn secondary" href="#ativar">Ir para ativação</a>
+      </div>
+      <div class="hero-note"><strong>Condição especial registrada:</strong> a Fratelli terá <strong>12 meses de isenção da taxa administrativa de gestão logística</strong>. Permanecem normalmente os custos operacionais de diárias dos entregadores fixos e das entregas realizadas conforme tabela de km. <strong>Prazo previsto para início da operação:</strong> até 5 dias úteis após a assinatura.</div>
+    </div>
+    <div class="hero-panel fade">
+      <div class="hero-img"><img src="assets/fratelli-hero-retrato.webp" alt="Imagem vertical premium da operação de entrega da Fratelli"></div>
+      <div class="hero-metrics">
+        <div class="metric-card"><strong>5 dias úteis</strong><span>prazo previsto da assinatura ao início da operação</span></div>
+        <div class="metric-card"><strong>fluxo guiado</strong><span>canais, recrutamento, integrações, testes e início assistido</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="journey-strip">
+  <div class="wrap journey-grid fade">
+    <a class="journey-card" href="#assinar"><span class="journey-n">1</span><span><b>Assinar</b><small>formalizar a parceria</small></span></a>
+    <a class="journey-card" href="#ativar"><span class="journey-n">2</span><span><b>Organizar canais</b><small>abrir a comunicação oficial da operação</small></span></a>
+    <a class="journey-card" href="#escalar"><span class="journey-n">3</span><span><b>Recrutar equipe</b><small>seleção e montagem da escala inicial</small></span></a>
+    <a class="journey-card" href="#integrar"><span class="journey-n">4</span><span><b>Integrar sistemas</b><small>loja, sistema e plataformas</small></span></a>
+    <a class="journey-card" href="#operar"><span class="journey-n">5</span><span><b>Testar e iniciar</b><small>validação final e começo assistido</small></span></a>
+  </div>
+</section>
+
+<main>
+  <section class="section light contract-stage" id="assinar">
+    <div class="wrap grid-2">
+      <div class="card image-card contract-hero fade"><img src="assets/fratelli-contrato-parceria.webp" alt="Imagem da documentação e contrato Fratelli"></div>
+      <div class="contract-main fade">
+        <div class="section-head">
+          <p class="kicker">1 · Assinar</p>
+          <h2>Primeiro passo: assinar o contrato oficial e liberar a implantação.</h2>
+          <p class="section-lead">O contrato oficial em PDF é o documento principal desta etapa. Após a assinatura, iniciamos os canais de comunicação, o recrutamento e a seleção da equipe, as integrações técnicas e os testes até o início da operação.</p>
+        </div>
+        <div class="signature-card">
+          <div class="signature-main">
+            <span class="signature-badge">Contrato oficial</span>
+            <h3>Contrato Fratelli em PDF</h3>
+            <p>Documento principal da parceria, atualizado com 12 meses de isenção da taxa administrativa, fechamento na terça, pagamento na quarta, escala, diárias e taxas por km.</p>
+            <a class="btn primary signature-cta" href="contratos/contrato-fratelli-12-meses-isencao.pdf" target="_blank">Abrir contrato oficial em PDF</a>
+          </div>
+
+          <div class="gov-sign-box">
+            <div>
+              <span class="signature-badge gov">Assinatura eletrônica</span>
+              <h3>Assinar pelo Gov.br</h3>
+              <p>A assinatura eletrônica permite assinar o documento em meio digital a partir da conta gov.br. O documento assinado digitalmente possui a mesma validade de um documento com assinatura física, conforme o Decreto Nº 10.543, de 13/11/2020.</p>
+            </div>
+            <a class="gov-link" href="https://www.gov.br/pt-br/servicos/assinatura-eletronica" target="_blank" rel="noopener">Acessar assinatura eletrônica Gov.br</a>
+          </div>
+        </div>
+        <div class="callout"><p><strong>Depois da assinatura:</strong> a Osasco Express cria os canais de comunicação, inicia o recrutamento e a seleção da equipe para o ponto, prepara a escala, realiza as integrações técnicas e conduz os testes. O início da operação acontece em até <strong>5 dias úteis</strong>.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section light activation-section" id="ativar">
+    <div class="wrap activation-wrap">
+      <aside class="side-panel fade">
+        <div class="panel-tag">2 · Implantar</div>
+        <h2>Painel de implantação da Fratelli.</h2>
+        <p>Acompanhe a implantação passo a passo. O fluxo é operacional e planejado: primeiro organizamos a comunicação e a equipe; depois entram as integrações técnicas e os testes.</p>
+        <div class="progress-shell">
+          <div class="progress-head"><span>Progresso</span><strong><span id="doneCount">0</span>/6</strong></div>
+          <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+          <div class="progress-status" id="progressStatus">Comece pelo cadastro da empresa no sistema da Osasco Express.</div>
+        </div>
+        <div class="panel-actions">
+          <a class="btn primary" href="https://wa.me/5511970334125?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+Assinei+o+contrato+e+quero+dar+sequ%C3%AAncia+%C3%A0+implanta%C3%A7%C3%A3o+da+opera%C3%A7%C3%A3o." target="_blank" rel="noopener">Falar com o comercial</a>
+          <a class="btn green" href="https://wa.me/5511986661784?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+J%C3%A1+fiz+o+cadastro+e+quero+ativar+a+conta+para+iniciar+a+integra%C3%A7%C3%A3o+remota+via+AnyDesk.+Tenho+cerca+de+40+minutos+para+acompanhar." target="_blank" rel="noopener">Falar com o suporte</a>
+          <button class="btn secondary" type="button" id="resetProgress">Reiniciar checklist</button>
+        </div>
+      </aside>
+      <div class="steps-stack fade" id="activationChecklist">
+        <article class="step-card" data-step="cadastro">
+          <button class="step-bullet" type="button" aria-label="Marcar cadastro como concluído"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="step-copy">
+            <h3>Criar canais de comunicação</h3>
+            <p>Após a assinatura, alinhamos os canais oficiais entre loja, operação, suporte e acompanhamento da parceria.</p>
+            <a href="https://wa.me/5511970334125?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+Quero+alinhar+os+canais+de+comunica%C3%A7%C3%A3o+da+opera%C3%A7%C3%A3o." target="_blank" rel="noopener">Alinhar canais pelo WhatsApp</a></div>
+          <span class="step-no">01</span>
+        </article>
+        <article class="step-card" data-step="email">
+          <button class="step-bullet" type="button" aria-label="Marcar e-mail como confirmado"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="step-copy">
+            <h3>Recrutamento e seleção da equipe</h3>
+            <p>A Osasco Express inicia o recrutamento e a seleção dos entregadores conforme o perfil do ponto e o volume previsto.</p></div>
+          <span class="step-no">02</span>
+        </article>
+        <article class="step-card" data-step="perfil">
+          <button class="step-bullet" type="button" aria-label="Marcar perfil como completo"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="step-copy">
+            <h3>Montagem da escala inicial</h3>
+            <p>Com a equipe definida, estruturamos a escala digital dos primeiros ciclos para almoço, jantar e reforços de pico.</p></div>
+          <span class="step-no">03</span>
+        </article>
+        <article class="step-card" data-step="anydesk">
+          <button class="step-bullet" type="button" aria-label="Marcar AnyDesk como preparado"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="step-copy">
+            <h3>Integração da loja ao nosso sistema</h3>
+            <p>Configuramos a operação da Fratelli no ambiente da Osasco Express, com os acessos e parâmetros internos necessários.</p></div>
+          <span class="step-no">04</span>
+        </article>
+        <article class="step-card" data-step="suporte">
+          <button class="step-bullet" type="button" aria-label="Marcar suporte como acionado"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="step-copy">
+            <h3>Integração com as plataformas</h3>
+            <p>Depois da configuração inicial, realizamos a integração técnica da loja e das plataformas necessárias para o fluxo operar corretamente.</p></div>
+          <span class="step-no">05</span>
+        </article>
+        <article class="step-card" data-step="integracao">
+          <button class="step-bullet" type="button" aria-label="Marcar integração como concluída"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="step-copy">
+            <h3>Testes e início da operação</h3>
+            <p>Com canais, equipe, escala e integrações prontas, fazemos os testes finais e iniciamos a operação com acompanhamento assistido. Prazo previsto total: até 5 dias úteis.</p></div>
+          <span class="step-no">06</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  
+
+<section class="section light" id="escalar">
+    <div class="wrap">
+      <div class="section-head fade">
+        <p class="kicker">3 · Escalar</p>
+        <h2>A escala inicial é montada no começo da implantação.</h2>
+        <p class="section-lead">A escala abaixo funciona como base dos primeiros ciclos da Fratelli. Ela é montada durante a preparação operacional, antes das integrações finais, e pode ser refinada conforme a demanda real dos primeiros dias.</p>
+      </div>
+      <div class="scale-top fade">
+        <div class="info-chip"><strong>Almoço controlado</strong><span>1 a 2 entregadores conforme o dia.</span></div>
+        <div class="info-chip"><strong>Jantar reforçado</strong><span>4 a 8 entregadores nos turnos críticos.</span></div>
+        <div class="info-chip"><strong>Sexta em destaque</strong><span>Dia de maior reforço operacional.</span></div>
+      </div>
+
+      <div class="mobile-scale fade" aria-label="Resumo compacto da escala no celular">
+        <div class="mobile-scale-head">
+          <strong>Escala resumida</strong>
+          <span>Toque abaixo apenas se quiser ver os horários completos.</span>
+        </div>
+
+        <div class="mobile-scale-grid">
+          <div class="mday"><b>Seg</b><span>1 almoço</span><strong>4 jantar</strong></div>
+          <div class="mday"><b>Ter</b><span>1 almoço</span><strong>4 jantar</strong></div>
+          <div class="mday"><b>Qua</b><span>1 almoço</span><strong>4 jantar</strong></div>
+          <div class="mday"><b>Qui</b><span>1 almoço</span><strong>5 jantar</strong></div>
+          <div class="mday hot"><b>Sex</b><span>2 almoço</span><strong>8 jantar</strong></div>
+          <div class="mday"><b>Sáb</b><span>2 almoço</span><strong>6 jantar</strong></div>
+          <div class="mday"><b>Dom</b><span>—</span><strong>6 jantar</strong></div>
+        </div>
+
+        <details class="mobile-hours">
+          <summary>Ver horários completos</summary>
+          <div class="mobile-hours-list">
+            <p><b>Segunda:</b> 1 almoço 11h às 15h · 4 jantar 18h às 23h</p>
+            <p><b>Terça:</b> 1 almoço 11h às 15h · 4 jantar 18h às 23h</p>
+            <p><b>Quarta:</b> 1 almoço 11h às 15h · 4 jantar 18h às 23h</p>
+            <p><b>Quinta:</b> 1 almoço 11h às 15h · 5 jantar 18h às 23h</p>
+            <p><b>Sexta:</b> 2 almoço 11h às 15h · 8 jantar 18h às 23h30</p>
+            <p><b>Sábado:</b> 2 almoço 12h às 15h · 6 jantar 18h às 23h30</p>
+            <p><b>Domingo:</b> 6 fim de tarde/jantar 17h às 23h</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="scale-grid fade">
+        <article class="day-card"><h3>Segunda</h3><div class="shift"><div class="qtd">1</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">4</div><div class="turno">Jantar</div><div class="hora">18h às 23h</div></div></article>
+        <article class="day-card"><h3>Terça</h3><div class="shift"><div class="qtd">1</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">4</div><div class="turno">Jantar</div><div class="hora">18h às 23h</div></div></article>
+        <article class="day-card"><h3>Quarta</h3><div class="shift"><div class="qtd">1</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">4</div><div class="turno">Jantar</div><div class="hora">18h às 23h</div></div></article>
+        <article class="day-card"><h3>Quinta</h3><div class="shift"><div class="qtd">1</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">5</div><div class="turno">Jantar</div><div class="hora">18h às 23h</div></div></article>
+        <article class="day-card hot"><h3>Sexta</h3><div class="shift"><div class="qtd">2</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">8</div><div class="turno">Jantar</div><div class="hora">18h às 23h30</div></div></article>
+        <article class="day-card"><h3>Sábado</h3><div class="shift"><div class="qtd">2</div><div class="turno">Almoço</div><div class="hora">12h às 15h</div></div><div class="shift"><div class="qtd">6</div><div class="turno">Jantar</div><div class="hora">18h às 23h30</div></div></article>
+        <article class="day-card"><h3>Domingo</h3><div class="shift"><div class="qtd">6</div><div class="turno">Fim de tarde / jantar</div><div class="hora">17h às 23h</div></div></article>
+      </div>
+    </div>
+  </section>
+
+<section class="section" id="integrar">
+    <div class="wrap integration-grid">
+      <div class="dark-card fade">
+        <p class="kicker">4 · Integrar</p>
+        <h2>As integrações técnicas entram depois da preparação operacional.</h2>
+        <p>A integração não acontece no mesmo dia da assinatura. Primeiro estruturamos os canais de comunicação, recrutamos e selecionamos a equipe para o ponto e organizamos a escala inicial. Na sequência, integramos a loja ao nosso sistema, conectamos as plataformas necessárias e realizamos os testes finais antes do início da operação.</p>
+        <div class="metrics-row">
+          <div class="big-metric"><strong>5 dias úteis</strong><span>prazo previsto da assinatura ao início da operação</span></div>
+          <div class="big-metric"><strong>2 integrações</strong><span>loja ao sistema + plataformas da operação</span></div>
+          <div class="big-metric"><strong>início assistido</strong><span>testes operacionais antes de rodar em definitivo</span></div>
+        </div>
+      </div>
+      <aside class="list-card fade">
+        <h3>Fluxo real da implantação</h3>
+        <p>O que acontece entre a assinatura e o início da operação:</p>
+        <div class="check-list">
+          <div class="check-item">Criação dos canais de comunicação entre loja, operação e suporte.</div>
+          <div class="check-item">Recrutamento e seleção da equipe para atender o ponto.</div>
+          <div class="check-item">Montagem da escala inicial conforme os primeiros turnos definidos.</div>
+          <div class="check-item">Integração da loja ao sistema da Osasco Express.</div>
+          <div class="check-item">Integração com as plataformas operacionais da loja.</div>
+          <div class="check-item">Testes operacionais e início assistido em até 5 dias úteis.</div>
+        </div>
+        <a class="btn primary" style="width:100%;margin-top:16px" href="https://wa.me/5511970334125?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+Quero+acompanhar+o+fluxo+de+implanta%C3%A7%C3%A3o+da+opera%C3%A7%C3%A3o." target="_blank" rel="noopener">Acompanhar implantação com o time</a>
+      </aside>
+    </div>
+  </section>
+
+<section class="section tight visual-stage">
+    <div class="wrap">
+      <div class="mockup-card fade"><img src="assets/fratelli-loja-plataformas.webp" alt="Mockup da loja da Fratelli nas plataformas"></div>
+    </div>
+  </section>
+
+
+
+  <section class="section tight light" id="operar">
+    <div class="wrap operate-grid">
+      <div class="fade">
+        <div class="section-head">
+          <p class="kicker">5 · Iniciar</p>
+          <h2>Valores operacionais para o início da operação.</h2>
+          <p class="section-lead">A isenção vale sobre a taxa administrativa. Diárias dos entregadores fixos e entregas realizadas seguem normalmente, com apuração operacional alinhada ao início assistido da operação.</p>
+        </div>
+        <div class="price-grid">
+          <article class="price-card"><div class="price-head blue">Segunda a quinta</div><div class="price-body"><div class="price-number">R$ 50 <span>/dia</span></div><p>Por entregador fixo escalado no turno combinado.</p></div></article>
+          <article class="price-card"><div class="price-head red">Sexta a domingo + feriados</div><div class="price-body"><div class="price-number">R$ 65 <span>/dia</span></div><p>Por entregador fixo nos dias de maior movimento.</p></div></article>
+        </div>
+      </div>
+      </div>
+    </section>
+</main>
+
+<footer>
+  <div class="wrap footer footer-company">
+    <div class="footer-brand">
+      <strong>Osasco Express Serviços LTDA</strong>
+      <small>CNPJ 54.707.097/0001-04</small>
+      <small>Avenida Diogo Antônio Feijó, 855 — Km 18, Osasco/SP</small>
+    </div>
+
+    <div class="footer-contact">
+      <small><strong>SAC:</strong> <a href="tel:+5511964251461">11 96425-1461</a></small>
+      <small><strong>Suporte:</strong> <a href="tel:+5511924782555">11 92478-2555</a></small>
+      <small><strong>Comercial:</strong> <a href="tel:+5511970334125">11 97033-4125</a></small>
+    </div>
+
+    <div class="footer-meta">
+      <small>Fratelli Espaço Gourmet Ltda</small>
+      <small>CNPJ 42.212.888/0003-38</small>
+      <small>Página de ativação da parceria.</small>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky"><a href="#ativar">Ativar minha conta</a></div>
+
+<script>
+const io = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in') }), {threshold:.14});
+document.querySelectorAll('.fade').forEach(el => io.observe(el));
+</script>
+<script>
+(function(){
+  const storageKey = 'fratelli_implantacao_professional_v4';
+  const cards = Array.from(document.querySelectorAll('.step-card[data-step]'));
+  const fill = document.getElementById('progressFill');
+  const count = document.getElementById('doneCount');
+  const status = document.getElementById('progressStatus');
+  const reset = document.getElementById('resetProgress');
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  document.body.appendChild(toast);
+
+  const labels = {cadastro:'Canais de comunicação', email:'Recrutamento e seleção', perfil:'Escala inicial', anydesk:'Loja integrada ao sistema', suporte:'Plataformas integradas', integracao:'Testes e início'};
+  const statusByCount = ['Comece pela formalização da parceria e pelo alinhamento dos canais de comunicação.', 'Próximo passo: recrutamento e seleção da equipe para o ponto.', 'Agora estruturamos a escala inicial da operação.', 'Seguimos para a integração da loja ao sistema da Osasco Express.', 'Depois entra a integração com as plataformas da operação.', 'Na sequência, realizamos os testes operacionais finais.', 'Implantação encaminhada. Próximo passo: início assistido da operação em até 5 dias úteis.'];
+  function load(){ try { return JSON.parse(localStorage.getItem(storageKey) || '{}'); } catch(e){ return {}; } }
+  function save(state){ localStorage.setItem(storageKey, JSON.stringify(state)); }
+  function showToast(text){ toast.textContent = text; toast.classList.add('show'); clearTimeout(window.__fratelliToast); window.__fratelliToast = setTimeout(()=>toast.classList.remove('show'), 1800); }
+  function render(){
+    const state = load(); let done = 0;
+    cards.forEach(card => {
+      const key = card.dataset.step; const isDone = !!state[key];
+      card.classList.toggle('is-done', isDone); card.classList.remove('is-next');
+      if(isDone) done++;
+    });
+    const next = cards.find(card => !state[card.dataset.step]); if(next) next.classList.add('is-next');
+    const percent = cards.length ? Math.round((done/cards.length)*100) : 0;
+    if(fill) fill.style.width = percent + '%'; if(count) count.textContent = done; if(status) status.textContent = statusByCount[done] || statusByCount[0];
+  }
+  cards.forEach(card => {
+    const btn = card.querySelector('.step-bullet'); if(!btn) return;
+    btn.addEventListener('click', () => {
+      const state = load(); const key = card.dataset.step; state[key] = !state[key]; save(state); render(); showToast(state[key] ? (labels[key] + ' marcado') : (labels[key] + ' desmarcado'));
+    });
+  });
+  if(reset){ reset.addEventListener('click', ()=>{ localStorage.removeItem(storageKey); render(); showToast('Checklist reiniciado'); }); }
+  render();
+})();
+</script>
+</body>
+</html>
