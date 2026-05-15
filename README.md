@@ -1,16 +1,18 @@
-# Proposta Fratelli - Osasco Express
+# Fratelli × Osasco Express — Página de Ativação
 
-Pacote pronto para publicar no GitHub Pages.
+Versão reestruturada em torno da jornada:
+
+**Assinar → Ativar → Integrar → Escalar → Operar**
 
 ## Estrutura
-- `index.html` - página principal
-- `assets/` - imagens otimizadas da proposta
-- `contratos/` - contratos em PDF e Word
+- `index.html` — página principal
+- `assets/` — imagens otimizadas
+- `contratos/` — contratos em PDF e Word
 
-## Como subir no GitHub
-1. Apague/substitua o `index.html` antigo.
-2. Envie este `index.html` novo.
-3. Envie as pastas `assets` e `contratos` completas.
-4. Aguarde o GitHub Pages atualizar.
-
-Não altere os nomes das pastas nem dos arquivos dos contratos, porque os botões do HTML usam esses caminhos.
+## Recursos
+- checklist interativo com progresso salvo no navegador;
+- CTAs inteligentes para cadastro, AnyDesk e suporte;
+- contratos separados em PDF/Word;
+- jornada de ativação orientada ao cliente;
+- escala digital após integração;
+- rotinas de fechamento e pagamento.

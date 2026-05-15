@@ -1,0 +1,23 @@
+ESTRUTURA CORRETA PARA SUBIR NO GITHUB
+
+Suba estes arquivos e pastas diretamente na raiz do repositório:
+
+index.html
+README.md
+assets/
+contratos/
+
+A estrutura final deve ficar assim:
+
+index.html
+README.md
+assets/fratelli-contrato-parceria.webp
+assets/fratelli-loja-plataformas.webp
+assets/fratelli-operacao-delivery.webp
+contratos/contrato-fratelli-12-meses-isencao.pdf
+contratos/contrato-fratelli-12-meses-isencao.docx
+contratos/contrato-entregador-osasco-express-pagamento-quarta.pdf
+contratos/contrato-entregador-osasco-express-pagamento-quarta.docx
+
+NÃO suba a pasta SUBIR_NO_GITHUB_FRATELLI como pasta dentro do repositório.
+Abra esta pasta e suba o conteúdo dela.
