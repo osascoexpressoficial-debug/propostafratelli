@@ -1,3 +1,11 @@
-# Fratelli × Osasco Express
+# Fratelli × Osasco Express — Versão Final Auditada
 
-Versão final profissional da página de ativação.
+Subir o conteúdo deste ZIP diretamente na raiz do repositório GitHub Pages.
+
+Estrutura:
+- index.html
+- assets/
+- contratos/
+- README.md
+
+Não subir uma pasta extra dentro do repositório.
