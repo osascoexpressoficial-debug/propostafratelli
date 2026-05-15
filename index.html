@@ -521,6 +521,174 @@ footer{padding:34px 0 24px;background:#0b0705;border-top:1px solid rgba(255,255,
   }
 }
 
+
+/* AUDITORIA FINAL — experiência mobile da escala */
+.mobile-scale{
+  display:none;
+}
+@media(max-width:640px){
+  #escalar .section-head{
+    margin-bottom:18px;
+  }
+  #escalar .scale-top{
+    grid-template-columns:1fr;
+    gap:8px;
+    margin-bottom:12px;
+  }
+  #escalar .info-chip{
+    padding:12px 13px;
+    border-radius:16px;
+  }
+  #escalar .info-chip strong{
+    font-size:14.5px;
+  }
+  #escalar .info-chip span{
+    font-size:12px;
+  }
+
+  .mobile-scale{
+    display:block;
+    margin-top:12px;
+  }
+  .mobile-scale-head{
+    padding:13px 14px;
+    border-radius:18px;
+    background:#111;
+    color:#fff;
+    margin-bottom:10px;
+    border:1px solid rgba(243,109,33,.24);
+  }
+  .mobile-scale-head strong{
+    display:block;
+    font-size:15px;
+    line-height:1.15;
+  }
+  .mobile-scale-head span{
+    display:block;
+    margin-top:4px;
+    font-size:11.5px;
+    color:#d8c3af;
+    line-height:1.35;
+  }
+  .mobile-scale-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:8px;
+  }
+  .mday{
+    min-height:74px;
+    padding:10px;
+    border-radius:16px;
+    background:#fff;
+    border:1px solid var(--line);
+    box-shadow:0 8px 22px rgba(42,22,12,.06);
+  }
+  .mday b{
+    display:block;
+    font-size:13px;
+    color:var(--ink);
+    line-height:1.1;
+  }
+  .mday span{
+    display:block;
+    margin-top:5px;
+    font-size:11.5px;
+    color:var(--muted);
+    line-height:1.2;
+  }
+  .mday strong{
+    display:block;
+    margin-top:3px;
+    font-size:13px;
+    color:var(--orange-2);
+    line-height:1.15;
+  }
+  .mday.hot{
+    background:linear-gradient(180deg,#fff4ec,#fff);
+    border-color:rgba(243,109,33,.38);
+  }
+  .mobile-hours{
+    margin-top:10px;
+    border-radius:16px;
+    overflow:hidden;
+    background:#fff;
+    border:1px solid var(--line);
+    box-shadow:0 8px 22px rgba(42,22,12,.06);
+  }
+  .mobile-hours summary{
+    list-style:none;
+    cursor:pointer;
+    padding:13px 14px;
+    font-size:13px;
+    font-weight:900;
+    color:#fff;
+    background:#111;
+  }
+  .mobile-hours summary::-webkit-details-marker{
+    display:none;
+  }
+  .mobile-hours-list{
+    padding:10px 14px 12px;
+  }
+  .mobile-hours-list p{
+    font-size:12px;
+    line-height:1.45;
+    color:var(--muted);
+    padding:8px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .mobile-hours-list p:last-child{
+    border-bottom:0;
+  }
+
+  /* No mobile, a grade completa não aparece de cara para não destruir a experiência */
+  #escalar .scale-grid{
+    display:none;
+  }
+}
+
+/* Auditoria final de compatibilidade responsiva */
+html,body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+img,svg,video,canvas,iframe{
+  max-width:100%;
+}
+a,button{
+  touch-action:manipulation;
+}
+@supports(height:100svh){
+  .hero{
+    min-height:min(860px,calc(100svh - 64px));
+  }
+}
+@media(max-width:430px){
+  .hero-actions,
+  .doc-actions,
+  .panel-actions{
+    grid-template-columns:1fr !important;
+  }
+  .journey-card{
+    padding:10px;
+  }
+  .journey-card b{
+    font-size:12px;
+  }
+  .journey-card small{
+    font-size:9.8px;
+  }
+}
+@media(min-width:1600px){
+  .wrap{
+    width:min(1240px,100%);
+  }
+  .hero-img{
+    max-width:460px;
+  }
+}
+
 </style>
 </head>
 <body id="top">
@@ -722,6 +890,37 @@ footer{padding:34px 0 24px;background:#0b0705;border-top:1px solid rgba(255,255,
         <div class="info-chip"><strong>Jantar reforçado</strong><span>4 a 8 entregadores nos turnos críticos.</span></div>
         <div class="info-chip"><strong>Sexta em destaque</strong><span>Dia de maior reforço operacional.</span></div>
       </div>
+
+      <div class="mobile-scale fade" aria-label="Resumo compacto da escala no celular">
+        <div class="mobile-scale-head">
+          <strong>Escala resumida</strong>
+          <span>Toque abaixo apenas se quiser ver os horários completos.</span>
+        </div>
+
+        <div class="mobile-scale-grid">
+          <div class="mday"><b>Seg</b><span>1 almoço</span><strong>4 jantar</strong></div>
+          <div class="mday"><b>Ter</b><span>1 almoço</span><strong>4 jantar</strong></div>
+          <div class="mday"><b>Qua</b><span>1 almoço</span><strong>4 jantar</strong></div>
+          <div class="mday"><b>Qui</b><span>1 almoço</span><strong>5 jantar</strong></div>
+          <div class="mday hot"><b>Sex</b><span>2 almoço</span><strong>8 jantar</strong></div>
+          <div class="mday"><b>Sáb</b><span>2 almoço</span><strong>6 jantar</strong></div>
+          <div class="mday"><b>Dom</b><span>—</span><strong>6 jantar</strong></div>
+        </div>
+
+        <details class="mobile-hours">
+          <summary>Ver horários completos</summary>
+          <div class="mobile-hours-list">
+            <p><b>Segunda:</b> 1 almoço 11h às 15h · 4 jantar 18h às 23h</p>
+            <p><b>Terça:</b> 1 almoço 11h às 15h · 4 jantar 18h às 23h</p>
+            <p><b>Quarta:</b> 1 almoço 11h às 15h · 4 jantar 18h às 23h</p>
+            <p><b>Quinta:</b> 1 almoço 11h às 15h · 5 jantar 18h às 23h</p>
+            <p><b>Sexta:</b> 2 almoço 11h às 15h · 8 jantar 18h às 23h30</p>
+            <p><b>Sábado:</b> 2 almoço 12h às 15h · 6 jantar 18h às 23h30</p>
+            <p><b>Domingo:</b> 6 fim de tarde/jantar 17h às 23h</p>
+          </div>
+        </details>
+      </div>
+
       <div class="scale-grid fade">
         <article class="day-card"><h3>Segunda</h3><div class="shift"><div class="qtd">1</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">4</div><div class="turno">Jantar</div><div class="hora">18h às 23h</div></div></article>
         <article class="day-card"><h3>Terça</h3><div class="shift"><div class="qtd">1</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">4</div><div class="turno">Jantar</div><div class="hora">18h às 23h</div></div></article>
