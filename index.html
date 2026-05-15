@@ -3,304 +3,530 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ativação Fratelli | Osasco Express</title>
-<meta name="description" content="Página de ativação da parceria Fratelli Espaço Gourmet com Osasco Express: assinar, ativar, integrar, escalar e operar." />
+<title>Fratelli × Osasco Express | Ativação da operação</title>
+<meta name="description" content="Ativação da parceria Fratelli Espaço Gourmet com a Osasco Express: contrato, ativação, integração, escala e início da operação." />
 <meta property="og:title" content="Fratelli × Osasco Express | Ativação da operação" />
-<meta property="og:description" content="Contratos, checklist de ativação, integração via AnyDesk, escala digital e próximos passos." />
+<meta property="og:description" content="Contrato, ativação da conta, integração via AnyDesk, escala digital e início da operação." />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="assets/fratelli-operacao-delivery.webp" />
+<meta property="og:image" content="assets/fratelli-hero-retrato.webp" />
 <style>
 :root{
-  --bg:#100b08;
-  --bg2:#1a100b;
-  --brown:#2a160e;
-  --paper:#fff7ee;
-  --paper2:#f7ecdf;
-  --white:#fff;
-  --ink:#1d1511;
-  --muted:#725f52;
-  --mutedDark:#d4c0ad;
-  --line:#ecd6bf;
+  --bg:#0b0705;
+  --bg-soft:#140c08;
+  --bg-card:#120c08;
+  --surface:#fff9f3;
+  --surface-2:#f6ecdf;
+  --paper:#fffdf9;
+  --ink:#18110c;
+  --muted:#6f5b4d;
+  --muted-2:#d9c7b8;
+  --line:#ebd7c3;
+  --line-soft:rgba(255,255,255,.10);
   --orange:#f36d21;
-  --orange2:#c85212;
-  --orangeSoft:#fff0e5;
-  --green:#147a50;
-  --green2:#25a36c;
-  --greenSoft:#eaf8f1;
-  --red:#d52636;
-  --blue:#245cc7;
-  --blueSoft:#edf4ff;
-  --shadow:0 26px 80px rgba(0,0,0,.26);
-  --softShadow:0 14px 38px rgba(31,23,19,.09);
-  --max:1120px;
-  --radius:28px;
+  --orange-2:#c95011;
+  --orange-soft:#fff1e6;
+  --green:#167b52;
+  --green-2:#22a36d;
+  --green-soft:#ecf8f1;
+  --blue:#315fd6;
+  --blue-soft:#eef4ff;
+  --red:#ce3645;
+  --shadow:0 28px 80px rgba(0,0,0,.30);
+  --shadow-soft:0 16px 44px rgba(42,22,12,.10);
+  --radius-xl:32px;
+  --radius-lg:24px;
+  --radius-md:18px;
+  --max:1180px;
+  --fs-hero:clamp(38px,5vw,62px);
+  --fs-h2:clamp(28px,3.5vw,42px);
+  --fs-h3:clamp(18px,1.9vw,24px);
+  --fs-body:15px;
+  --fs-body-sm:13px;
 }
 *{box-sizing:border-box;margin:0;padding:0;min-width:0}
-html{scroll-behavior:smooth;max-width:100%;overflow-x:hidden}
+html{scroll-behavior:smooth;overflow-x:hidden}
 body{
-  font-family:Arial,Helvetica,sans-serif;
+  font-family:Inter,Arial,Helvetica,sans-serif;
   background:
-    radial-gradient(circle at 88% 0%,rgba(243,109,33,.18),transparent 28%),
-    linear-gradient(180deg,var(--bg) 0%,var(--bg2) 42%,#0d0806 100%);
-  color:var(--white);
-  line-height:1.6;
+    radial-gradient(circle at 85% -5%,rgba(243,109,33,.18),transparent 30%),
+    radial-gradient(circle at 10% 10%,rgba(255,255,255,.03),transparent 25%),
+    linear-gradient(180deg,var(--bg) 0%,#1b100a 38%,var(--bg) 100%);
+  color:#fff;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
 }
-a{color:inherit;text-decoration:none}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px),
+    linear-gradient(180deg,rgba(255,255,255,.017) 1px,transparent 1px);
+  background-size:56px 56px;
+  mask-image:linear-gradient(180deg,rgba(0,0,0,.5),transparent 62%);
+}
+a{text-decoration:none;color:inherit}
 img{display:block;max-width:100%;height:auto}
 button{font:inherit}
-.wrap{width:min(var(--max),100%);margin:auto;padding:0 clamp(16px,4vw,24px)}
-.section{padding:72px 0}
-.section-tight{padding:52px 0}
-.light{background:linear-gradient(180deg,var(--paper) 0%,var(--paper2) 100%);color:var(--ink)}
-.light p{color:var(--muted)}
-.kicker{
-  display:inline-flex;align-items:center;gap:10px;
-  font-size:11px;font-weight:950;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);
-  margin-bottom:14px;
+.wrap{width:min(var(--max),100%);margin:auto;padding:0 clamp(16px,4vw,28px)}
+.section{padding:76px 0}
+.section.tight{padding:54px 0}
+.section.light{
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 92% 6%,rgba(243,109,33,.10),transparent 30%),
+    linear-gradient(180deg,var(--surface) 0%,var(--surface-2) 100%);
 }
-.kicker::before{content:"";width:22px;height:2px;background:currentColor;border-radius:99px}
-h1,h2,h3{font-weight:950;letter-spacing:-.045em;line-height:1.04}
-h1{font-size:clamp(40px,6vw,72px);max-width:760px}
-h2{font-size:clamp(30px,4.6vw,54px);max-width:900px}
-h3{font-size:24px}
-p{color:var(--mutedDark)}
-strong{font-weight:950;color:inherit}
+.section.light p{color:var(--muted)}
+.kicker{
+  display:inline-flex;align-items:center;gap:10px;margin-bottom:14px;
+  font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);
+}
+.kicker::before{content:"";width:22px;height:2px;border-radius:99px;background:currentColor}
+h1,h2,h3{font-weight:950;letter-spacing:-.045em;line-height:1.02;text-wrap:balance}
+h1{font-size:var(--fs-hero);max-width:650px}
+h2{font-size:var(--fs-h2);max-width:720px}
+h3{font-size:var(--fs-h3)}
+p{font-size:var(--fs-body);line-height:1.72;color:var(--muted-2);text-wrap:pretty}
+.lead{font-size:16px;max-width:580px}
+.section-head{margin-bottom:28px;max-width:800px}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  min-height:52px;padding:14px 22px;border-radius:999px;
-  border:0;cursor:pointer;text-align:center;
-  font-size:14px;font-weight:950;line-height:1.15;
-  transition:transform .18s ease,box-shadow .18s ease,background .18s ease,color .18s ease;
+  min-height:50px;padding:14px 20px;border-radius:16px;font-size:13px;font-weight:900;
+  border:1px solid transparent;cursor:pointer;transition:.18s ease;text-align:center;
 }
 .btn:hover{transform:translateY(-2px)}
-.btn-primary{background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff;box-shadow:0 16px 38px rgba(243,109,33,.30)}
-.btn-green{background:linear-gradient(135deg,var(--green2),var(--green));color:#fff;box-shadow:0 16px 34px rgba(20,122,80,.23)}
-.btn-dark{background:#111;color:#fff}
-.btn-light{background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:var(--softShadow)}
-.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.18)}
-.topbar{
-  position:sticky;top:0;z-index:999;
-  background:rgba(16,11,8,.92);backdrop-filter:blur(16px);
-  border-bottom:1px solid rgba(255,247,238,.12);
-}
-.topbar-inner{width:min(var(--max),100%);margin:auto;padding:12px clamp(16px,4vw,24px);display:flex;align-items:center;justify-content:space-between;gap:14px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:950;white-space:nowrap;color:#fff}
-.brand-mark{width:38px;height:38px;border-radius:14px;background:#050403;border:1px solid rgba(243,109,33,.44);display:grid;place-items:center;color:var(--orange);box-shadow:0 12px 28px rgba(0,0,0,.25)}
-.brand em{font-style:normal;color:var(--orange)}
-.nav{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
-.nav a{font-size:12px;font-weight:900;color:var(--mutedDark);padding:8px 11px;border-radius:999px;white-space:nowrap}
-.nav a:hover{background:rgba(255,255,255,.08)}
-.nav .primary{background:var(--orange);color:#fff}
-
-.hero{position:relative;overflow:hidden;padding:72px 0 58px;border-bottom:1px solid rgba(255,247,238,.12)}
-.hero-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(320px,1.05fr);gap:clamp(26px,4vw,48px);align-items:center}
-.badge{display:inline-flex;width:fit-content;max-width:100%;padding:9px 13px;border-radius:999px;background:rgba(255,247,238,.08);border:1px solid rgba(243,109,33,.28);color:#ffd9c0;font-size:11.5px;font-weight:900;margin-bottom:18px}
+.btn.primary{background:linear-gradient(135deg,var(--orange),var(--orange-2));color:#fff;box-shadow:0 18px 38px rgba(243,109,33,.28)}
+.btn.secondary{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.14)}
+.btn.light{background:#fff;color:var(--ink);border-color:var(--line);box-shadow:var(--shadow-soft)}
+.btn.green{background:linear-gradient(135deg,var(--green-2),var(--green));color:#fff;box-shadow:0 18px 36px rgba(22,123,82,.24)}
+.topbar{position:sticky;top:0;z-index:999;background:rgba(11,7,5,.84);backdrop-filter:blur(18px);border-bottom:1px solid var(--line-soft)}
+.topbar-inner{width:min(var(--max),100%);margin:auto;padding:12px clamp(16px,4vw,28px);display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:950;color:#fff;letter-spacing:-.02em;white-space:nowrap}
+.brand-mark{width:38px;height:38px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(180deg,#110b08,#050403);border:1px solid rgba(243,109,33,.5);color:var(--orange);box-shadow:0 12px 28px rgba(0,0,0,.25)}
+.nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.nav a{padding:8px 12px;border-radius:999px;font-size:11.5px;font-weight:900;color:#dccab9}
+.nav a:hover{background:rgba(255,255,255,.06)}
+.nav a.primary{background:linear-gradient(135deg,var(--orange),var(--orange-2));color:#fff}
+.hero{padding:68px 0 54px;min-height:min(860px,calc(100vh - 64px));display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.10)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,430px);gap:clamp(30px,5vw,72px);align-items:center}
+.badge{display:inline-flex;padding:9px 13px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(243,109,33,.26);font-size:11px;font-weight:900;color:#ffdcc6;margin-bottom:18px}
 .hero h1 em{font-style:normal;color:var(--orange)}
-.lead{font-size:17px;line-height:1.78;max-width:710px;margin-top:18px;color:var(--mutedDark)}
-.hero-actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;max-width:650px;margin-top:26px}
-.hero-actions .btn{width:100%;border-radius:16px}
-.hero-img{border-radius:34px;overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(243,109,33,.24);background:#080604}
-.hero-img img{width:100%;aspect-ratio:16/10;object-fit:cover}
-.special-note{margin-top:18px;background:rgba(20,122,80,.18);border:1px solid rgba(20,122,80,.32);border-left:4px solid var(--green);border-radius:0 18px 18px 0;padding:16px 18px;color:#e2f6ec;font-size:14px;line-height:1.72}
-
-.mission-bar{
-  background:rgba(255,247,238,.06);
-  border-top:1px solid rgba(255,247,238,.10);
-  border-bottom:1px solid rgba(255,247,238,.10);
-  padding:18px 0;
-}
-.mission-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
-.mission-step{
-  display:flex;align-items:center;gap:10px;
-  border:1px solid rgba(255,247,238,.13);
-  border-radius:18px;padding:12px;
-  background:rgba(255,247,238,.06);
-}
-.mission-num{width:30px;height:30px;border-radius:12px;background:var(--orange);color:#fff;display:grid;place-items:center;font-size:12px;font-weight:950;flex:0 0 auto}
-.mission-step b{display:block;font-size:13px;color:#fff;line-height:1.15}
-.mission-step span{display:block;font-size:10.5px;color:rgba(255,247,238,.55);line-height:1.25;margin-top:2px}
-
-.section-head{max-width:900px;margin-bottom:28px}
-.section-lead{font-size:15.5px;line-height:1.78;max-width:780px;margin-top:12px;color:var(--muted)}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.card,.contract-card,.check-card,.ready-card,.summary,.day,.price-card,.step,.tax-card{
-  background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--softShadow);color:var(--ink)
-}
-.card{padding:22px}
-.card h3{font-size:20px;margin-bottom:8px}
-.card p{font-size:13.5px;line-height:1.7;color:var(--muted)}
-.icon{width:44px;height:44px;border-radius:15px;background:var(--orangeSoft);color:var(--orange);display:grid;place-items:center;margin-bottom:14px}
-.icon svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
-
-.contract-stage{background:linear-gradient(180deg,var(--paper) 0%,#fff 100%);color:var(--ink)}
-.contract-wrap{display:grid;grid-template-columns:.92fr 1.08fr;gap:22px;align-items:stretch}
-.contract-image{border-radius:30px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);background:#111;min-height:440px}
-.contract-image img{width:100%;height:100%;object-fit:cover}
-.contract-panel{background:#fff;border:1px solid var(--line);border-radius:30px;box-shadow:var(--softShadow);padding:28px;color:var(--ink)}
-.contract-panel h2{font-size:clamp(31px,4vw,50px);margin-bottom:12px}
-.doc-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;margin-top:20px}
-.doc-card{border:1px solid var(--line);border-radius:22px;padding:18px;background:#fffaf5}
-.doc-card.main{background:linear-gradient(180deg,#fff,#fff0e5);border-color:rgba(243,109,33,.28)}
-.doc-card h3{font-size:21px;margin-bottom:6px}
-.doc-card p{font-size:13px;color:var(--muted);line-height:1.62}
+.hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:500px;margin-top:24px}
+.hero-note{margin-top:20px;max-width:560px;padding:16px 18px;border-radius:0 18px 18px 0;background:linear-gradient(180deg,rgba(22,123,82,.20),rgba(22,123,82,.10));border:1px solid rgba(22,123,82,.28);border-left:4px solid var(--green);font-size:13px;line-height:1.65;color:#e4f7ee}
+.hero-panel{position:relative}
+.hero-img{max-width:430px;margin-left:auto;border-radius:30px;overflow:hidden;background:#090604;border:1px solid rgba(243,109,33,.28);box-shadow:var(--shadow)}
+.hero-img img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.hero-metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px;max-width:430px;margin-left:auto}
+.metric-card{padding:14px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);backdrop-filter:blur(10px)}
+.metric-card strong{display:block;font-size:22px;line-height:1;color:#fff;letter-spacing:-.04em}
+.metric-card span{display:block;font-size:11px;color:#d8c6b6;line-height:1.4;margin-top:6px}
+.journey-strip{padding:18px 0;background:rgba(255,255,255,.05);border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)}
+.journey-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.journey-card{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10)}
+.journey-n{width:30px;height:30px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--orange),var(--orange-2));font-size:12px;font-weight:900;color:#fff;flex:0 0 auto}
+.journey-card b{display:block;font-size:12.5px;color:#fff;line-height:1.2}
+.journey-card small{display:block;font-size:10px;color:#cdb9a8;line-height:1.35;margin-top:3px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-lg);box-shadow:var(--shadow-soft);color:var(--ink)}
+.card.pad{padding:24px}
+.image-card{overflow:hidden}
+.image-card img{width:100%;height:100%;object-fit:cover}
+.contract-stage .grid-2{align-items:stretch}
+.contract-hero{min-height:420px}
+.contract-main{display:flex;flex-direction:column;gap:18px}
+.contract-main p{color:var(--muted)}
+.doc-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px}
+.doc-card{padding:18px;border-radius:22px;border:1px solid var(--line);background:#fffaf4;box-shadow:0 8px 22px rgba(42,22,12,.06)}
+.doc-card.main{background:linear-gradient(180deg,#fff,#fff1e5);border-color:rgba(243,109,33,.30)}
+.doc-card h3{font-size:20px;margin-bottom:8px}
+.doc-card p{font-size:13px;line-height:1.62;color:var(--muted)}
 .doc-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
-.doc-actions .btn{border-radius:15px;min-height:48px;width:100%;font-size:13px}
-.contract-alert{margin-top:16px;background:var(--greenSoft);border:1px solid rgba(20,122,80,.14);border-left:4px solid var(--green);border-radius:0 16px 16px 0;padding:14px 16px;font-size:13px;line-height:1.62;color:#285d43}
-
-.activation-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(340px,1.08fr);gap:22px;align-items:start}
-.command-card{
-  position:sticky;top:86px;background:#0f0c0a;color:#fff;border:1px solid rgba(243,109,33,.24);border-radius:30px;padding:24px;box-shadow:0 26px 74px rgba(31,23,19,.22);overflow:hidden
-}
-.command-card::after{content:"";position:absolute;right:-110px;bottom:-125px;width:290px;height:290px;border-radius:50%;background:rgba(243,109,33,.16)}
-.command-card>*{position:relative;z-index:1}
-.command-label{display:inline-flex;align-items:center;gap:8px;background:rgba(243,109,33,.14);border:1px solid rgba(243,109,33,.24);color:#ffd7bd;border-radius:999px;padding:7px 10px;font-size:10px;font-weight:950;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
-.command-card h2{color:#fff;font-size:clamp(27px,3.4vw,42px);margin-bottom:12px}
-.command-card p{color:rgba(255,247,238,.72);font-size:14px;line-height:1.72}
-.progress-shell{margin:22px 0 16px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:16px}
-.progress-top{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:10px}
-.progress-title{font-size:12px;color:rgba(255,255,255,.58);font-weight:950;text-transform:uppercase;letter-spacing:.1em}
-.progress-count{font-size:20px;font-weight:950;color:#fff;letter-spacing:-.04em}
-.progress-bar{height:12px;background:rgba(255,255,255,.12);border-radius:999px;overflow:hidden}
-.progress-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--orange),#ffb06f);border-radius:999px;transition:width .35s ease;box-shadow:0 0 22px rgba(243,109,33,.38)}
-.progress-status{margin-top:10px;font-size:12.5px;line-height:1.55;color:#f5d8c6}
-.command-actions{display:grid;gap:10px;margin-top:16px}
-.command-actions .btn{width:100%;border-radius:16px;min-height:52px}
-.activation-board{display:grid;gap:14px}
-.check-card{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:flex-start;padding:16px;transition:.18s ease}
-.check-card:hover{transform:translateY(-2px);box-shadow:0 18px 42px rgba(31,23,19,.10)}
-.check-card.is-done{background:linear-gradient(180deg,#fff,#f0fbf6);border-color:rgba(20,122,80,.22)}
-.check-card.is-next{border-color:rgba(243,109,33,.45);box-shadow:0 18px 46px rgba(243,109,33,.13)}
-.check-toggle{width:34px;height:34px;border-radius:13px;border:2px solid #ddc9b5;background:#fff;display:grid;place-items:center;color:#fff;cursor:pointer;transition:.18s ease;flex:0 0 auto}
-.check-toggle svg{width:17px;height:17px;stroke:currentColor;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
-.check-card.is-done .check-toggle{background:var(--green);border-color:var(--green)}
-.check-body h3{font-size:17px;letter-spacing:-.025em;margin-bottom:4px;color:var(--ink)}
-.check-body p{font-size:13px;line-height:1.62;color:var(--muted)}
-.check-body a{color:var(--orange2);font-weight:950;text-decoration:underline;text-underline-offset:3px}
-.step-badge{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:28px;border-radius:999px;background:var(--orangeSoft);color:var(--orange2);font-size:11px;font-weight:950;white-space:nowrap}
-.check-card.is-done .step-badge{background:var(--greenSoft);color:var(--green)}
-.check-card.is-next .step-badge{background:var(--orange);color:#fff}
-
-.remote-section{background:linear-gradient(180deg,#120d0a 0%,#1b120d 100%);color:#fff;position:relative;overflow:hidden}
-.remote-section::after{content:"";position:absolute;right:-120px;top:20px;width:360px;height:360px;border-radius:50%;background:rgba(243,109,33,.16)}
-.remote-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.75fr);gap:22px;align-items:stretch}
-.remote-main{background:rgba(255,247,238,.07);border:1px solid rgba(255,247,238,.14);border-radius:30px;padding:28px;box-shadow:0 24px 70px rgba(0,0,0,.22)}
-.remote-main h2{color:#fff;margin-bottom:12px}
-.remote-main p{color:rgba(255,247,238,.72);font-size:15px;line-height:1.76}
-.remote-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
-.remote-metric{background:rgba(0,0,0,.20);border:1px solid rgba(255,255,255,.11);border-radius:20px;padding:16px}
-.remote-metric strong{display:block;color:#fff;font-size:27px;line-height:1;letter-spacing:-.04em;margin-bottom:6px}
-.remote-metric span{color:rgba(255,247,238,.58);font-size:12px;line-height:1.45}
-.ready-card{padding:24px;border:1px solid rgba(243,109,33,.22)}
-.ready-card h3{font-size:26px;margin-bottom:10px}
-.ready-list{display:grid;gap:9px;margin-top:14px}
-.ready-item{display:flex;gap:9px;align-items:flex-start;padding:10px;border-radius:14px;background:#fff8f0;border:1px solid rgba(243,109,33,.12);font-size:12.7px;line-height:1.45;color:var(--muted)}
-.ready-item::before{content:"✓";display:grid;place-items:center;width:20px;height:20px;border-radius:50%;flex:0 0 20px;background:var(--green);color:#fff;font-size:12px;font-weight:950}
-.ready-card .btn{width:100%;border-radius:16px;margin-top:16px}
-
-.mockup-block{background:#0d0b0a;border-radius:34px;overflow:hidden;border:1px solid rgba(243,109,33,.28);box-shadow:var(--shadow)}
-.mockup-block img{width:100%;aspect-ratio:16/9;object-fit:cover}
-.scale-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px}
-.day{border-radius:22px;padding:16px}
-.day h4{font-size:15px;font-weight:950;margin-bottom:12px}
-.day.hot{background:var(--orangeSoft);border-color:rgba(243,109,33,.36)}
-.day.hot h4{color:var(--orange)}
-.shift{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;margin-bottom:10px}
-.qtd{font-size:29px;line-height:1;font-weight:950;letter-spacing:-.04em}
-.turno{font-size:12px;color:var(--muted);font-weight:900;margin-top:3px}
-.hora{font-size:12px;color:#8b7d73;margin-top:2px}
-.scale-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}
-.scale-pill{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--softShadow)}
-.scale-pill b{display:block;font-size:18px;color:var(--ink)}
-.scale-pill span{font-size:12.5px;color:var(--muted);line-height:1.45}
-
-.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.price-card{overflow:hidden}
-.price-head{padding:16px 18px;border-bottom:1px solid var(--line);font-size:14px;font-weight:950}
-.price-head.blue{background:var(--blueSoft)}
-.price-head.red{background:#fff0f2;color:var(--red)}
-.price-body{padding:22px}
-.price{font-size:46px;font-weight:950;letter-spacing:-.055em;line-height:1}
-.price span{font-size:15px;color:var(--muted);font-weight:850;letter-spacing:0}
-.price-body p{font-size:13.5px;margin-top:9px;line-height:1.6;color:var(--muted)}
-details{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--softShadow);overflow:hidden;color:var(--ink)}
-summary{cursor:pointer;padding:20px 24px;font-weight:950;background:#0f0c0a;color:#fff;list-style:none}
-summary::-webkit-details-marker{display:none}
-.tax-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:18px}
-.tax-card{overflow:hidden;border-radius:22px}
-.tax-head{padding:14px 16px;font-size:14px;font-weight:950;border-bottom:1px solid var(--line)}
-.tax-head.blue{background:var(--blueSoft)}
-.tax-head.red{background:#fff0f2;color:var(--red)}
-.tax-row{display:flex;justify-content:space-between;gap:10px;padding:10px 16px;border-bottom:1px solid var(--line);font-size:13px}
-.tax-row:last-child{border-bottom:0}
-
-.summary{overflow:hidden}
-.summary-head{background:#0f0c0a;color:#fff;padding:21px 24px}
-.summary-head h3{color:#fff;font-size:26px}
-.summary-head p{font-size:12px;color:rgba(255,255,255,.6);margin-top:5px}
-.summary-row{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:17px 24px;border-bottom:1px solid var(--line)}
-.summary-row.total{background:var(--orangeSoft)}
-.summary-label b{display:block;font-size:14px}
-.summary-label small{display:block;font-size:12.5px;color:var(--muted);line-height:1.55;margin-top:4px}
-.summary-val{font-size:26px;font-weight:950;white-space:nowrap;text-align:right;letter-spacing:-.04em}
-.summary-row.total .summary-val,.summary-row.total .summary-label b{color:var(--orange)}
-.badges{display:flex;gap:8px;flex-wrap:wrap;background:#fff;padding:16px 24px}
-.badge-item{background:var(--greenSoft);color:var(--green);border-radius:999px;padding:7px 11px;font-size:11px;font-weight:950;border:1px solid rgba(20,122,80,.12)}
-.badge-item::before{content:"✓ "}
-
-.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.step{padding:22px}
-.step .n{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--orange);color:#fff;font-weight:950;margin-bottom:14px}
-.step p{font-size:14px;line-height:1.68;color:var(--muted)}
-.cta{background:linear-gradient(135deg,#0d0a08 0%,#1f120d 62%,#3a2114 100%);color:#fff;overflow:hidden}
+.callout{padding:16px 18px;border-radius:18px;background:var(--green-soft);border:1px solid rgba(22,123,82,.16)}
+.callout p{font-size:13px;color:#285d43}
+.activation-section .activation-wrap{display:grid;grid-template-columns:minmax(300px,.92fr) minmax(0,1.08fr);gap:24px;align-items:start}
+.side-panel{position:sticky;top:84px;padding:24px;border-radius:28px;background:linear-gradient(180deg,#120d0a,#080504);border:1px solid rgba(243,109,33,.25);box-shadow:var(--shadow);overflow:hidden}
+.side-panel::after{content:"";position:absolute;right:-80px;bottom:-90px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(243,109,33,.18),transparent 65%)}
+.side-panel > *{position:relative;z-index:1}
+.panel-tag{display:inline-flex;padding:7px 10px;border-radius:999px;background:rgba(243,109,33,.12);border:1px solid rgba(243,109,33,.22);font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:900;color:#ffd8bf;margin-bottom:14px}
+.side-panel h2{font-size:clamp(28px,3.4vw,38px);max-width:320px;margin-bottom:10px}
+.side-panel p{font-size:13px;color:#d9c7b8;line-height:1.65}
+.progress-shell{margin:20px 0 16px;padding:16px;border-radius:18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.10)}
+.progress-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}
+.progress-head span{font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#bea998}
+.progress-head strong{font-size:20px;letter-spacing:-.04em}
+.progress-bar{height:10px;border-radius:999px;background:rgba(255,255,255,.10);overflow:hidden}
+.progress-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--orange),#ffb06f);border-radius:999px;transition:width .32s ease}
+.progress-status{margin-top:10px;font-size:12px;color:#f3d6c2;line-height:1.5}
+.panel-actions{display:grid;gap:10px}
+.panel-actions .btn{width:100%}
+.steps-stack{display:grid;gap:14px;position:relative}
+.steps-stack::before{content:"";position:absolute;left:20px;top:20px;bottom:20px;width:2px;background:#ead7c4;opacity:.7}
+.step-card{position:relative;display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:start;padding:18px;border-radius:22px;background:#fff;box-shadow:var(--shadow-soft);border:1px solid var(--line)}
+.step-card.is-next{border-color:rgba(243,109,33,.42);box-shadow:0 18px 44px rgba(243,109,33,.12)}
+.step-card.is-done{background:linear-gradient(180deg,#fff,#f1fbf5);border-color:rgba(22,123,82,.22)}
+.step-bullet{width:40px;height:40px;border-radius:14px;background:#fff;border:2px solid #e2cdb8;display:grid;place-items:center;position:relative;z-index:2;cursor:pointer;color:#fff;transition:.18s ease}
+.step-bullet svg{width:18px;height:18px;stroke:currentColor;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.step-card.is-done .step-bullet{background:var(--green);border-color:var(--green)}
+.step-icon{width:40px;height:40px;border-radius:14px;background:var(--orange-soft);display:grid;place-items:center;color:var(--orange)}
+.step-icon svg{width:18px;height:18px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.step-copy h3{font-size:18px;margin-bottom:6px}
+.step-copy p{font-size:13px;line-height:1.62;color:var(--muted)}
+.step-copy a{display:inline-block;margin-top:6px;font-size:12.5px;font-weight:900;color:var(--orange-2);text-decoration:underline;text-underline-offset:3px}
+.step-no{padding:8px 10px;border-radius:999px;background:#fff7f1;color:var(--orange-2);font-size:10px;font-weight:900}
+.integration-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+.dark-card{padding:28px;border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow)}
+.dark-card p{color:#d7c5b6}
+.metrics-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.big-metric{padding:16px;border-radius:20px;background:rgba(0,0,0,.20);border:1px solid rgba(255,255,255,.10)}
+.big-metric strong{display:block;font-size:26px;line-height:1;color:#fff;letter-spacing:-.04em}
+.big-metric span{display:block;font-size:11.5px;line-height:1.45;color:#cdb9a8;margin-top:6px}
+.list-card{padding:24px;border-radius:28px;background:#fff;color:var(--ink);border:1px solid rgba(243,109,33,.18);box-shadow:var(--shadow-soft)}
+.list-card p{color:var(--muted)}
+.check-list{display:grid;gap:10px;margin-top:16px}
+.check-item{display:flex;gap:10px;align-items:flex-start;padding:10px;border-radius:14px;background:#fff8f0;border:1px solid rgba(243,109,33,.12);font-size:13px;line-height:1.5;color:var(--muted)}
+.check-item::before{content:"✓";display:grid;place-items:center;width:20px;height:20px;border-radius:50%;flex:0 0 20px;background:var(--green);color:#fff;font-size:12px;font-weight:900}
+.visual-stage{padding-top:0}
+.mockup-card{overflow:hidden;border-radius:30px;border:1px solid rgba(243,109,33,.22);box-shadow:var(--shadow);background:#0b0806;max-width:980px;margin:0 auto}
+.mockup-card img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.scale-top{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}
+.info-chip{padding:14px;border-radius:18px;background:#fff;border:1px solid var(--line);box-shadow:0 8px 24px rgba(42,22,12,.07)}
+.info-chip strong{display:block;font-size:16px;color:var(--ink)}
+.info-chip span{display:block;font-size:12px;color:var(--muted);line-height:1.45;margin-top:4px}
+.scale-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}
+.day-card{padding:16px;border-radius:22px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-soft)}
+.day-card.hot{background:linear-gradient(180deg,#fff4ec,#fff);border-color:rgba(243,109,33,.36);box-shadow:0 18px 44px rgba(243,109,33,.10)}
+.day-card h3{font-size:15px;margin-bottom:12px}
+.shift{padding:12px;border-radius:14px;background:#fffdf9;border:1px solid var(--line);margin-bottom:10px}
+.shift:last-child{margin-bottom:0}
+.qtd{font-size:28px;font-weight:950;line-height:1;letter-spacing:-.04em;color:var(--ink)}
+.turno{margin-top:4px;font-size:12px;font-weight:900;color:var(--muted)}
+.hora{font-size:11.5px;color:#8c7d71;margin-top:2px}
+.operate-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.price-grid{display:grid;gap:14px}
+.price-card{padding:0;border-radius:24px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-soft)}
+.price-head{padding:16px 18px;font-size:13px;font-weight:900;border-bottom:1px solid var(--line)}
+.price-head.blue{background:var(--blue-soft)}
+.price-head.red{background:#fff1f3;color:var(--red)}
+.price-body{padding:20px}
+.price-number{font-size:42px;font-weight:950;letter-spacing:-.05em;color:var(--ink);line-height:1}
+.price-number span{font-size:15px;color:var(--muted);font-weight:900}
+.price-body p{margin-top:8px;font-size:13px;color:var(--muted)}
+.summary-card{overflow:hidden}
+.summary-head{padding:20px 22px;background:#0f0c0a;color:#fff}
+.summary-head p{font-size:12px;color:#ccb8a8;margin-top:6px}
+.summary-row{display:flex;justify-content:space-between;gap:14px;padding:16px 22px;border-bottom:1px solid var(--line)}
+.summary-row:last-of-type{border-bottom:0}
+.summary-row.highlight{background:var(--orange-soft)}
+.summary-row b{display:block;font-size:14px;color:var(--ink)}
+.summary-row small{display:block;font-size:12px;line-height:1.55;color:var(--muted);margin-top:4px}
+.summary-row .value{font-size:24px;font-weight:950;letter-spacing:-.04em;white-space:nowrap;color:var(--ink)}
+.summary-row.highlight .value,.summary-row.highlight b{color:var(--orange-2)}
+.badges{display:flex;gap:8px;flex-wrap:wrap;padding:16px 22px;background:#fff}
+.badge-item{padding:7px 10px;border-radius:999px;background:var(--green-soft);border:1px solid rgba(22,123,82,.12);color:var(--green);font-size:11px;font-weight:900}
+.details{margin-top:18px;border-radius:24px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-soft)}
+.details summary{list-style:none;cursor:pointer;padding:18px 22px;background:#0f0c0a;color:#fff;font-weight:900}
+.details summary::-webkit-details-marker{display:none}
+.km-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:18px}
+.km-card{border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+.km-head{padding:14px 16px;font-size:13px;font-weight:900;border-bottom:1px solid var(--line)}
+.km-head.blue{background:var(--blue-soft)}
+.km-head.red{background:#fff1f3;color:var(--red)}
+.km-row{display:flex;justify-content:space-between;gap:10px;padding:10px 16px;border-bottom:1px solid var(--line);font-size:13px;color:var(--ink)}
+.km-row:last-child{border-bottom:0}
+.flow-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.flow-card{padding:22px;border-radius:24px;background:#fff;border:1px solid var(--line);color:var(--ink);box-shadow:var(--shadow-soft)}
+.flow-n{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--orange);color:#fff;font-weight:900;margin-bottom:14px}
+.flow-card p{font-size:13px;color:var(--muted);line-height:1.62}
+.cta{background:radial-gradient(circle at 50% -10%,rgba(243,109,33,.22),transparent 34%),linear-gradient(135deg,#0d0907 0%,#1a100b 62%,#382014 100%)}
 .cta-box{max-width:820px;margin:auto;text-align:center}
-.cta h2{color:#fff;font-size:clamp(34px,5vw,56px)}
-.cta p{color:rgba(255,255,255,.82);font-size:15.5px;line-height:1.8;max-width:700px;margin:16px auto 28px}
-.final-info{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;margin-top:34px;padding-top:24px;border-top:1px solid rgba(255,255,255,.16)}
-.fi-label{font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:950;color:rgba(255,255,255,.45)}
-.fi-val{font-size:13px;font-weight:950;color:rgba(255,255,255,.9);margin-top:3px}
-footer{background:#0c0806;color:#fff;padding:34px 0 24px;border-top:1px solid rgba(255,247,238,.1)}
-.footer{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;flex-wrap:wrap}
-footer small{font-size:11px;color:rgba(255,255,255,.42);line-height:1.65}
-.sticky{display:none;position:fixed;left:0;right:0;bottom:0;background:rgba(16,11,8,.94);border-top:1px solid rgba(255,247,238,.16);padding:10px 14px calc(12px + env(safe-area-inset-bottom));z-index:99;box-shadow:0 -12px 32px rgba(0,0,0,.30);backdrop-filter:blur(14px)}
-.sticky a{display:flex;justify-content:center;align-items:center;background:var(--orange);color:#fff;border-radius:13px;padding:14px;font-size:14px;font-weight:950}
-.fade{opacity:0;transform:translateY(18px);transition:.5s ease}
+.cta p{max-width:700px;margin:16px auto 28px;color:#e0cdbd}
+.final-row{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;margin-top:30px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14)}
+.final-row div{min-width:110px}
+.final-row small{display:block;font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#bfa895}
+.final-row strong{display:block;font-size:13px;color:#fff;margin-top:4px}
+footer{padding:34px 0 24px;background:#0b0705;border-top:1px solid rgba(255,255,255,.10)}
+.footer{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:flex-end}
+.footer small{font-size:11px;color:#ac9b8d;line-height:1.6}
+.sticky{display:none;position:fixed;left:0;right:0;bottom:0;background:rgba(11,7,5,.92);backdrop-filter:blur(14px);padding:10px 14px calc(12px + env(safe-area-inset-bottom));border-top:1px solid rgba(255,255,255,.12);z-index:99}
+.sticky a{display:flex;align-items:center;justify-content:center;border-radius:14px;padding:14px;background:linear-gradient(135deg,var(--orange),var(--orange-2));color:#fff;font-size:14px;font-weight:900}
+.fade{opacity:0;transform:translateY(18px);transition:.45s ease}
 .fade.in{opacity:1;transform:none}
-.toast{position:fixed;left:50%;bottom:92px;transform:translateX(-50%) translateY(18px);opacity:0;pointer-events:none;z-index:999;background:#0f0c0a;color:#fff;border:1px solid rgba(243,109,33,.28);border-radius:999px;padding:11px 16px;font-size:12.5px;font-weight:850;box-shadow:0 20px 50px rgba(0,0,0,.28);transition:.22s ease}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(16px);opacity:0;pointer-events:none;z-index:999;background:#0f0c0a;color:#fff;border:1px solid rgba(243,109,33,.25);padding:11px 16px;border-radius:999px;font-size:12px;font-weight:900;transition:.2s ease;box-shadow:0 20px 44px rgba(0,0,0,.24)}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-@media(max-width:1100px){.scale-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.mission-steps{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:980px){
-  .topbar-inner{align-items:flex-start;flex-direction:column}.nav{width:100%;overflow:auto;flex-wrap:nowrap;padding-bottom:3px}.nav a{flex:0 0 auto}
-  .hero-grid,.contract-wrap,.activation-grid,.remote-grid,.grid-2{grid-template-columns:1fr}
-  .hero-img{max-width:760px;margin:auto}.command-card{position:relative;top:auto}
-  .grid-3,.grid-4,.scale-summary{grid-template-columns:repeat(2,1fr)}
-  .scale-grid,.tax-grid{grid-template-columns:repeat(2,1fr)}
-  .flow{grid-template-columns:1fr}.sticky{display:block}body{padding-bottom:82px}
+@media (max-width:1100px){
+  .journey-grid,.scale-grid{grid-template-columns:repeat(3,1fr)}
+  .scale-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media (max-width:980px){
+  .topbar-inner{flex-direction:column;align-items:flex-start}
+  .nav{width:100%;overflow:auto;flex-wrap:nowrap;padding-bottom:3px}
+  .nav a{flex:0 0 auto}
+  .hero{min-height:auto}
+  .hero-grid,.grid-2,.activation-section .activation-wrap,.integration-grid,.operate-grid{grid-template-columns:1fr}
+  .hero-img,.hero-metrics{margin-left:auto;margin-right:auto;max-width:500px}
+  .side-panel{position:relative;top:auto}
+  .journey-grid{grid-template-columns:repeat(3,1fr)}
+  .doc-grid,.metrics-row,.scale-top,.price-grid,.km-grid{grid-template-columns:1fr 1fr}
+  .flow-grid{grid-template-columns:1fr}
+  .sticky{display:block}
+  body{padding-bottom:82px}
+}
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  .section{padding:50px 0}
+  .section.tight{padding:40px 0}
+  h1{font-size:clamp(34px,10vw,42px)}
+  h2{font-size:clamp(26px,7vw,34px)}
+  p,.lead{font-size:14px;line-height:1.68}
+  .hero-grid{gap:24px}
+  .hero-actions,.doc-actions,.doc-grid,.journey-grid,.scale-top,.scale-grid,.km-grid,.metrics-row,.price-grid{grid-template-columns:1fr}
+  .hero-note{font-size:12.5px}
+  .hero-img,.card,.doc-card,.side-panel,.dark-card,.list-card,.flow-card,.price-card,.summary-card,.mockup-card,.day-card{border-radius:22px}
+  .card.pad,.side-panel,.dark-card,.list-card,.flow-card{padding:18px}
+  .steps-stack::before{left:18px}
+  .step-card{grid-template-columns:auto 1fr;gap:12px;padding:14px}
+  .step-no{grid-column:2;justify-self:start}
+  .step-icon{display:none}
+  .scale-grid{grid-template-columns:1fr}
+  .shift{display:grid;grid-template-columns:56px 1fr;column-gap:12px;align-items:center}
+  .qtd{grid-row:1/span 3;font-size:30px}
+  .summary-row{flex-direction:column;align-items:flex-start}
+  .summary-row .value{font-size:22px;white-space:normal}
+  .final-row{gap:14px}
+  .toast{width:calc(100% - 28px);text-align:center;border-radius:18px}
+}
+@media (max-width:380px){
+  .brand-mark{display:none}
+  .hero-actions .btn,.panel-actions .btn,.doc-actions .btn{font-size:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .fade{opacity:1;transform:none;transition:none}
+  .btn{transition:none}
+}
+
+/* Ajuste da dobra de assinatura oficial */
+.signature-card{
+  display:grid;
+  gap:16px;
+  margin-top:20px;
+}
+.signature-main{
+  padding:22px;
+  border-radius:26px;
+  background:linear-gradient(180deg,#fff,#fff0e5);
+  border:1px solid rgba(243,109,33,.34);
+  box-shadow:0 14px 34px rgba(42,22,12,.08);
+}
+.signature-badge{
+  display:inline-flex;
+  width:max-content;
+  margin-bottom:10px;
+  padding:7px 10px;
+  border-radius:999px;
+  background:rgba(243,109,33,.10);
+  border:1px solid rgba(243,109,33,.18);
+  color:var(--orange-2);
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.signature-badge.gov{
+  background:var(--green-soft);
+  border-color:rgba(22,123,82,.16);
+  color:var(--green);
+}
+.signature-main h3,
+.gov-sign-box h3{
+  font-size:22px;
+  margin-bottom:8px;
+}
+.signature-main p,
+.gov-sign-box p{
+  font-size:13px;
+  line-height:1.62;
+  color:var(--muted);
+}
+.signature-cta{
+  width:100%;
+  margin-top:16px;
+  font-size:14px;
+}
+.gov-sign-box{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:16px;
+  align-items:center;
+  padding:18px;
+  border-radius:24px;
+  background:#fff;
+  border:1px solid var(--line);
+  box-shadow:0 10px 26px rgba(42,22,12,.06);
+}
+.gov-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  padding:13px 16px;
+  border-radius:16px;
+  background:#111;
+  color:#fff;
+  font-size:13px;
+  font-weight:950;
+  text-align:center;
+  transition:.18s ease;
+}
+.gov-link:hover{
+  transform:translateY(-2px);
 }
 @media(max-width:640px){
-  .wrap{padding-left:16px;padding-right:16px}.section{padding:48px 0}.section-tight{padding:40px 0}.hero{padding:38px 0 44px}
-  h1{font-size:clamp(34px,11vw,42px)}h2{font-size:clamp(29px,8.7vw,36px)}.lead,.section-lead{font-size:14.5px;line-height:1.72}
-  .brand{font-size:14px}.brand-mark{width:34px;height:34px}.nav a{font-size:11.5px;padding:7px 10px}
-  .hero-actions,.doc-actions{grid-template-columns:1fr}.hero-actions .btn,.doc-actions .btn{border-radius:14px}
-  .mission-steps,.grid-3,.grid-4,.scale-grid,.tax-grid,.remote-metrics,.price-grid,.scale-summary,.doc-grid{grid-template-columns:1fr}
-  .mission-step{padding:10px}.contract-panel,.command-card,.remote-main,.ready-card,.contract-image,.mockup-block{border-radius:22px}
-  .contract-panel,.command-card,.remote-main,.ready-card{padding:18px}.contract-image{min-height:auto}.contract-image img{aspect-ratio:4/3}
-  .check-card{grid-template-columns:auto minmax(0,1fr);gap:12px}.step-badge{grid-column:2;justify-self:start}.check-card{padding:14px;border-radius:20px}
-  .day,.card,.step{border-radius:21px;padding:18px}.shift{display:grid;grid-template-columns:56px 1fr;column-gap:12px;align-items:center;padding:13px}.qtd{grid-row:1 / span 3;font-size:31px}
-  .price{font-size:38px}.summary-row{flex-direction:column;align-items:flex-start}.summary-val{text-align:left;white-space:normal;font-size:23px}
-  .cta .btn{width:100%}.toast{width:calc(100% - 28px);text-align:center;border-radius:18px}
+  .gov-sign-box{
+    grid-template-columns:1fr;
+  }
+  .gov-link{
+    width:100%;
+  }
 }
-@media(max-width:380px){.wrap{padding-left:14px;padding-right:14px}.brand-mark{display:none}h1{font-size:31px}.final-info{gap:14px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fade{opacity:1;transform:none;transition:none}.btn{transition:none}}
+
+
+/* Ajuste proporcional do checklist de ativação */
+.activation-section .activation-wrap{
+  grid-template-columns:minmax(300px,.96fr) minmax(0,1.04fr);
+  align-items:start;
+}
+.side-panel{
+  max-width:390px;
+  justify-self:end;
+}
+.steps-stack{
+  gap:10px;
+  max-width:520px;
+}
+.step-card{
+  padding:12px 14px;
+  border-radius:18px;
+  gap:11px;
+  align-items:center;
+}
+.step-bullet{
+  width:32px;
+  height:32px;
+  border-radius:11px;
+}
+.step-bullet svg{
+  width:15px;
+  height:15px;
+}
+.step-copy h3{
+  font-size:15px;
+  margin-bottom:3px;
+  line-height:1.15;
+}
+.step-copy p{
+  font-size:11.7px;
+  line-height:1.42;
+}
+.step-copy a{
+  margin-top:3px;
+  font-size:11.5px;
+}
+.step-no{
+  padding:6px 8px;
+  font-size:9.5px;
+}
+.steps-stack::before{
+  left:16px;
+  top:18px;
+  bottom:18px;
+}
+@media(max-width:980px){
+  .side-panel,
+  .steps-stack{
+    max-width:100%;
+    justify-self:stretch;
+  }
+}
+@media(max-width:640px){
+  .step-card{
+    padding:12px;
+    align-items:flex-start;
+  }
+  .steps-stack::before{
+    left:16px;
+  }
+}
+
+
+/* Ajuste após remoção do card de fechamento */
+.operate-grid{
+  grid-template-columns:1fr;
+  max-width:760px;
+}
+.operate-grid .section-head{
+  max-width:720px;
+}
+.price-grid{
+  max-width:720px;
+}
+@media(max-width:980px){
+  .operate-grid{
+    max-width:100%;
+  }
+}
+
+
+/* Rodapé institucional Osasco Express */
+.footer-company{
+  display:grid;
+  grid-template-columns:1.2fr 1fr 1fr;
+  gap:22px;
+  align-items:start;
+}
+.footer-company strong{
+  display:block;
+  color:#fff;
+  font-size:14px;
+  margin-bottom:6px;
+}
+.footer-company small{
+  display:block;
+  font-size:11.5px;
+  color:#b9a89a;
+  line-height:1.7;
+}
+.footer-company a{
+  color:#f4d2bb;
+  text-decoration:none;
+}
+.footer-company a:hover{
+  color:#fff;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.footer-contact{
+  display:grid;
+  gap:4px;
+}
+.footer-meta{
+  text-align:right;
+}
+@media(max-width:760px){
+  .footer-company{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+  .footer-meta{
+    text-align:left;
+  }
+}
+
 </style>
 </head>
 <body id="top">
 <nav class="topbar">
   <div class="topbar-inner">
-    <a class="brand" href="#top"><span class="brand-mark">F</span>Fratelli <em>×</em> Osasco Express</a>
+    <a class="brand" href="#top"><span class="brand-mark">F</span>Fratelli <span style="color:var(--orange)">×</span> Osasco Express</a>
     <div class="nav">
       <a href="#assinar">Assinar</a>
       <a href="#ativar">Ativar</a>
@@ -318,356 +544,291 @@ footer small{font-size:11px;color:rgba(255,255,255,.42);line-height:1.65}
       <div class="badge">Início da parceria • Fratelli Espaço Gourmet</div>
       <p class="kicker">Ativação da operação</p>
       <h1>Henrique, sua operação já está desenhada. <em>Agora é ativar.</em></h1>
-      <p class="lead">A jornada agora é simples: assinar o contrato, ativar a conta, integrar as plataformas, montar a escala digital e iniciar a operação acompanhada pela Osasco Express.</p>
+      <p class="lead">A partir daqui, a jornada é objetiva: assinar o contrato, ativar a conta, integrar as plataformas, montar a escala digital e iniciar a operação com acompanhamento da Osasco Express.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#assinar">Assinar contrato Fratelli</a>
-        <a class="btn btn-ghost" href="#ativar">Ir para ativação</a>
+        <a class="btn primary" href="#assinar">Assinar contrato Fratelli</a>
+        <a class="btn secondary" href="#ativar">Ir para ativação</a>
       </div>
-      <div class="special-note"><strong>Condição especial registrada:</strong> a Fratelli terá <strong>12 meses de isenção da taxa administrativa de gestão logística</strong>. Permanecem normalmente os custos operacionais de diárias dos entregadores fixos e entregas realizadas conforme tabela de km.</div>
+      <div class="hero-note"><strong>Condição especial registrada:</strong> a Fratelli terá <strong>12 meses de isenção da taxa administrativa de gestão logística</strong>. Permanecem normalmente os custos operacionais de diárias dos entregadores fixos e das entregas realizadas conforme tabela de km.</div>
     </div>
-    <div class="hero-img fade">
-      <img src="assets/fratelli-operacao-delivery.webp" alt="Imagem premium da operação de entrega da Fratelli">
+    <div class="hero-panel fade">
+      <div class="hero-img"><img src="assets/fratelli-hero-retrato.webp" alt="Imagem vertical premium da operação de entrega da Fratelli"></div>
+      <div class="hero-metrics">
+        <div class="metric-card"><strong>5 etapas</strong><span>da assinatura até o início da operação</span></div>
+        <div class="metric-card"><strong>40 min</strong><span>média para acompanhar a integração remota</span></div>
+      </div>
     </div>
   </div>
 </header>
 
-<section class="mission-bar" aria-label="Jornada de ativação">
-  <div class="wrap">
-    <div class="mission-steps">
-      <a class="mission-step" href="#assinar"><span class="mission-num">1</span><span><b>Assinar</b><span>contrato Fratelli</span></span></a>
-      <a class="mission-step" href="#ativar"><span class="mission-num">2</span><span><b>Ativar</b><span>cadastro e suporte</span></span></a>
-      <a class="mission-step" href="#integrar"><span class="mission-num">3</span><span><b>Integrar</b><span>AnyDesk + plataformas</span></span></a>
-      <a class="mission-step" href="#escalar"><span class="mission-num">4</span><span><b>Escalar</b><span>turnos digitais</span></span></a>
-      <a class="mission-step" href="#operar"><span class="mission-num">5</span><span><b>Operar</b><span>início acompanhado</span></span></a>
-    </div>
+<section class="journey-strip">
+  <div class="wrap journey-grid fade">
+    <a class="journey-card" href="#assinar"><span class="journey-n">1</span><span><b>Assinar</b><small>formalizar a parceria</small></span></a>
+    <a class="journey-card" href="#ativar"><span class="journey-n">2</span><span><b>Ativar</b><small>criar conta e liberar suporte</small></span></a>
+    <a class="journey-card" href="#integrar"><span class="journey-n">3</span><span><b>Integrar</b><small>AnyDesk + plataformas</small></span></a>
+    <a class="journey-card" href="#escalar"><span class="journey-n">4</span><span><b>Escalar</b><small>montar os turnos digitais</small></span></a>
+    <a class="journey-card" href="#operar"><span class="journey-n">5</span><span><b>Operar</b><small>iniciar rotina e fechamentos</small></span></a>
   </div>
 </section>
 
 <main>
-<section class="section contract-stage" id="assinar">
-  <div class="wrap contract-wrap">
-    <div class="contract-image fade">
-      <img src="assets/fratelli-contrato-parceria.webp" alt="Imagem premium de contrato e operação logística Fratelli">
-    </div>
-    <div class="contract-panel fade">
-      <p class="kicker">1 · Assinar</p>
-      <h2>Primeiro passo: assinar o contrato Fratelli.</h2>
-      <p class="section-lead">O contrato da Fratelli é o documento principal para formalizar a parceria e liberar a implantação. O contrato do entregador fica disponível como documento operacional da rede Osasco Express.</p>
-
-      <div class="doc-grid">
-        <article class="doc-card main">
-          <h3>Contrato Fratelli</h3>
-          <p>Atualizado com 12 meses de isenção, fechamento na terça, pagamento na quarta, escala, diárias e taxas por km.</p>
-          <div class="doc-actions">
-            <a class="btn btn-primary" href="contratos/contrato-fratelli-12-meses-isencao.pdf" target="_blank">Abrir PDF</a>
-            <a class="btn btn-light" href="contratos/contrato-fratelli-12-meses-isencao.docx" download>Baixar Word</a>
+  <section class="section light contract-stage" id="assinar">
+    <div class="wrap grid-2">
+      <div class="card image-card contract-hero fade"><img src="assets/fratelli-contrato-parceria.webp" alt="Imagem da documentação e contrato Fratelli"></div>
+      <div class="contract-main fade">
+        <div class="section-head">
+          <p class="kicker">1 · Assinar</p>
+          <h2>Primeiro passo: formalizar a parceria e liberar a implantação.</h2>
+          <p class="section-lead">O contrato da Fratelli é o documento principal desta etapa. O contrato do entregador fica disponível como documento operacional da rede Osasco Express.</p>
+        </div>
+        <div class="signature-card">
+          <div class="signature-main">
+            <span class="signature-badge">Contrato oficial</span>
+            <h3>Contrato Fratelli em PDF</h3>
+            <p>Documento principal da parceria, atualizado com 12 meses de isenção da taxa administrativa, fechamento na terça, pagamento na quarta, escala, diárias e taxas por km.</p>
+            <a class="btn primary signature-cta" href="contratos/contrato-fratelli-12-meses-isencao.pdf" target="_blank">Abrir contrato oficial em PDF</a>
           </div>
-        </article>
 
-        <article class="doc-card">
-          <h3>Contrato do entregador</h3>
-          <p>Modelo operacional do parceiro, com fechamento da semana trabalhada na terça e pagamento na quarta.</p>
-          <div class="doc-actions">
-            <a class="btn btn-dark" href="contratos/contrato-entregador-osasco-express-pagamento-quarta.pdf" target="_blank">Abrir PDF</a>
-            <a class="btn btn-light" href="contratos/contrato-entregador-osasco-express-pagamento-quarta.docx" download>Word</a>
+          <div class="gov-sign-box">
+            <div>
+              <span class="signature-badge gov">Assinatura eletrônica</span>
+              <h3>Assinar pelo Gov.br</h3>
+              <p>A assinatura eletrônica permite assinar o documento em meio digital a partir da conta gov.br. O documento assinado digitalmente possui a mesma validade de um documento com assinatura física, conforme o Decreto Nº 10.543, de 13/11/2020.</p>
+            </div>
+            <a class="gov-link" href="https://www.gov.br/pt-br/servicos/assinatura-eletronica" target="_blank" rel="noopener">Acessar assinatura eletrônica Gov.br</a>
           </div>
-        </article>
+        </div>
+        <div class="callout"><p><strong>Depois da assinatura:</strong> o próximo passo é ativar a conta. Cadastro, e-mail confirmado e suporte acionado liberam a integração.</p></div>
       </div>
-
-      <div class="contract-alert"><strong>Depois de assinar:</strong> avance para a ativação da conta. O cadastro, e-mail confirmado e suporte acionado liberam a integração via AnyDesk.</div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section activation-section light" id="ativar">
-  <div class="wrap">
-    <div class="activation-grid">
-      <aside class="command-card fade">
-        <div class="command-label">2 · Ativar</div>
+  <section class="section light activation-section" id="ativar">
+    <div class="wrap activation-wrap">
+      <aside class="side-panel fade">
+        <div class="panel-tag">2 · Ativar</div>
         <h2>Painel de ativação da Fratelli.</h2>
-        <p>Marque cada etapa conforme for concluindo. A página salva seu progresso neste dispositivo e mostra o próximo passo para a integração não travar.</p>
-
-        <div class="progress-shell" aria-label="Progresso da ativação">
-          <div class="progress-top">
-            <div class="progress-title">Progresso</div>
-            <div class="progress-count"><span id="doneCount">0</span>/6</div>
-          </div>
+        <p>Marque cada etapa conforme for concluindo. A página salva seu progresso neste dispositivo e mostra o próximo passo para a integração acontecer sem travar.</p>
+        <div class="progress-shell">
+          <div class="progress-head"><span>Progresso</span><strong><span id="doneCount">0</span>/6</strong></div>
           <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
           <div class="progress-status" id="progressStatus">Comece pelo cadastro da empresa no sistema da Osasco Express.</div>
         </div>
-
-        <div class="command-actions">
-          <a class="btn btn-primary" href="https://osascoexpressemotoboys.entregas.io/signup/customer-company" target="_blank" rel="noopener">Criar conta da empresa</a>
-          <a class="btn btn-green" href="https://wa.me/5511986661784?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+J%C3%A1+fiz+o+cadastro+e+quero+ativar+a+conta+para+iniciar+a+integra%C3%A7%C3%A3o+remota+via+AnyDesk.+Tenho+cerca+de+40+minutos+para+acompanhar." target="_blank" rel="noopener">Ativar com suporte</a>
-          <button class="btn btn-ghost" type="button" id="resetProgress">Reiniciar checklist</button>
+        <div class="panel-actions">
+          <a class="btn primary" href="https://osascoexpressemotoboys.entregas.io/signup/customer-company" target="_blank" rel="noopener">Criar conta da empresa</a>
+          <a class="btn green" href="https://wa.me/5511986661784?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+J%C3%A1+fiz+o+cadastro+e+quero+ativar+a+conta+para+iniciar+a+integra%C3%A7%C3%A3o+remota+via+AnyDesk.+Tenho+cerca+de+40+minutos+para+acompanhar." target="_blank" rel="noopener">Ativar com suporte</a>
+          <button class="btn secondary" type="button" id="resetProgress">Reiniciar checklist</button>
         </div>
       </aside>
-
-      <div class="activation-board fade" id="activationChecklist">
-        <article class="check-card" data-step="cadastro">
-          <button class="check-toggle" type="button" aria-label="Marcar cadastro como concluído"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
-          <div class="check-body"><h3>Fazer o cadastro no sistema</h3><p>Acesse o cadastro da empresa, preencha os dados da Fratelli e finalize a criação da conta.</p><p><a href="https://osascoexpressemotoboys.entregas.io/signup/customer-company" target="_blank" rel="noopener">Abrir cadastro da empresa</a></p></div>
-          <span class="step-badge">01</span>
+      <div class="steps-stack fade" id="activationChecklist">
+        <article class="step-card" data-step="cadastro">
+          <button class="step-bullet" type="button" aria-label="Marcar cadastro como concluído"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="step-copy">
+            <h3>Fazer o cadastro no sistema</h3>
+            <p>Acesse o cadastro da empresa, preencha os dados da Fratelli e finalize a criação da conta.</p>
+            <a href="https://osascoexpressemotoboys.entregas.io/signup/customer-company" target="_blank" rel="noopener">Abrir cadastro da empresa</a>
+          </div>
+          <span class="step-no">01</span>
         </article>
-
-        <article class="check-card" data-step="email">
-          <button class="check-toggle" type="button" aria-label="Marcar e-mail como confirmado"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
-          <div class="check-body"><h3>Confirmar o e-mail</h3><p>Abra o Gmail usado no cadastro e clique no link de confirmação enviado pelo sistema da Osasco Express.</p></div>
-          <span class="step-badge">02</span>
+        <article class="step-card" data-step="email">
+          <button class="step-bullet" type="button" aria-label="Marcar e-mail como confirmado"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="step-copy">
+            <h3>Confirmar o e-mail</h3>
+            <p>Abra o Gmail usado no cadastro e clique no link de confirmação enviado pelo sistema da Osasco Express.</p>
+          </div>
+          <span class="step-no">02</span>
         </article>
-
-        <article class="check-card" data-step="perfil">
-          <button class="check-toggle" type="button" aria-label="Marcar perfil como completo"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
-          <div class="check-body"><h3>Completar o perfil da empresa</h3><p>Informe endereço completo, defina uma senha segura e configure o raio de atuação em <strong>10 km</strong>.</p></div>
-          <span class="step-badge">03</span>
+        <article class="step-card" data-step="perfil">
+          <button class="step-bullet" type="button" aria-label="Marcar perfil como completo"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="step-copy">
+            <h3>Completar o perfil da empresa</h3>
+            <p>Informe endereço completo, defina uma senha segura e configure o raio de atuação em <strong>10 km</strong>.</p>
+          </div>
+          <span class="step-no">03</span>
         </article>
-
-        <article class="check-card" data-step="anydesk">
-          <button class="check-toggle" type="button" aria-label="Marcar AnyDesk como preparado"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
-          <div class="check-body"><h3>Deixar o AnyDesk pronto</h3><p>Baixe, instale e abra o AnyDesk no computador da loja. O suporte vai pedir o número do dispositivo exibido na tela.</p><p><a href="https://anydesk.com/pt/downloads/windows" target="_blank" rel="noopener">Baixar AnyDesk para Windows</a></p></div>
-          <span class="step-badge">04</span>
+        <article class="step-card" data-step="anydesk">
+          <button class="step-bullet" type="button" aria-label="Marcar AnyDesk como preparado"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="step-copy">
+            <h3>Deixar o AnyDesk pronto</h3>
+            <p>Baixe, instale e abra o AnyDesk no computador da loja. O suporte vai pedir o número do dispositivo exibido na tela.</p>
+            <a href="https://anydesk.com/pt/downloads/windows" target="_blank" rel="noopener">Baixar AnyDesk para Windows</a>
+          </div>
+          <span class="step-no">04</span>
         </article>
-
-        <article class="check-card" data-step="suporte">
-          <button class="check-toggle" type="button" aria-label="Marcar suporte como acionado"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
-          <div class="check-body"><h3>Acionar o suporte oficial</h3><p>Com cadastro, e-mail e AnyDesk prontos, fale com o suporte. A integração pode acontecer no mesmo dia, em horário combinado.</p><p><a href="https://wa.me/5511986661784?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+J%C3%A1+fiz+o+cadastro+e+quero+ativar+a+conta+para+iniciar+a+integra%C3%A7%C3%A3o+remota+via+AnyDesk.+Tenho+cerca+de+40+minutos+para+acompanhar." target="_blank" rel="noopener">Chamar suporte no WhatsApp</a></p></div>
-          <span class="step-badge">05</span>
+        <article class="step-card" data-step="suporte">
+          <button class="step-bullet" type="button" aria-label="Marcar suporte como acionado"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="step-copy">
+            <h3>Acionar o suporte oficial</h3>
+            <p>Com cadastro, e-mail e AnyDesk prontos, fale com o suporte. A integração pode acontecer no mesmo dia, em horário combinado.</p>
+            <a href="https://wa.me/5511986661784?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+J%C3%A1+fiz+o+cadastro+e+quero+ativar+a+conta+para+iniciar+a+integra%C3%A7%C3%A3o+remota+via+AnyDesk.+Tenho+cerca+de+40+minutos+para+acompanhar." target="_blank" rel="noopener">Chamar suporte no WhatsApp</a>
+          </div>
+          <span class="step-no">05</span>
         </article>
-
-        <article class="check-card" data-step="integracao">
-          <button class="check-toggle" type="button" aria-label="Marcar integração como concluída"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
-          <div class="check-body"><h3>Acompanhar a integração remota</h3><p>Reserve cerca de <strong>40 minutos</strong>. O cliente acompanha a configuração do iFood e demais contas pelo AnyDesk, com o suporte da Osasco Express.</p></div>
-          <span class="step-badge">06</span>
+        <article class="step-card" data-step="integracao">
+          <button class="step-bullet" type="button" aria-label="Marcar integração como concluída"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
+          <div class="step-copy">
+            <h3>Acompanhar a integração remota</h3>
+            <p>Reserve cerca de <strong>40 minutos</strong>. O responsável da Fratelli acompanha a configuração do iFood e demais contas pelo AnyDesk, junto do suporte da Osasco Express.</p>
+          </div>
+          <span class="step-no">06</span>
         </article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section remote-section" id="integrar">
-  <div class="wrap">
-    <div class="remote-grid">
-      <div class="remote-main fade">
+  <section class="section" id="integrar">
+    <div class="wrap integration-grid">
+      <div class="dark-card fade">
         <p class="kicker">3 · Integrar</p>
-        <h2>O suporte configura com você no mesmo dia, se tudo estiver pronto.</h2>
+        <h2>Se tudo estiver pronto, a integração pode acontecer no mesmo dia.</h2>
         <p>Depois do cadastro e da confirmação do e-mail, a Osasco Express ativa a conta e conduz a integração remota via AnyDesk. O responsável da Fratelli precisa acompanhar a sessão para liberar acessos, validar plataformas e garantir que o fluxo fique correto desde o primeiro dia.</p>
-        <div class="remote-metrics">
-          <div class="remote-metric"><strong>40 min</strong><span>tempo médio para acompanhar a integração</span></div>
-          <div class="remote-metric"><strong>10 km</strong><span>raio operacional configurado no perfil</span></div>
-          <div class="remote-metric"><strong>mesmo dia</strong><span>quando cadastro, e-mail e AnyDesk já estão prontos</span></div>
+        <div class="metrics-row">
+          <div class="big-metric"><strong>40 min</strong><span>tempo médio para acompanhar a integração</span></div>
+          <div class="big-metric"><strong>10 km</strong><span>raio operacional configurado no perfil</span></div>
+          <div class="big-metric"><strong>mesmo dia</strong><span>quando cadastro, e-mail e AnyDesk já estão prontos</span></div>
         </div>
       </div>
-
-      <aside class="ready-card fade">
+      <aside class="list-card fade">
         <h3>Para não atrasar sua ativação</h3>
         <p>Antes de chamar o suporte, deixe estes itens em mãos:</p>
-        <div class="ready-list">
-          <div class="ready-item">Acesso ao e-mail usado no cadastro.</div>
-          <div class="ready-item">Login do iFood e demais plataformas necessárias.</div>
-          <div class="ready-item">Computador da loja disponível.</div>
-          <div class="ready-item">AnyDesk instalado e aberto.</div>
-          <div class="ready-item">Número do dispositivo visível na tela.</div>
-          <div class="ready-item">Responsável da Fratelli disponível por cerca de 40 minutos.</div>
+        <div class="check-list">
+          <div class="check-item">Acesso ao e-mail usado no cadastro.</div>
+          <div class="check-item">Login do iFood e demais plataformas necessárias.</div>
+          <div class="check-item">Computador da loja disponível.</div>
+          <div class="check-item">AnyDesk instalado e aberto.</div>
+          <div class="check-item">Número do dispositivo visível na tela.</div>
+          <div class="check-item">Responsável da Fratelli disponível por cerca de 40 minutos.</div>
         </div>
-        <a class="btn btn-primary" href="https://wa.me/5511986661784?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+J%C3%A1+estou+com+cadastro%2C+e-mail%2C+AnyDesk+e+acessos+prontos.+Podemos+ativar+a+conta+e+fazer+a+integra%C3%A7%C3%A3o+remota." target="_blank" rel="noopener">Estou com tudo pronto</a>
+        <a class="btn primary" style="width:100%;margin-top:16px" href="https://wa.me/5511986661784?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+J%C3%A1+estou+com+cadastro%2C+e-mail%2C+AnyDesk+e+acessos+prontos.+Podemos+ativar+a+conta+e+fazer+a+integra%C3%A7%C3%A3o+remota." target="_blank" rel="noopener">Estou com tudo pronto</a>
       </aside>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section-tight">
-  <div class="wrap">
-    <div class="mockup-block fade">
-      <img src="assets/fratelli-loja-plataformas.webp" alt="Mockup de celular e tablet com a loja da Fratelli em plataforma de delivery">
+  <section class="section tight visual-stage">
+    <div class="wrap">
+      <div class="mockup-card fade"><img src="assets/fratelli-loja-plataformas.webp" alt="Mockup da loja da Fratelli nas plataformas"></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section light" id="escalar">
-  <div class="wrap">
-    <div class="section-head fade">
-      <p class="kicker">4 · Escalar</p>
-      <h2>Com a integração concluída, montamos a escala digital.</h2>
-      <p class="section-lead">A escala abaixo é o ponto de partida da operação Fratelli. A Osasco Express acompanha os primeiros ciclos e ajusta o fluxo quando necessário.</p>
-    </div>
-
-    <div class="scale-summary fade">
-      <div class="scale-pill"><b>Almoço controlado</b><span>1 a 2 entregadores conforme o dia.</span></div>
-      <div class="scale-pill"><b>Jantar reforçado</b><span>4 a 8 entregadores nos turnos críticos.</span></div>
-      <div class="scale-pill"><b>Sexta em destaque</b><span>Dia de maior reforço operacional.</span></div>
-    </div>
-
-    <div class="scale-grid fade">
-      <div class="day"><h4>Segunda</h4><div class="shift"><div class="qtd">1</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">4</div><div class="turno">Jantar</div><div class="hora">18h às 23h</div></div></div>
-      <div class="day"><h4>Terça</h4><div class="shift"><div class="qtd">1</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">4</div><div class="turno">Jantar</div><div class="hora">18h às 23h</div></div></div>
-      <div class="day"><h4>Quarta</h4><div class="shift"><div class="qtd">1</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">4</div><div class="turno">Jantar</div><div class="hora">18h às 23h</div></div></div>
-      <div class="day"><h4>Quinta</h4><div class="shift"><div class="qtd">1</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">5</div><div class="turno">Jantar</div><div class="hora">18h às 23h</div></div></div>
-      <div class="day hot"><h4>Sexta</h4><div class="shift"><div class="qtd">2</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">8</div><div class="turno">Jantar</div><div class="hora">18h às 23h30</div></div></div>
-      <div class="day"><h4>Sábado</h4><div class="shift"><div class="qtd">2</div><div class="turno">Almoço</div><div class="hora">12h às 15h</div></div><div class="shift"><div class="qtd">6</div><div class="turno">Jantar</div><div class="hora">18h às 23h30</div></div></div>
-      <div class="day"><h4>Domingo</h4><div class="shift"><div class="qtd">6</div><div class="turno">Fim de tarde / jantar</div><div class="hora">17h às 23h</div></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="section-tight light" id="operar">
-  <div class="wrap grid-2">
-    <div class="fade">
-      <p class="kicker">5 · Operar</p>
-      <h2>Valores e rotina de fechamento.</h2>
-      <p class="section-lead">A isenção é sobre a taxa administrativa. A operação segue com apuração normal das diárias dos entregadores fixos e das entregas realizadas.</p>
-    </div>
-    <div class="price-grid fade">
-      <article class="price-card"><div class="price-head blue">Segunda a quinta</div><div class="price-body"><div class="price">R$ 50 <span>/dia</span></div><p>Por entregador fixo escalado no turno combinado.</p></div></article>
-      <article class="price-card"><div class="price-head red">Sexta a domingo + feriados</div><div class="price-body"><div class="price">R$ 65 <span>/dia</span></div><p>Por entregador fixo nos dias de maior movimento.</p></div></article>
-    </div>
-  </div>
-  <div class="wrap" style="margin-top:18px">
-    <div class="summary fade">
-      <div class="summary-head"><h3>Fechamento e pagamento</h3><p>Fluxo ajustado ao repasse das plataformas e ao pagamento dos entregadores</p></div>
-      <div class="summary-row"><div class="summary-label"><b>Fechamento operacional</b><small>Semana trabalhada fechada toda terça-feira para conferência.</small></div><div class="summary-val">terça</div></div>
-      <div class="summary-row total"><div class="summary-label"><b>Pagamento semanal</b><small>Realizado toda quarta-feira, no CNPJ da Osasco Express.</small></div><div class="summary-val">quarta</div></div>
-      <div class="summary-row"><div class="summary-label"><b>Taxa administrativa</b><small>Isenta por 12 meses. Após esse período, segue o Plano Médio Fratelli, salvo novo ajuste formal entre as partes.</small></div><div class="summary-val">R$ 0 por 12 meses</div></div>
-      <div class="badges"><span class="badge-item">Sem taxa administrativa por 12 meses</span><span class="badge-item">Diárias e entregas seguem normalmente</span><span class="badge-item">Pagamento no CNPJ</span></div>
-    </div>
-
-    <details class="fade" style="margin-top:18px">
-      <summary>Ver tabela de km das entregas realizadas</summary>
-      <div class="tax-grid">
-        <article class="tax-card"><div class="tax-head blue">Segunda a quinta</div>
-          <div class="tax-row"><span>1 km</span><b>R$ 6,00</b></div><div class="tax-row"><span>2 km</span><b>R$ 6,00</b></div><div class="tax-row"><span>3 km</span><b>R$ 7,00</b></div><div class="tax-row"><span>4 km</span><b>R$ 7,00</b></div><div class="tax-row"><span>5 km</span><b>R$ 8,00</b></div><div class="tax-row"><span>6 km</span><b>R$ 9,00</b></div><div class="tax-row"><span>7 km</span><b>R$ 10,00</b></div><div class="tax-row"><span>8 km</span><b>R$ 11,00</b></div><div class="tax-row"><span>9 km</span><b>R$ 12,00</b></div><div class="tax-row"><span>10 km</span><b>R$ 14,00</b></div><div class="tax-row"><span>11 km</span><b>R$ 14,00</b></div><div class="tax-row"><span>12 km</span><b>R$ 15,00</b></div>
-        </article>
-        <article class="tax-card"><div class="tax-head red">Sexta a domingo + feriados</div>
-          <div class="tax-row"><span>1 km</span><b>R$ 8,00</b></div><div class="tax-row"><span>2 km</span><b>R$ 8,00</b></div><div class="tax-row"><span>3 km</span><b>R$ 8,00</b></div><div class="tax-row"><span>4 km</span><b>R$ 9,00</b></div><div class="tax-row"><span>5 km</span><b>R$ 10,00</b></div><div class="tax-row"><span>6 km</span><b>R$ 10,00</b></div><div class="tax-row"><span>7 km</span><b>R$ 12,00</b></div><div class="tax-row"><span>8 km</span><b>R$ 13,00</b></div><div class="tax-row"><span>9 km</span><b>R$ 14,00</b></div><div class="tax-row"><span>10 km</span><b>R$ 16,00</b></div><div class="tax-row"><span>11 km</span><b>R$ 16,00</b></div><div class="tax-row"><span>12 km</span><b>R$ 16,00</b></div><div class="tax-row"><span>13 km</span><b>R$ 20,00</b></div>
-        </article>
+  <section class="section light" id="escalar">
+    <div class="wrap">
+      <div class="section-head fade">
+        <p class="kicker">4 · Escalar</p>
+        <h2>Com a integração concluída, montamos a escala digital da operação.</h2>
+        <p class="section-lead">A escala abaixo é o ponto de partida da Fratelli. A Osasco Express acompanha os primeiros ciclos e ajusta o fluxo quando necessário.</p>
       </div>
-    </details>
-  </div>
-</section>
-
-<section class="section-tight">
-  <div class="wrap">
-    <div class="section-head fade">
-      <p class="kicker">Resumo final</p>
-      <h2>Assinou, ativou, integrou, escalou, começou.</h2>
-    </div>
-    <div class="flow fade">
-      <div class="step"><div class="n">1</div><h3>Contrato assinado</h3><p>Documento Fratelli assinado pelas partes.</p></div>
-      <div class="step"><div class="n">2</div><h3>Integração concluída</h3><p>Conta ativada, AnyDesk realizado, plataformas conectadas.</p></div>
-      <div class="step"><div class="n">3</div><h3>Operação acompanhada</h3><p>Escala digital montada, turnos confirmados e início monitorado.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section cta" id="confirmar">
-  <div class="wrap">
-    <div class="cta-box fade">
-      <p class="kicker" style="color:#fff">Vamos iniciar</p>
-      <h2>Henrique, avise a equipe assim que assinar.</h2>
-      <p>A partir da assinatura e da ativação da conta, a Osasco Express conduz a integração, monta a escala digital e prepara a operação para iniciar com acompanhamento.</p>
-      <a class="btn btn-primary" href="https://wa.me/5511970334125?text=Ol%C3%A1%2C+assinei+o+contrato+da+Fratelli.+Podemos+seguir+com+a+ativa%C3%A7%C3%A3o+da+conta+e+integra%C3%A7%C3%A3o+da+opera%C3%A7%C3%A3o." target="_blank">Avisar que o contrato foi assinado</a>
-      <div class="final-info">
-        <div><div class="fi-label">Jornada</div><div class="fi-val">Assinar → Operar</div></div>
-        <div><div class="fi-label">Isenção</div><div class="fi-val">12 meses</div></div>
-        <div><div class="fi-label">Integração</div><div class="fi-val">média 40 min</div></div>
-        <div><div class="fi-label">Pagamento</div><div class="fi-val">quarta-feira</div></div>
+      <div class="scale-top fade">
+        <div class="info-chip"><strong>Almoço controlado</strong><span>1 a 2 entregadores conforme o dia.</span></div>
+        <div class="info-chip"><strong>Jantar reforçado</strong><span>4 a 8 entregadores nos turnos críticos.</span></div>
+        <div class="info-chip"><strong>Sexta em destaque</strong><span>Dia de maior reforço operacional.</span></div>
+      </div>
+      <div class="scale-grid fade">
+        <article class="day-card"><h3>Segunda</h3><div class="shift"><div class="qtd">1</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">4</div><div class="turno">Jantar</div><div class="hora">18h às 23h</div></div></article>
+        <article class="day-card"><h3>Terça</h3><div class="shift"><div class="qtd">1</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">4</div><div class="turno">Jantar</div><div class="hora">18h às 23h</div></div></article>
+        <article class="day-card"><h3>Quarta</h3><div class="shift"><div class="qtd">1</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">4</div><div class="turno">Jantar</div><div class="hora">18h às 23h</div></div></article>
+        <article class="day-card"><h3>Quinta</h3><div class="shift"><div class="qtd">1</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">5</div><div class="turno">Jantar</div><div class="hora">18h às 23h</div></div></article>
+        <article class="day-card hot"><h3>Sexta</h3><div class="shift"><div class="qtd">2</div><div class="turno">Almoço</div><div class="hora">11h às 15h</div></div><div class="shift"><div class="qtd">8</div><div class="turno">Jantar</div><div class="hora">18h às 23h30</div></div></article>
+        <article class="day-card"><h3>Sábado</h3><div class="shift"><div class="qtd">2</div><div class="turno">Almoço</div><div class="hora">12h às 15h</div></div><div class="shift"><div class="qtd">6</div><div class="turno">Jantar</div><div class="hora">18h às 23h30</div></div></article>
+        <article class="day-card"><h3>Domingo</h3><div class="shift"><div class="qtd">6</div><div class="turno">Fim de tarde / jantar</div><div class="hora">17h às 23h</div></div></article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="section tight light" id="operar">
+    <div class="wrap operate-grid">
+      <div class="fade">
+        <div class="section-head">
+          <p class="kicker">5 · Operar</p>
+          <h2>Valores operacionais e rotina de fechamento.</h2>
+          <p class="section-lead">A isenção é sobre a taxa administrativa. A operação segue com apuração normal das diárias dos entregadores fixos e das entregas realizadas.</p>
+        </div>
+        <div class="price-grid">
+          <article class="price-card"><div class="price-head blue">Segunda a quinta</div><div class="price-body"><div class="price-number">R$ 50 <span>/dia</span></div><p>Por entregador fixo escalado no turno combinado.</p></div></article>
+          <article class="price-card"><div class="price-head red">Sexta a domingo + feriados</div><div class="price-body"><div class="price-number">R$ 65 <span>/dia</span></div><p>Por entregador fixo nos dias de maior movimento.</p></div></article>
+        </div>
+      </div>
+      </div>
+    </section>
 </main>
 
 <footer>
-  <div class="wrap footer">
-    <div><strong>Osasco Express</strong><br><small>Gestão de entregas e operação logística local para negócios que precisam de previsibilidade.</small></div>
-    <small>Fratelli Espaço Gourmet Ltda<br>CNPJ 42.212.888/0003-38<br>Página de ativação da parceria.</small>
+  <div class="wrap footer footer-company">
+    <div class="footer-brand">
+      <strong>Osasco Express Serviços LTDA</strong>
+      <small>CNPJ 54.707.097/0001-04</small>
+      <small>Avenida Diogo Antônio Feijó, 855 — Km 18, Osasco/SP</small>
+    </div>
+
+    <div class="footer-contact">
+      <small><strong>SAC:</strong> <a href="tel:+5511964251461">11 96425-1461</a></small>
+      <small><strong>Suporte:</strong> <a href="tel:+5511924782555">11 92478-2555</a></small>
+      <small><strong>Comercial:</strong> <a href="tel:+5511970334125">55 11 97033-4125</a></small>
+    </div>
+
+    <div class="footer-meta">
+      <small>Fratelli Espaço Gourmet Ltda</small>
+      <small>CNPJ 42.212.888/0003-38</small>
+      <small>Página de ativação da parceria.</small>
+    </div>
   </div>
 </footer>
 
 <div class="sticky"><a href="#ativar">Ativar minha conta</a></div>
 
 <script>
-const io = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in') }), {threshold:.12});
+const io = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in') }), {threshold:.14});
 document.querySelectorAll('.fade').forEach(el => io.observe(el));
 </script>
-
 <script>
 (function(){
-  const storageKey = "fratelli_activation_flow_v2";
-  const cards = Array.from(document.querySelectorAll(".check-card[data-step]"));
-  const fill = document.getElementById("progressFill");
-  const count = document.getElementById("doneCount");
-  const status = document.getElementById("progressStatus");
-  const reset = document.getElementById("resetProgress");
-  const toast = document.createElement("div");
-  toast.className = "toast";
+  const storageKey = 'fratelli_activation_professional_v3';
+  const cards = Array.from(document.querySelectorAll('.step-card[data-step]'));
+  const fill = document.getElementById('progressFill');
+  const count = document.getElementById('doneCount');
+  const status = document.getElementById('progressStatus');
+  const reset = document.getElementById('resetProgress');
+  const toast = document.createElement('div');
+  toast.className = 'toast';
   document.body.appendChild(toast);
 
   const labels = {
-    cadastro: "Cadastro criado",
-    email: "E-mail confirmado",
-    perfil: "Perfil completo",
-    anydesk: "AnyDesk pronto",
-    suporte: "Suporte acionado",
-    integracao: "Integração acompanhada"
+    cadastro:'Cadastro criado',
+    email:'E-mail confirmado',
+    perfil:'Perfil completo',
+    anydesk:'AnyDesk pronto',
+    suporte:'Suporte acionado',
+    integracao:'Integração acompanhada'
   };
-
   const statusByCount = [
-    "Comece pelo cadastro da empresa no sistema da Osasco Express.",
-    "Agora confirme o e-mail enviado pelo sistema.",
-    "Complete o perfil da empresa e configure o raio de 10 km.",
-    "Deixe o AnyDesk instalado e aberto no computador da loja.",
-    "Chame o suporte oficial para ativar a conta e iniciar a integração.",
-    "Acompanhe a integração remota por cerca de 40 minutos.",
-    "Ativação encaminhada. Próximo passo: escala digital e início da operação."
+    'Comece pelo cadastro da empresa no sistema da Osasco Express.',
+    'Agora confirme o e-mail enviado pelo sistema.',
+    'Complete o perfil da empresa e configure o raio de 10 km.',
+    'Deixe o AnyDesk instalado e aberto no computador da loja.',
+    'Chame o suporte oficial para ativar a conta e iniciar a integração.',
+    'Acompanhe a integração remota por cerca de 40 minutos.',
+    'Ativação encaminhada. Próximo passo: escala digital e início da operação.'
   ];
-
-  function load(){
-    try { return JSON.parse(localStorage.getItem(storageKey) || "{}"); }
-    catch(e){ return {}; }
-  }
+  function load(){ try { return JSON.parse(localStorage.getItem(storageKey) || '{}'); } catch(e){ return {}; } }
   function save(state){ localStorage.setItem(storageKey, JSON.stringify(state)); }
-  function showToast(text){
-    toast.textContent = text;
-    toast.classList.add("show");
-    clearTimeout(window.__fratelliToast);
-    window.__fratelliToast = setTimeout(()=>toast.classList.remove("show"), 1800);
-  }
+  function showToast(text){ toast.textContent = text; toast.classList.add('show'); clearTimeout(window.__fratelliToast); window.__fratelliToast = setTimeout(()=>toast.classList.remove('show'), 1800); }
   function render(){
-    const state = load();
-    let done = 0;
+    const state = load(); let done = 0;
     cards.forEach(card => {
-      const key = card.dataset.step;
-      const isDone = !!state[key];
-      card.classList.toggle("is-done", isDone);
-      card.classList.remove("is-next");
+      const key = card.dataset.step; const isDone = !!state[key];
+      card.classList.toggle('is-done', isDone); card.classList.remove('is-next');
       if(isDone) done++;
     });
-    const next = cards.find(card => !state[card.dataset.step]);
-    if(next) next.classList.add("is-next");
-    const percent = cards.length ? Math.round((done / cards.length) * 100) : 0;
-    if(fill) fill.style.width = percent + "%";
-    if(count) count.textContent = done;
-    if(status) status.textContent = statusByCount[done] || statusByCount[0];
+    const next = cards.find(card => !state[card.dataset.step]); if(next) next.classList.add('is-next');
+    const percent = cards.length ? Math.round((done/cards.length)*100) : 0;
+    if(fill) fill.style.width = percent + '%'; if(count) count.textContent = done; if(status) status.textContent = statusByCount[done] || statusByCount[0];
   }
   cards.forEach(card => {
-    const btn = card.querySelector(".check-toggle");
-    if(!btn) return;
-    btn.addEventListener("click", () => {
-      const state = load();
-      const key = card.dataset.step;
-      state[key] = !state[key];
-      save(state);
-      render();
-      showToast(state[key] ? (labels[key] + " marcado") : (labels[key] + " desmarcado"));
+    const btn = card.querySelector('.step-bullet'); if(!btn) return;
+    btn.addEventListener('click', () => {
+      const state = load(); const key = card.dataset.step; state[key] = !state[key]; save(state); render(); showToast(state[key] ? (labels[key] + ' marcado') : (labels[key] + ' desmarcado'));
     });
   });
-  if(reset){
-    reset.addEventListener("click", () => {
-      localStorage.removeItem(storageKey);
-      render();
-      showToast("Checklist reiniciado");
-    });
-  }
+  if(reset){ reset.addEventListener('click', ()=>{ localStorage.removeItem(storageKey); render(); showToast('Checklist reiniciado'); }); }
   render();
 })();
 </script>
