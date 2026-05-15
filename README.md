@@ -1,11 +1,11 @@
-# Fratelli × Osasco Express — Versão Final Auditada
+# Fratelli × Osasco Express — versão final corrigida
 
-Subir o conteúdo deste ZIP diretamente na raiz do repositório GitHub Pages.
+Suba TODO o conteúdo deste pacote diretamente na raiz do repositório.
 
-Estrutura:
+Estrutura correta:
 - index.html
 - assets/
 - contratos/
 - README.md
 
-Não subir uma pasta extra dentro do repositório.
+Não suba uma pasta extra dentro do GitHub.

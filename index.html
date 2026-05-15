@@ -3,12 +3,18 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Fratelli × Osasco Express | Ativação da operação</title>
-<meta name="description" content="Ativação da parceria Fratelli Espaço Gourmet com a Osasco Express: contrato, ativação, integração, escala e início da operação." />
-<meta property="og:title" content="Fratelli × Osasco Express | Ativação da operação" />
-<meta property="og:description" content="Contrato, ativação da conta, integração via AnyDesk, escala digital e início da operação." />
+<title>Fratelli × Osasco Express | Implantação da operação</title>
+<meta name="description" content="Implantação da parceria Fratelli Espaço Gourmet com a Osasco Express: canais de comunicação, recrutamento e seleção, integração ao sistema, integração com plataformas, testes e início em até 5 dias úteis." />
+<meta property="og:title" content="Fratelli × Osasco Express | Implantação da operação" />
+<meta property="og:description" content="Fluxo real da parceria: canais de comunicação, recrutamento e seleção, integrações técnicas, testes e início em até 5 dias úteis." />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="assets/fratelli-hero-retrato.webp" />
+<meta property="og:image" content="assets/fratelli-capa-social.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Fratelli × Osasco Express | Implantação da operação" />
+<meta name="twitter:description" content="Fluxo real da parceria: canais de comunicação, recrutamento e seleção, integrações técnicas, testes e início em até 5 dias úteis." />
+<meta name="twitter:image" content="assets/fratelli-capa-social.png" />
+<link rel="icon" type="image/png" href="assets/favicon-fratelli.png" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 <style>
 :root{
   --bg:#0b0705;
@@ -689,6 +695,41 @@ a,button{
   }
 }
 
+
+/* FLUXO CORRIGIDO — textura sutil com logo Osasco Express */
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  background-image:url('assets/oe-watermark-tile.png');
+  background-repeat:repeat;
+  background-size:320px 320px;
+  opacity:.14;
+  mix-blend-mode:screen;
+  mask-image:linear-gradient(180deg,rgba(0,0,0,.24),rgba(0,0,0,.12));
+}
+.hero{position:relative;overflow:hidden}
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:radial-gradient(circle at 18% 22%,rgba(243,109,33,.12),transparent 24%), radial-gradient(circle at 84% 18%,rgba(255,255,255,.03),transparent 24%);
+}
+.hero > .wrap{position:relative;z-index:1}
+.signature-card{display:grid;gap:16px;margin-top:20px}
+.signature-main{padding:22px;border-radius:26px;background:linear-gradient(180deg,#fff,#fff0e5);border:1px solid rgba(243,109,33,.34);box-shadow:0 14px 34px rgba(42,22,12,.08)}
+.signature-badge{display:inline-flex;width:max-content;margin-bottom:10px;padding:7px 10px;border-radius:999px;background:rgba(243,109,33,.10);border:1px solid rgba(243,109,33,.18);color:var(--orange-2);font-size:10px;font-weight:950;letter-spacing:.12em;text-transform:uppercase}
+.signature-badge.gov{background:var(--green-soft);border-color:rgba(22,123,82,.16);color:var(--green)}
+.signature-main h3,.gov-sign-box h3{font-size:22px;margin-bottom:8px}
+.signature-main p,.gov-sign-box p{font-size:13px;line-height:1.62;color:var(--muted)}
+.signature-cta{width:100%;margin-top:16px;font-size:14px}
+.gov-sign-box{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;padding:18px;border-radius:24px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 26px rgba(42,22,12,.06)}
+.gov-link{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 16px;border-radius:16px;background:#111;color:#fff;font-size:13px;font-weight:950;text-align:center;transition:.18s ease}
+@media(max-width:640px){.gov-sign-box{grid-template-columns:1fr}.gov-link{width:100%}}
+
 </style>
 </head>
 <body id="top">
@@ -697,10 +738,10 @@ a,button{
     <a class="brand" href="#top"><span class="brand-mark">F</span>Fratelli <span style="color:var(--orange)">×</span> Osasco Express</a>
     <div class="nav">
       <a href="#assinar">Assinar</a>
-      <a href="#ativar">Ativar</a>
-      <a href="#integrar">Integrar</a>
-      <a href="#escalar">Escalar</a>
-      <a href="#operar">Operar</a>
+      <a href="#ativar">Canais</a>
+      <a href="#escalar">Escala</a>
+      <a href="#integrar">Integrações</a>
+      <a href="#operar">Início</a>
       <a class="primary" href="#ativar">Começar</a>
     </div>
   </div>
@@ -710,20 +751,20 @@ a,button{
   <div class="wrap hero-grid">
     <div class="fade">
       <div class="badge">Início da parceria • Fratelli Espaço Gourmet</div>
-      <p class="kicker">Ativação da operação</p>
-      <h1>Henrique, sua operação já está desenhada. <em>Agora é ativar.</em></h1>
-      <p class="lead">A partir daqui, a jornada é objetiva: assinar o contrato, ativar a conta, integrar as plataformas, montar a escala digital e iniciar a operação com acompanhamento da Osasco Express.</p>
+      <p class="kicker">Implantação da operação</p>
+      <h1>Henrique, sua operação já está desenhada. <em>Agora é implantar com previsibilidade.</em></h1>
+      <p class="lead">Da assinatura ao início da operação, o fluxo segue uma sequência clara e planejada. O prazo previsto é de <strong>até 5 dias úteis</strong>: criação dos canais de comunicação, recrutamento e seleção da equipe, integração da loja ao nosso sistema, integração com as plataformas, testes e início.</p>
       <div class="hero-actions">
         <a class="btn primary" href="#assinar">Assinar contrato Fratelli</a>
         <a class="btn secondary" href="#ativar">Ir para ativação</a>
       </div>
-      <div class="hero-note"><strong>Condição especial registrada:</strong> a Fratelli terá <strong>12 meses de isenção da taxa administrativa de gestão logística</strong>. Permanecem normalmente os custos operacionais de diárias dos entregadores fixos e das entregas realizadas conforme tabela de km.</div>
+      <div class="hero-note"><strong>Condição especial registrada:</strong> a Fratelli terá <strong>12 meses de isenção da taxa administrativa de gestão logística</strong>. Permanecem normalmente os custos operacionais de diárias dos entregadores fixos e das entregas realizadas conforme tabela de km. <strong>Prazo previsto para início da operação:</strong> até 5 dias úteis após a assinatura.</div>
     </div>
     <div class="hero-panel fade">
       <div class="hero-img"><img src="assets/fratelli-hero-retrato.webp" alt="Imagem vertical premium da operação de entrega da Fratelli"></div>
       <div class="hero-metrics">
-        <div class="metric-card"><strong>5 etapas</strong><span>da assinatura até o início da operação</span></div>
-        <div class="metric-card"><strong>40 min</strong><span>média para acompanhar a integração remota</span></div>
+        <div class="metric-card"><strong>5 dias úteis</strong><span>prazo previsto da assinatura ao início da operação</span></div>
+        <div class="metric-card"><strong>fluxo guiado</strong><span>canais, recrutamento, integrações, testes e início assistido</span></div>
       </div>
     </div>
   </div>
@@ -732,10 +773,10 @@ a,button{
 <section class="journey-strip">
   <div class="wrap journey-grid fade">
     <a class="journey-card" href="#assinar"><span class="journey-n">1</span><span><b>Assinar</b><small>formalizar a parceria</small></span></a>
-    <a class="journey-card" href="#ativar"><span class="journey-n">2</span><span><b>Ativar</b><small>criar conta e liberar suporte</small></span></a>
-    <a class="journey-card" href="#integrar"><span class="journey-n">3</span><span><b>Integrar</b><small>AnyDesk + plataformas</small></span></a>
-    <a class="journey-card" href="#escalar"><span class="journey-n">4</span><span><b>Escalar</b><small>montar os turnos digitais</small></span></a>
-    <a class="journey-card" href="#operar"><span class="journey-n">5</span><span><b>Operar</b><small>iniciar rotina e fechamentos</small></span></a>
+    <a class="journey-card" href="#ativar"><span class="journey-n">2</span><span><b>Organizar canais</b><small>abrir a comunicação oficial da operação</small></span></a>
+    <a class="journey-card" href="#escalar"><span class="journey-n">3</span><span><b>Recrutar equipe</b><small>seleção e montagem da escala inicial</small></span></a>
+    <a class="journey-card" href="#integrar"><span class="journey-n">4</span><span><b>Integrar sistemas</b><small>loja, sistema e plataformas</small></span></a>
+    <a class="journey-card" href="#operar"><span class="journey-n">5</span><span><b>Testar e iniciar</b><small>validação final e começo assistido</small></span></a>
   </div>
 </section>
 
@@ -746,8 +787,8 @@ a,button{
       <div class="contract-main fade">
         <div class="section-head">
           <p class="kicker">1 · Assinar</p>
-          <h2>Primeiro passo: formalizar a parceria e liberar a implantação.</h2>
-          <p class="section-lead">O contrato da Fratelli é o documento principal desta etapa. O contrato do entregador fica disponível como documento operacional da rede Osasco Express.</p>
+          <h2>Primeiro passo: assinar o contrato oficial e liberar a implantação.</h2>
+          <p class="section-lead">O contrato oficial em PDF é o documento principal desta etapa. Após a assinatura, iniciamos os canais de comunicação, o recrutamento e a seleção da equipe, as integrações técnicas e os testes até o início da operação.</p>
         </div>
         <div class="signature-card">
           <div class="signature-main">
@@ -766,7 +807,7 @@ a,button{
             <a class="gov-link" href="https://www.gov.br/pt-br/servicos/assinatura-eletronica" target="_blank" rel="noopener">Acessar assinatura eletrônica Gov.br</a>
           </div>
         </div>
-        <div class="callout"><p><strong>Depois da assinatura:</strong> o próximo passo é ativar a conta. Cadastro, e-mail confirmado e suporte acionado liberam a integração.</p></div>
+        <div class="callout"><p><strong>Depois da assinatura:</strong> a Osasco Express cria os canais de comunicação, inicia o recrutamento e a seleção da equipe para o ponto, prepara a escala, realiza as integrações técnicas e conduz os testes. O início da operação acontece em até <strong>5 dias úteis</strong>.</p></div>
       </div>
     </div>
   </section>
@@ -774,17 +815,17 @@ a,button{
   <section class="section light activation-section" id="ativar">
     <div class="wrap activation-wrap">
       <aside class="side-panel fade">
-        <div class="panel-tag">2 · Ativar</div>
-        <h2>Painel de ativação da Fratelli.</h2>
-        <p>Marque cada etapa conforme for concluindo. A página salva seu progresso neste dispositivo e mostra o próximo passo para a integração acontecer sem travar.</p>
+        <div class="panel-tag">2 · Implantar</div>
+        <h2>Painel de implantação da Fratelli.</h2>
+        <p>Acompanhe a implantação passo a passo. O fluxo é operacional e planejado: primeiro organizamos a comunicação e a equipe; depois entram as integrações técnicas e os testes.</p>
         <div class="progress-shell">
           <div class="progress-head"><span>Progresso</span><strong><span id="doneCount">0</span>/6</strong></div>
           <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
           <div class="progress-status" id="progressStatus">Comece pelo cadastro da empresa no sistema da Osasco Express.</div>
         </div>
         <div class="panel-actions">
-          <a class="btn primary" href="https://osascoexpressemotoboys.entregas.io/signup/customer-company" target="_blank" rel="noopener">Criar conta da empresa</a>
-          <a class="btn green" href="https://wa.me/5511986661784?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+J%C3%A1+fiz+o+cadastro+e+quero+ativar+a+conta+para+iniciar+a+integra%C3%A7%C3%A3o+remota+via+AnyDesk.+Tenho+cerca+de+40+minutos+para+acompanhar." target="_blank" rel="noopener">Ativar com suporte</a>
+          <a class="btn primary" href="https://wa.me/5511970334125?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+Assinei+o+contrato+e+quero+dar+sequ%C3%AAncia+%C3%A0+implanta%C3%A7%C3%A3o+da+opera%C3%A7%C3%A3o." target="_blank" rel="noopener">Falar com o comercial</a>
+          <a class="btn green" href="https://wa.me/5511986661784?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+J%C3%A1+fiz+o+cadastro+e+quero+ativar+a+conta+para+iniciar+a+integra%C3%A7%C3%A3o+remota+via+AnyDesk.+Tenho+cerca+de+40+minutos+para+acompanhar." target="_blank" rel="noopener">Falar com o suporte</a>
           <button class="btn secondary" type="button" id="resetProgress">Reiniciar checklist</button>
         </div>
       </aside>
@@ -792,98 +833,58 @@ a,button{
         <article class="step-card" data-step="cadastro">
           <button class="step-bullet" type="button" aria-label="Marcar cadastro como concluído"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
           <div class="step-copy">
-            <h3>Fazer o cadastro no sistema</h3>
-            <p>Acesse o cadastro da empresa, preencha os dados da Fratelli e finalize a criação da conta.</p>
-            <a href="https://osascoexpressemotoboys.entregas.io/signup/customer-company" target="_blank" rel="noopener">Abrir cadastro da empresa</a>
-          </div>
+            <h3>Criar canais de comunicação</h3>
+            <p>Após a assinatura, alinhamos os canais oficiais entre loja, operação, suporte e acompanhamento da parceria.</p>
+            <a href="https://wa.me/5511970334125?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+Quero+alinhar+os+canais+de+comunica%C3%A7%C3%A3o+da+opera%C3%A7%C3%A3o." target="_blank" rel="noopener">Alinhar canais pelo WhatsApp</a></div>
           <span class="step-no">01</span>
         </article>
         <article class="step-card" data-step="email">
           <button class="step-bullet" type="button" aria-label="Marcar e-mail como confirmado"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
           <div class="step-copy">
-            <h3>Confirmar o e-mail</h3>
-            <p>Abra o Gmail usado no cadastro e clique no link de confirmação enviado pelo sistema da Osasco Express.</p>
-          </div>
+            <h3>Recrutamento e seleção da equipe</h3>
+            <p>A Osasco Express inicia o recrutamento e a seleção dos entregadores conforme o perfil do ponto e o volume previsto.</p></div>
           <span class="step-no">02</span>
         </article>
         <article class="step-card" data-step="perfil">
           <button class="step-bullet" type="button" aria-label="Marcar perfil como completo"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
           <div class="step-copy">
-            <h3>Completar o perfil da empresa</h3>
-            <p>Informe endereço completo, defina uma senha segura e configure o raio de atuação em <strong>10 km</strong>.</p>
-          </div>
+            <h3>Montagem da escala inicial</h3>
+            <p>Com a equipe definida, estruturamos a escala digital dos primeiros ciclos para almoço, jantar e reforços de pico.</p></div>
           <span class="step-no">03</span>
         </article>
         <article class="step-card" data-step="anydesk">
           <button class="step-bullet" type="button" aria-label="Marcar AnyDesk como preparado"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
           <div class="step-copy">
-            <h3>Deixar o AnyDesk pronto</h3>
-            <p>Baixe, instale e abra o AnyDesk no computador da loja. O suporte vai pedir o número do dispositivo exibido na tela.</p>
-            <a href="https://anydesk.com/pt/downloads/windows" target="_blank" rel="noopener">Baixar AnyDesk para Windows</a>
-          </div>
+            <h3>Integração da loja ao nosso sistema</h3>
+            <p>Configuramos a operação da Fratelli no ambiente da Osasco Express, com os acessos e parâmetros internos necessários.</p></div>
           <span class="step-no">04</span>
         </article>
         <article class="step-card" data-step="suporte">
           <button class="step-bullet" type="button" aria-label="Marcar suporte como acionado"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
           <div class="step-copy">
-            <h3>Acionar o suporte oficial</h3>
-            <p>Com cadastro, e-mail e AnyDesk prontos, fale com o suporte. A integração pode acontecer no mesmo dia, em horário combinado.</p>
-            <a href="https://wa.me/5511986661784?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+J%C3%A1+fiz+o+cadastro+e+quero+ativar+a+conta+para+iniciar+a+integra%C3%A7%C3%A3o+remota+via+AnyDesk.+Tenho+cerca+de+40+minutos+para+acompanhar." target="_blank" rel="noopener">Chamar suporte no WhatsApp</a>
-          </div>
+            <h3>Integração com as plataformas</h3>
+            <p>Depois da configuração inicial, realizamos a integração técnica da loja e das plataformas necessárias para o fluxo operar corretamente.</p></div>
           <span class="step-no">05</span>
         </article>
         <article class="step-card" data-step="integracao">
           <button class="step-bullet" type="button" aria-label="Marcar integração como concluída"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></button>
           <div class="step-copy">
-            <h3>Acompanhar a integração remota</h3>
-            <p>Reserve cerca de <strong>40 minutos</strong>. O responsável da Fratelli acompanha a configuração do iFood e demais contas pelo AnyDesk, junto do suporte da Osasco Express.</p>
-          </div>
+            <h3>Testes e início da operação</h3>
+            <p>Com canais, equipe, escala e integrações prontas, fazemos os testes finais e iniciamos a operação com acompanhamento assistido. Prazo previsto total: até 5 dias úteis.</p></div>
           <span class="step-no">06</span>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="section" id="integrar">
-    <div class="wrap integration-grid">
-      <div class="dark-card fade">
-        <p class="kicker">3 · Integrar</p>
-        <h2>Se tudo estiver pronto, a integração pode acontecer no mesmo dia.</h2>
-        <p>Depois do cadastro e da confirmação do e-mail, a Osasco Express ativa a conta e conduz a integração remota via AnyDesk. O responsável da Fratelli precisa acompanhar a sessão para liberar acessos, validar plataformas e garantir que o fluxo fique correto desde o primeiro dia.</p>
-        <div class="metrics-row">
-          <div class="big-metric"><strong>40 min</strong><span>tempo médio para acompanhar a integração</span></div>
-          <div class="big-metric"><strong>10 km</strong><span>raio operacional configurado no perfil</span></div>
-          <div class="big-metric"><strong>mesmo dia</strong><span>quando cadastro, e-mail e AnyDesk já estão prontos</span></div>
-        </div>
-      </div>
-      <aside class="list-card fade">
-        <h3>Para não atrasar sua ativação</h3>
-        <p>Antes de chamar o suporte, deixe estes itens em mãos:</p>
-        <div class="check-list">
-          <div class="check-item">Acesso ao e-mail usado no cadastro.</div>
-          <div class="check-item">Login do iFood e demais plataformas necessárias.</div>
-          <div class="check-item">Computador da loja disponível.</div>
-          <div class="check-item">AnyDesk instalado e aberto.</div>
-          <div class="check-item">Número do dispositivo visível na tela.</div>
-          <div class="check-item">Responsável da Fratelli disponível por cerca de 40 minutos.</div>
-        </div>
-        <a class="btn primary" style="width:100%;margin-top:16px" href="https://wa.me/5511986661784?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+J%C3%A1+estou+com+cadastro%2C+e-mail%2C+AnyDesk+e+acessos+prontos.+Podemos+ativar+a+conta+e+fazer+a+integra%C3%A7%C3%A3o+remota." target="_blank" rel="noopener">Estou com tudo pronto</a>
-      </aside>
-    </div>
-  </section>
+  
 
-  <section class="section tight visual-stage">
-    <div class="wrap">
-      <div class="mockup-card fade"><img src="assets/fratelli-loja-plataformas.webp" alt="Mockup da loja da Fratelli nas plataformas"></div>
-    </div>
-  </section>
-
-  <section class="section light" id="escalar">
+<section class="section light" id="escalar">
     <div class="wrap">
       <div class="section-head fade">
-        <p class="kicker">4 · Escalar</p>
-        <h2>Com a integração concluída, montamos a escala digital da operação.</h2>
-        <p class="section-lead">A escala abaixo é o ponto de partida da Fratelli. A Osasco Express acompanha os primeiros ciclos e ajusta o fluxo quando necessário.</p>
+        <p class="kicker">3 · Escalar</p>
+        <h2>A escala inicial é montada no começo da implantação.</h2>
+        <p class="section-lead">A escala abaixo funciona como base dos primeiros ciclos da Fratelli. Ela é montada durante a preparação operacional, antes das integrações finais, e pode ser refinada conforme a demanda real dos primeiros dias.</p>
       </div>
       <div class="scale-top fade">
         <div class="info-chip"><strong>Almoço controlado</strong><span>1 a 2 entregadores conforme o dia.</span></div>
@@ -933,13 +934,49 @@ a,button{
     </div>
   </section>
 
+<section class="section" id="integrar">
+    <div class="wrap integration-grid">
+      <div class="dark-card fade">
+        <p class="kicker">4 · Integrar</p>
+        <h2>As integrações técnicas entram depois da preparação operacional.</h2>
+        <p>A integração não acontece no mesmo dia da assinatura. Primeiro estruturamos os canais de comunicação, recrutamos e selecionamos a equipe para o ponto e organizamos a escala inicial. Na sequência, integramos a loja ao nosso sistema, conectamos as plataformas necessárias e realizamos os testes finais antes do início da operação.</p>
+        <div class="metrics-row">
+          <div class="big-metric"><strong>5 dias úteis</strong><span>prazo previsto da assinatura ao início da operação</span></div>
+          <div class="big-metric"><strong>2 integrações</strong><span>loja ao sistema + plataformas da operação</span></div>
+          <div class="big-metric"><strong>início assistido</strong><span>testes operacionais antes de rodar em definitivo</span></div>
+        </div>
+      </div>
+      <aside class="list-card fade">
+        <h3>Fluxo real da implantação</h3>
+        <p>O que acontece entre a assinatura e o início da operação:</p>
+        <div class="check-list">
+          <div class="check-item">Criação dos canais de comunicação entre loja, operação e suporte.</div>
+          <div class="check-item">Recrutamento e seleção da equipe para atender o ponto.</div>
+          <div class="check-item">Montagem da escala inicial conforme os primeiros turnos definidos.</div>
+          <div class="check-item">Integração da loja ao sistema da Osasco Express.</div>
+          <div class="check-item">Integração com as plataformas operacionais da loja.</div>
+          <div class="check-item">Testes operacionais e início assistido em até 5 dias úteis.</div>
+        </div>
+        <a class="btn primary" style="width:100%;margin-top:16px" href="https://wa.me/5511970334125?text=Ol%C3%A1%2C+sou+Henrique+da+Fratelli.+Quero+acompanhar+o+fluxo+de+implanta%C3%A7%C3%A3o+da+opera%C3%A7%C3%A3o." target="_blank" rel="noopener">Acompanhar implantação com o time</a>
+      </aside>
+    </div>
+  </section>
+
+<section class="section tight visual-stage">
+    <div class="wrap">
+      <div class="mockup-card fade"><img src="assets/fratelli-loja-plataformas.webp" alt="Mockup da loja da Fratelli nas plataformas"></div>
+    </div>
+  </section>
+
+
+
   <section class="section tight light" id="operar">
     <div class="wrap operate-grid">
       <div class="fade">
         <div class="section-head">
-          <p class="kicker">5 · Operar</p>
-          <h2>Valores operacionais e rotina de fechamento.</h2>
-          <p class="section-lead">A isenção é sobre a taxa administrativa. A operação segue com apuração normal das diárias dos entregadores fixos e das entregas realizadas.</p>
+          <p class="kicker">5 · Iniciar</p>
+          <h2>Valores operacionais para o início da operação.</h2>
+          <p class="section-lead">A isenção vale sobre a taxa administrativa. Diárias dos entregadores fixos e entregas realizadas seguem normalmente, com apuração operacional alinhada ao início assistido da operação.</p>
         </div>
         <div class="price-grid">
           <article class="price-card"><div class="price-head blue">Segunda a quinta</div><div class="price-body"><div class="price-number">R$ 50 <span>/dia</span></div><p>Por entregador fixo escalado no turno combinado.</p></div></article>
@@ -980,7 +1017,7 @@ document.querySelectorAll('.fade').forEach(el => io.observe(el));
 </script>
 <script>
 (function(){
-  const storageKey = 'fratelli_activation_professional_v3';
+  const storageKey = 'fratelli_implantacao_professional_v4';
   const cards = Array.from(document.querySelectorAll('.step-card[data-step]'));
   const fill = document.getElementById('progressFill');
   const count = document.getElementById('doneCount');
@@ -990,23 +1027,8 @@ document.querySelectorAll('.fade').forEach(el => io.observe(el));
   toast.className = 'toast';
   document.body.appendChild(toast);
 
-  const labels = {
-    cadastro:'Cadastro criado',
-    email:'E-mail confirmado',
-    perfil:'Perfil completo',
-    anydesk:'AnyDesk pronto',
-    suporte:'Suporte acionado',
-    integracao:'Integração acompanhada'
-  };
-  const statusByCount = [
-    'Comece pelo cadastro da empresa no sistema da Osasco Express.',
-    'Agora confirme o e-mail enviado pelo sistema.',
-    'Complete o perfil da empresa e configure o raio de 10 km.',
-    'Deixe o AnyDesk instalado e aberto no computador da loja.',
-    'Chame o suporte oficial para ativar a conta e iniciar a integração.',
-    'Acompanhe a integração remota por cerca de 40 minutos.',
-    'Ativação encaminhada. Próximo passo: escala digital e início da operação.'
-  ];
+  const labels = {cadastro:'Canais de comunicação', email:'Recrutamento e seleção', perfil:'Escala inicial', anydesk:'Loja integrada ao sistema', suporte:'Plataformas integradas', integracao:'Testes e início'};
+  const statusByCount = ['Comece pela formalização da parceria e pelo alinhamento dos canais de comunicação.', 'Próximo passo: recrutamento e seleção da equipe para o ponto.', 'Agora estruturamos a escala inicial da operação.', 'Seguimos para a integração da loja ao sistema da Osasco Express.', 'Depois entra a integração com as plataformas da operação.', 'Na sequência, realizamos os testes operacionais finais.', 'Implantação encaminhada. Próximo passo: início assistido da operação em até 5 dias úteis.'];
   function load(){ try { return JSON.parse(localStorage.getItem(storageKey) || '{}'); } catch(e){ return {}; } }
   function save(state){ localStorage.setItem(storageKey, JSON.stringify(state)); }
   function showToast(text){ toast.textContent = text; toast.classList.add('show'); clearTimeout(window.__fratelliToast); window.__fratelliToast = setTimeout(()=>toast.classList.remove('show'), 1800); }
